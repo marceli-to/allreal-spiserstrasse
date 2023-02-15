@@ -1,0 +1,7 @@
+nav a {
+  @apply inline-flex items-center w-auto p-3 pr-4 -ml-2 text-gray-900 hover:bg-gray-50 hover:rounded-full hover:text-primary-900
+}
+
+nav a.is-active {
+  @apply text-primary-900
+}
