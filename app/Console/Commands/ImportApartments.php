@@ -58,6 +58,8 @@ class ImportApartments extends Command
       ]);
       $this->info('imported apartment: ' . $array[0]);
 
+      $apartment->flag('available');
+
       $af = explode(',', $array[9]);
       foreach ($af as $floor)
       {

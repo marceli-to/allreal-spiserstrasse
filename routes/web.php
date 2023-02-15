@@ -20,5 +20,5 @@ Route::get('/', function () {
 Route::middleware('auth:sanctum', 'verified')->group(function() {
   Route::get('/administration/{any?}', function () {
     return view('spa.app');
-  });
+  })->where('any', '.*');
 });

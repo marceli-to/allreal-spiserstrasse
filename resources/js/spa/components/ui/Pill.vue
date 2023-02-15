@@ -4,13 +4,16 @@
   </div>
 </template>
 <style scoped>
-.is-danger {
+.is-danger,
+.is-sold {
   @apply bg-red-200 text-red-600
 }
-.is-success {
+.is-success,
+.is-available {
   @apply bg-green-200 text-green-600
 }
-.is-warning {
+.is-warning,
+.is-reserved {
   @apply bg-yellow-200 text-yellow-600
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-white border-r-2 border-gray-200/50 w-auto p-4 pr-6 pt-6 flex flex-col justify-between items-start group">
+  <nav class="bg-white border-r-2 border-gray-200/50 w-auto p-4 lg:pr-8 pt-6 flex flex-col justify-between items-start group">
     <nav-section>
       <logo class="w-20 mx-auto h-auto block mb-8" />
       <template v-for="group in navigation">

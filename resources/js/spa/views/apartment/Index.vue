@@ -5,13 +5,6 @@
         @change="doSearch($event)" 
         @reset="getApartments()"
       />
-      <button-secondary 
-        @click="$router.push('/projects')" 
-        :label="'Create apartment'">
-        <template #icon>
-          <user-group class="w-4 h-4" />
-        </template>
-      </button-secondary>
     </content-header>
     <content-main>
       <content-section>
@@ -30,8 +23,17 @@
                 <table-cell>{{ apartment.type }}</table-cell>
                 <table-cell>{{ apartment.street }}</table-cell>
                 <table-cell>{{ apartment.floor }}</table-cell>
+                <table-cell>
+                  <pill :class="`is-${apartment.state.key}`">
+                    {{ apartment.state.value }}
+                  </pill>
+                </table-cell>
                 <table-cell class="text-right">
-                  <a href="" class="text-xs text-primary-900 hover:underline underline-offset-2">Bearbeiten</a>
+                  <router-link 
+                    :to="{ name: 'apartment.update', params: { id: apartment.id} }" 
+                    class="text-xs text-primary-900 hover:underline underline-offset-2">
+                    Bearbeiten
+                  </router-link>
                 </table-cell>
               </table-row>
             </template>

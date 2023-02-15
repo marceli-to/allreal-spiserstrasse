@@ -6,7 +6,7 @@ export default {
         {
           icon: 'stack',
           label: 'Objekte',
-          route: 'apartment'
+          route: 'apartments.index'
         }
       ]
     },

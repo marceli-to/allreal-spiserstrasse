@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Resources;
 use Illuminate\Http\Resources\Json\JsonResource;
+use App\Models\State;
 
 class ApartmentResource extends JsonResource
 {
@@ -23,13 +24,11 @@ class ApartmentResource extends JsonResource
       'area_basement' => $this->area_basement,
       'area_exterior' => $this->area_exterior,
       'price' => $this->price,
+      'state' => [
+        'key' => $this->state,
+        'value' => $this->state == State::SOLD ? 'verkauft' : ($this->state == State::RESERVED ? 'reserviert' : 'frei')
+      ],
       'floor' => collect($this->floors->pluck('acronym')->all())->implode(', '),
-      'foors' => $this->floors->map(function($floor) {
-        return [
-          'acronym' => $floor->acronym,
-          'description' => $floor->description,
-        ];
-      }),
     ];
   }
 }
