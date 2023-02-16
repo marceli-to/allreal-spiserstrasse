@@ -74,4 +74,22 @@ class ApartmentController extends Controller
     );
     return response()->json($data);
   }
+
+  /**
+   * Update an apartment
+   *
+   * @param Apartment $apartment
+   * @param  \Illuminate\Http\Request $request
+   * @return \Illuminate\Http\Response
+   */
+  public function update(Apartment $apartment, Request $request)
+  {
+    $apartment->price = $request->input('price');
+    $apartment->save();
+    $apartment->flags()->delete();
+    $apartment->flag(
+      $request->input('state')
+    );
+    return response()->json('successfully updated');
+  }
 }

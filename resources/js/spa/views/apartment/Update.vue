@@ -11,7 +11,7 @@
     </content-header>
     <content-main>
       <content-section>
-        <form class="p-4">
+        <form class="p-4" @submit.prevent="update(apartment.id, apartment, state)">
           <h1 class="mb-8">
             <span class="font-bold text-primary-900 text-xl block mb-1">{{ apartment.number }}</span>
             {{ apartment.type !== 'Atelier' ? apartment.rooms + ' Zimmer' : 'Atelier' }}, {{ apartment.floor }}, {{ apartment.street }}
@@ -30,6 +30,14 @@
               :options="states">
             </form-select>
           </form-group>
+          <form-group class="mt-10">
+            <button-primary 
+              :label="'Speichern'">
+              <template #icon>
+                <check />
+              </template>
+            </button-primary>
+          </form-group>
         </form>
       </content-section>
     </content-main>
@@ -40,7 +48,9 @@ import Content from "@/components/layout/Content.vue";
 import ContentHeader from "@/components/layout/ContentHeader.vue";
 import ContentMain from "@/components/layout/ContentMain.vue";
 import ContentSection from "@/components/layout/ContentSection.vue";
+import ButtonPrimary from "@/components/buttons/Primary.vue";
 import ButtonSecondary from "@/components/buttons/Secondary.vue";
+import Check from "@/components/icons/Check.vue";
 import ArrowSmallLeft from "@/components/icons/ArrowSmallLeft.vue";
 import FormGroup from "@/components/ui/form/Group.vue";
 import FormInput from "@/components/ui/form/Input.vue";
@@ -59,8 +69,16 @@ let state = ref('');
 
 onMounted(() => {
   getApartment(router.currentRoute.value.params.id).then(() => {
-    state = apartment.value.state.key;
+    state.value = apartment.value.state.key;
   });
 });
+
+const update = async () => {
+  await updateApartment(apartment.value.id, {
+    state: state.value,
+    price: apartment.value.price
+  });
+}
+
 
 </script>

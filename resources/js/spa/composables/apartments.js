@@ -7,11 +7,20 @@ import { storeToRefs } from 'pinia';
 export default function useApartments() {
   const apartments = ref([]);
   const apartment = ref([]);
-  const states = ref({
-    1: 'frei',
-    2: 'vermietet',
-    3: 'verkauft',
-  });
+  const states = ref([
+    {
+      key: 'available',
+      value: 'frei'
+    },
+    {
+      key: 'reserved',
+      value: 'reserviert'
+    },
+    {
+      key: 'sold',
+      value: 'verkauft'
+    },
+  ]);
   const router = useRouter();
   const errors = ref('');
 
@@ -40,10 +49,10 @@ export default function useApartments() {
     store.loaded.value = true;
   };
 
-  const updateApartment = async (id) => {
+  const updateApartment = async (id, data) => {
     errors.value = ''
     try {
-      await axios.put('/api/apartment/' + id, apartment.value)
+      await axios.put(`/api/apartment/${id}`, data)
       await router.push({name: 'apartments.index'})
     } catch (e) {
         if (e.response.status === 422) {

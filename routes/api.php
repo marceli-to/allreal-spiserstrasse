@@ -25,6 +25,7 @@ Route::middleware('auth:sanctum')->group(function() {
     Route::get('/apartments/search/{keyword?}', 'search');
     Route::get('/apartments', 'get');
     Route::get('/apartment/{apartment}', 'find');
+    Route::put('/apartment/{apartment}', 'update');
   });
 
 });
