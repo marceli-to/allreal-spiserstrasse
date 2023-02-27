@@ -1,7 +1,9 @@
 import { ref } from 'vue';
 import axios from "axios";
 import { useRouter } from 'vue-router';
-import { useLoadingStateStore } from '@/stores/loadingState';
+import { toast } from 'vue3-toastify';
+import 'vue3-toastify/dist/index.css';
+import { useLoadingStateStore } from '@/spa/stores/loadingState';
 import { storeToRefs } from 'pinia';
 
 export default function useApartments() {
@@ -23,6 +25,10 @@ export default function useApartments() {
   ]);
   const router = useRouter();
   const errors = ref('');
+
+  const toastConfig = {
+    hideProgressBar: true,
+  };
 
   const store = storeToRefs(useLoadingStateStore());
 
@@ -52,8 +58,10 @@ export default function useApartments() {
   const updateApartment = async (id, data) => {
     errors.value = ''
     try {
-      await axios.put(`/api/apartment/${id}`, data)
-      await router.push({name: 'apartments.index'})
+      await axios.put(`/api/apartment/${id}`, data).then(() => {
+        toast.success('Wohnung wurde erfolgreich aktualisiert.', toastConfig);
+        router.push({name: 'apartments.index'});
+      });      
     } catch (e) {
         if (e.response.status === 422) {
         errors.value = e.response.data.errors

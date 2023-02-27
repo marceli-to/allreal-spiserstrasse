@@ -1,2 +1,2 @@
 // app.js
-import '../../css/spa/app.css'; 
+import '../../css/web/app.css'; 

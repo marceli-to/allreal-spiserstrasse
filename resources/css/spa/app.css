@@ -8,6 +8,7 @@
 @import "vendor/nprogress.css";
 @import "vendor/toastify.css";
 
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

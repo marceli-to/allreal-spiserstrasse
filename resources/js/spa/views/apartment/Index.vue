@@ -2,7 +2,7 @@
   <content v-if="store.loaded.value === true">
     <content-header>
       <search 
-        @change="doSearch($event)" 
+        @change="searchApartments($event)" 
         @reset="getApartments()"
       />
     </content-header>
@@ -10,10 +10,28 @@
       <content-section>
         <table-container>
           <template #table-head>
-            <table-head>Nummer</table-head>
-            <table-head>Zimmer</table-head>
+            <table-head>
+              <a href="" @click.prevent="sortBy('number')" class="flex items-center">
+                Number
+                <chevron-up-down class="ml-2" />
+              </a>
+            </table-head>
+            <table-head>
+              <a href="" @click.prevent="sortBy('type')" class="flex items-center">
+                Zimmer
+                <chevron-up-down class="ml-2" />
+              </a>
+            </table-head>
+            <table-head>
+              <a href="" @click.prevent="sortBy('floor')">Stockwerk</a>
+            </table-head>
             <table-head>Strasse</table-head>
-            <table-head>Stockwerk</table-head>
+            <table-head>
+              <a href="" @click.prevent="sortBy('price')" class="flex items-center">
+                Preis
+                <chevron-up-down class="ml-2" />
+              </a>
+            </table-head>
             <table-head>&nbsp;</table-head>
           </template>
           <template #table-body>
@@ -21,8 +39,9 @@
               <table-row>
                 <table-cell>{{ apartment.number }}</table-cell>
                 <table-cell>{{ apartment.type }}</table-cell>
-                <table-cell>{{ apartment.street }}</table-cell>
                 <table-cell>{{ apartment.floor }}</table-cell>
+                <table-cell>{{ apartment.street }}</table-cell>
+                <table-cell>{{ apartment.price }}</table-cell>
                 <table-cell>
                   <pill :class="`is-${apartment.state.key}`">
                     {{ apartment.state.value }}
@@ -44,42 +63,53 @@
   </content>
 </template>
 <script setup>
-import Content from "@/components/layout/Content.vue";
-import ContentHeader from "@/components/layout/ContentHeader.vue";
-import ContentMain from "@/components/layout/ContentMain.vue";
-import ContentSection from "@/components/layout/ContentSection.vue";
-import TableContainer from "@/components/ui/table/Table.vue";
-import TableHead from "@/components/ui/table/Th.vue";
-import TableRow from "@/components/ui/table/Tr.vue";
-import TableCell from "@/components/ui/table/Td.vue";
-import ButtonSecondary from "@/components/buttons/Secondary.vue";
-import Search from "@/components/ui/Search.vue";
-import Pill from "@/components/ui/Pill.vue";
-import UserGroup from "@/components/icons/UserGroup.vue";
-import useApartments from "@/composables/apartments";
-import { onMounted } from "vue";
-import { useLoadingStateStore } from '@/stores/loadingState';
+import Content from "@/spa/components/layout/Content.vue";
+import ContentHeader from "@/spa/components/layout/ContentHeader.vue";
+import ContentMain from "@/spa/components/layout/ContentMain.vue";
+import ContentSection from "@/spa/components/layout/ContentSection.vue";
+import TableContainer from "@/spa/components/ui/table/Table.vue";
+import TableHead from "@/spa/components/ui/table/Th.vue";
+import TableRow from "@/spa/components/ui/table/Tr.vue";
+import TableCell from "@/spa/components/ui/table/Td.vue";
+import Search from "@/spa/components/ui/Search.vue";
+import Pill from "@/spa/components/ui/Pill.vue";
+import ChevronUpDown from "@/spa/components/icons/ChevronUpDown.vue";
+import useApartments from "@/spa/composables/apartments";
+import { ref, onMounted } from "vue";
+import { useLoadingStateStore } from '@/spa/stores/loadingState';
 import { storeToRefs } from 'pinia';
 
-const { apartments, getApartments, updateApartment, searchApartments } = useApartments();
+const { apartments, getApartments, searchApartments } = useApartments();
 
 const store = storeToRefs(useLoadingStateStore());
 store.loaded.value = false;
+
+let sortDirection = ref(false);
 
 onMounted(() => {
   getApartments();
 });
 
-const deleteApartment = async (id) => {
-  if (!window.confirm('Are you sure?')) {
-    return
-  }
-  await destroyApartment(id);
-  await getApartments();
-}
+const sortBy = (attribute) => {
+  sortDirection.value = sortDirection.value ? false : true;
+  const order = sortDirection.value ? -1 : 1;
+  apartments.value.sort((a, b) => {
+    let aValue = parseFloat(a[attribute]);
+    let bValue = parseFloat(b[attribute]);
 
-const doSearch = async (keyword) => {
-  await searchApartments(keyword);
-}
+    if (isNaN(aValue) && isNaN(bValue)) {
+      // Both values are non-numeric strings, so sort them alphabetically
+      aValue = a[attribute];
+      bValue = b[attribute];
+    } else if (isNaN(aValue)) {
+      // a is a non-numeric string, so it should come after b
+      return 1;
+    } else if (isNaN(bValue)) {
+      // b is a non-numeric string, so it should come after a
+      return -1;
+    }
+    return order * (aValue - bValue);
+  });
+};
 
 </script>

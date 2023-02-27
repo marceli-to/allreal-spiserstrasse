@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import ApartmentIndex from '@/views/apartment/Index.vue';
-import ApartmentUpdate from '@/views/apartment/Update.vue';
+import ApartmentIndex from '@/spa/views/apartment/Index.vue';
+import ApartmentUpdate from '@/spa/views/apartment/Update.vue';
 
 const router = createRouter({
   history: createWebHistory(),

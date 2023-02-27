@@ -7,7 +7,7 @@ const path = require('path');
 export default defineConfig({
   resolve:{
     alias:{
-      '@' : path.resolve(__dirname, './resources/js/spa/')
+      '@' : path.resolve(__dirname, './resources/js/')
     },
   },
   plugins: [

@@ -2,10 +2,6 @@
 import './bootstrap';
 import '../../css/spa/app.css'; 
 
-// tiktok.js
-// import { tikTok } from './plugins/tikTok.js';
-// tikTok();
-
 // Vue
 import {createApp} from 'vue';
 import App from './App.vue';
@@ -23,7 +19,7 @@ import { createPinia } from "pinia";
 app.use(createPinia());
 
 // Router
-import router from "@/config/router";
+import router from "@/spa/config/router";
 app.use(router);
 
 // Mount app

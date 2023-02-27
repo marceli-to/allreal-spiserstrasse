@@ -30,15 +30,15 @@
   </nav>
 </template>
 <script>
-import Logo from "@/components/icons/Logo.vue";
-import Logout from "@/components/icons/Logout.vue";
-import Stack from "@/components/icons/Stack.vue";
-import User from "@/components/icons/User.vue";
-import NavSection from "@/components/navigation/NavSection.vue";
-import NavHeader from "@/components/navigation/NavHeader.vue";
-import NavItemGroup from "@/components/navigation/NavItemGroup.vue";
-import navigation from '@/config/navigation';
-import { useUserStore } from '@/stores/user';
+import Logo from "@/spa/components/icons/Logo.vue";
+import Logout from "@/spa/components/icons/Logout.vue";
+import Stack from "@/spa/components/icons/Stack.vue";
+import User from "@/spa/components/icons/User.vue";
+import NavSection from "@/spa/components/navigation/NavSection.vue";
+import NavHeader from "@/spa/components/navigation/NavHeader.vue";
+import NavItemGroup from "@/spa/components/navigation/NavItemGroup.vue";
+import navigation from '@/spa/config/navigation';
+import { useUserStore } from '@/spa/stores/user';
 
 export default {
 

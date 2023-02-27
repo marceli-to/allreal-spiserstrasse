@@ -2,7 +2,7 @@
   @apply !w-auto !min-w-[120px]
 }
 .Toastify__toast {
-  @apply !min-h-[32px] !rounded-sm !text-center
+  @apply !min-h-[32px] !rounded-lg !text-center !shadow !shadow-gray-200
 }
 
 .Toastify__toast-body {
@@ -14,7 +14,7 @@
 }
 
 .Toastify__toast--success {
-  @apply !bg-green-500 !text-white
+  @apply !bg-green-100 !text-green-600
 }
 
 .Toastify__toast--info {
@@ -31,4 +31,8 @@
 
 .Toastify__toast-icon svg {
   @apply !fill-white
+}
+
+.Toastify__toast--success .Toastify__close-button {
+  @apply !hidden
 }
