@@ -1,5 +1,6 @@
 @include('web.partials.head')
-<body class="antialised text-black font-light">
-<h1>Allreal Spiserstrasse</h1>
-</body>
-</html>
+@include('web.partials.header')
+<main role="main">
+  @yield('content')
+</main>
+@include('web.partials.footer')

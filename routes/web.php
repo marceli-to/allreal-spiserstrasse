@@ -1,6 +1,7 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProjectController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-  return view('web.app');
-});
+// Route::get('/', function () {
+//   return view('web.app');
+// });
+
+Route::get('/', [HomeController::class, 'index'])->name('page.home');
+Route::get('/projekt', [ProjectController::class, 'index'])->name('page.project');
 
 Route::middleware('auth:sanctum', 'verified')->group(function() {
   Route::get('/administration/{any?}', function () {

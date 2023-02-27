@@ -1,4 +1,6 @@
 @import "typo/webfonts.css";
+@import "layout/base.css";
+
 @config "../../../tailwind.web.config.js";
 @tailwind base;
 @tailwind components;
