@@ -8,10 +8,12 @@ module.exports = {
     "./resources/**/*.vue",
   ],
   theme: {
+
     extend: {
       
       colors: {
         'blue': '#164194',
+        'blue-light': '#f4f6fa',
         'anthrazit': '#828282',
         'silver': '#c8c8c8',
       },
@@ -19,9 +21,11 @@ module.exports = {
       fontFamily: {
         regular: ['DINRegular', ...defaultTheme.fontFamily.sans],
         light: ['DINLight', ...defaultTheme.fontFamily.sans],
+        medium: ['DINMedium', ...defaultTheme.fontFamily.sans],
       },
 
       fontSize: {
+        'xxs': '0.5rem',   // 10px
         'xs': '0.75rem',     // 12px
         'sm': '0.8125rem',   // 13px
         'base': '0.8125rem', // 13px
@@ -299,6 +303,7 @@ module.exports = {
       '249': '15.5625rem',
       '250': '15.625rem',
     }
+
   },
   plugins: [
     require('@tailwindcss/forms'),

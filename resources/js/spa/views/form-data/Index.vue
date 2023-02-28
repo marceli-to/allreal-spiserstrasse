@@ -36,7 +36,7 @@
                     href="javascript:;" 
                     @click.prevent="destroyFormData(data.id)"
                     class="text-xs text-primary-900 hover:underline underline-offset-2">
-                    Bearbeiten
+                    Löschen
                   </a>
                 </table-cell>
               </table-row>
