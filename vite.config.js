@@ -15,6 +15,7 @@ export default defineConfig({
     laravel([
       'resources/js/spa/app.js',
       'resources/js/web/app.js',
+      'resources/js/web/form/app.js',
     ]),
   ],
 });

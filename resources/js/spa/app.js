@@ -1,5 +1,5 @@
 // app.js
-import './bootstrap';
+import '@/global/bootstrap';
 import '../../css/spa/app.css'; 
 
 // Vue
@@ -12,7 +12,7 @@ import VueAxios from "vue-axios";
 app.use(VueAxios, axios);
 
 // Axios interceptors
-import './plugins/interceptor';
+import '@/global/plugins/interceptor';
 
 // Pinia store
 import { createPinia } from "pinia";

@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ApartmentController;
+use App\Http\Controllers\Api\FormDataController;
 use App\Http\Resources\UserResource;
 
 /*
@@ -30,5 +31,9 @@ Route::middleware('auth:sanctum')->group(function() {
     Route::put('/apartment/{apartment}', 'update');
   });
 
+});
+
+Route::controller(FormDataController::class)->group(function () {
+  Route::post('/contact-form', 'store');
 });
 

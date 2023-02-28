@@ -2,6 +2,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,7 @@ use App\Http\Controllers\ProjectController;
 
 Route::get('/', [HomeController::class, 'index'])->name('page.home');
 Route::get('/projekt', [ProjectController::class, 'index'])->name('page.project');
+Route::get('/kontakt', [ContactController::class, 'index'])->name('page.contact');
 
 Route::middleware('auth:sanctum', 'verified')->group(function() {
   Route::get('/administration/{any?}', function () {
