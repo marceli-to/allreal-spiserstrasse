@@ -33,6 +33,7 @@
 import Logo from "@/spa/components/icons/Logo.vue";
 import Logout from "@/spa/components/icons/Logout.vue";
 import Stack from "@/spa/components/icons/Stack.vue";
+import Mail from "@/spa/components/icons/Mail.vue";
 import User from "@/spa/components/icons/User.vue";
 import NavSection from "@/spa/components/navigation/NavSection.vue";
 import NavHeader from "@/spa/components/navigation/NavHeader.vue";
@@ -46,6 +47,7 @@ export default {
     Logo,
     Logout,
     Stack,
+    Mail,
     User,
     NavSection,
     NavHeader,

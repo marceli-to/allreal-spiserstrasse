@@ -26,6 +26,8 @@ class FormDataStoreRequest extends FormRequest
     return [
       'name' => 'required',
       'firstname' => 'required',
+      'phone' => 'required',
+      'email' => 'required|email',
     ];
   }
 
@@ -45,6 +47,18 @@ class FormDataStoreRequest extends FormRequest
       'firstname.required' => [
         'field' => 'firstname',
         'error' => 'Vorname wird benötigt'
+      ],
+      'phone.required' => [
+        'field' => 'phone',
+        'error' => 'Telefon wird benötigt'
+      ],
+      'email.required' => [
+        'field' => 'email',
+        'error' => 'E-Mail wird benötigt'
+      ],
+      'email.email' => [
+        'field' => 'email',
+        'error' => 'E-Mail ist ungültig'
       ],
     ];
   }

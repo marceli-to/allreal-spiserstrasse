@@ -31,9 +31,15 @@ Route::middleware('auth:sanctum')->group(function() {
     Route::put('/apartment/{apartment}', 'update');
   });
 
+  Route::controller(FormDataController::class)->group(function () {
+    Route::get('/form-data/search/{keyword?}', 'search');
+    Route::get('/form-data', 'get');
+    Route::delete('/form-data/{formData:id}', 'destroy');
+  });
+
 });
 
 Route::controller(FormDataController::class)->group(function () {
-  Route::post('/contact-form', 'store');
+  Route::post('/form-data', 'store');
 });
 
