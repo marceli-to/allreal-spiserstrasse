@@ -40,7 +40,10 @@ class ApartmentController extends Controller
           'value' => $apartment->state == State::SOLD ? 'verkauft' : ($apartment->state == State::RESERVED ? 'reserviert' : 'frei'),
           'order' => $apartment->state == State::SOLD ? 3 : ($apartment->state == State::RESERVED ? 2 : 1),
         ],
-        'floor' => collect($apartment->floors->pluck('acronym')->all())->implode(', '),
+        'floor' => [
+          'label' => collect($apartment->floors->pluck('acronym')->all())->implode(', '),
+          'order' => collect($apartment->floors->pluck('order')->all())->min(),
+        ]
       ];
     }
 

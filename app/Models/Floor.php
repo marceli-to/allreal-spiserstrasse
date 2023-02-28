@@ -15,5 +15,6 @@ class Floor extends Model
   protected $fillable = [
     'acronym',
     'decscription',
+    'order'
   ];
 }

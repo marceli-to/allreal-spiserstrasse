@@ -23,7 +23,7 @@
     const order = sortDirection == 'asc' ? -1 : 1;
 
     // get elements
-    const els = document.querySelectorAll(`[data-${attribute}]`);
+    const els = document.querySelectorAll(`[data-sortable][data-${attribute}]`);
     const elsArray = Array.from(els);
 
     let sorted = elsArray.sort((a, b) => {
