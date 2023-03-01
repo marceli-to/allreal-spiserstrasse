@@ -26,6 +26,7 @@
     const els = document.querySelectorAll(`[data-sortable][data-${attribute}]`);
     const elsArray = Array.from(els);
 
+    // sort elements
     let sorted = elsArray.sort((a, b) => {
       let aValue = parseFloat(a.dataset[attribute]);
       let bValue = parseFloat(b.dataset[attribute]);

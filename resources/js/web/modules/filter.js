@@ -41,9 +41,11 @@
 
     // Add event listeners for filter reset button
     const btnReset = document.querySelector(selectors.btnFilterReset);
-    btnReset.addEventListener("click", function(){
-      resetFilter();
-    }, false);
+    if (btnReset) {
+      btnReset.addEventListener("click", function(){
+        resetFilter();
+      }, false);
+    }
   };
 
   const applyFilter = (attributes) => {
@@ -66,6 +68,7 @@
       filterAttributes.push(attribute);
     }
 
+    // Show all items if no filters are selected
     if (filterAttributes.length == 0) {
       states.isFiltering = false;
       showAll();
@@ -73,6 +76,7 @@
       return;
     }
 
+    // Show matching items
     states.isFiltering = true;
     hideAll();
     showItems();

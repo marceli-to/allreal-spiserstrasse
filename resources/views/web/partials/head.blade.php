@@ -24,4 +24,4 @@
 @vite('resources/js/web/form/app.js')
 @endif
 </head>
-<body class="antialised font-light text-base px-16 pb-48 max-w-7xl">
+<body class="antialised font-light text-base px-16 pb-48 max-w-7xl relative">

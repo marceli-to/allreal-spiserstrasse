@@ -33,7 +33,7 @@
 
 <a 
   href="javascript:;" 
-  class="uppercase block mt-32 text-center border border-silver text-silver leading-none py-8"
+  class="uppercase block mt-32 text-center border border-silver text-silver leading-none py-10"
   data-btn-filter-reset>
   Filter zurücksetzen
 </a>
