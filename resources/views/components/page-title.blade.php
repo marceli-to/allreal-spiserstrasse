@@ -1,4 +1,4 @@
-<h1 class="font-light text-lg">
+<h1 class="font-regular text-lg">
   @if (request()->routeIs('page.home'))
     {{ config('app.name') }}
   @else

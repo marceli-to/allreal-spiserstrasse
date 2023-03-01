@@ -5,3 +5,7 @@
 html {
   overflow-y: scroll;
 }
+
+.hyphen-auto {
+  hyphens: auto;
+}

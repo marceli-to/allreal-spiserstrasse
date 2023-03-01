@@ -2,8 +2,10 @@
 <div class="swiper-slide">
   <figure>
     <img src="/media/{{ $image }}" alt="Placeholder" class="w-full" />
-    <figcaption class="block pt-8">
-      {{ $caption }}
-    </figcaption>
+    @if (isset($caption))
+      <figcaption class="block pt-8">
+        {{ $caption }}
+      </figcaption>
+    @endif
   </figure>
 </div>

@@ -49,6 +49,10 @@ module.exports = {
         'span-15': 'span 15 / span 15',
         'span-16': 'span 16 / span 16',
       },
+
+      boxShadow: {
+        'right': '5px 0 3px #000000',
+      },
     },
 
     spacing: {
