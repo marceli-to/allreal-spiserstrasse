@@ -1,4 +1,4 @@
-<header class="grid grid-cols-16 min-h-[140px]">
+<header class="grid grid-cols-16 gap-16 min-h-[140px]">
   <div class="col-span-1 pt-40">
     @include('web.icons.burger')
   </div>

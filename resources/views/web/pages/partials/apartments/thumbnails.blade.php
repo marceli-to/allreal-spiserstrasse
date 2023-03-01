@@ -6,7 +6,10 @@
         class="col-span-6 lg:col-span-3 min-h-[150px] p-8 border border-silver"
         data-filterable
         data-rooms="{{ $a['rooms'] }}"
-        >
+        data-floor="{{ $a['floor']['order'] }}"
+        data-area="{{ $a['area'] }}"
+        data-price="{{ $a['price'] }}"
+        data-state="{{ $a['state']['order'] }}">
           {{ $a['number'] }}, {{ $a['rooms'] }}
         </div>
       @endforeach

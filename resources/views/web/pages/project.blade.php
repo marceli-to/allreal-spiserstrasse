@@ -2,7 +2,7 @@
 @section('seo_title', __('Projekt'))
 @section('page_title', __('Projekt'))
 @section('content')
-<div class="grid grid-cols-16">
+<div class="grid grid-cols-16 gap-16">
   <div class="col-span-10 lg:col-start-2 lg:col-span-8">
     <figure class="mb-48">
       <img src="https://via.placeholder.com/616x320" alt="Projekt" class="w-full">
@@ -12,12 +12,12 @@
   <div class="col-start-12 col-span-4 lg:col-start-11 lg:col-span-3">
     <x-list-item>
       <x-link-external url="https://maps.google.com" title="Karte öffnen">
-        Google Maps
+        <span>Google Maps</span>
       </x-link-external>
     </x-list-item>
     <x-list-item>
       <x-link-external url="https://maps.google.com" title="Karte öffnen">
-        Webcam Baustelle
+        <span>Webcam Baustelle</span>
       </x-link-external>
     </x-list-item>
   </div>
