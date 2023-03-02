@@ -27,11 +27,15 @@
 
     if (type == 'list') {
       list.classList.replace('hidden', 'block');
+      list.classList.add('is-visible');
       thumbnails.classList.replace('block', 'hidden');
+      thumbnails.classList.remove('is-visible');
     }
     else if (type == 'thumbnails') {
       list.classList.replace('block', 'hidden');
+      list.classList.remove('is-visible');
       thumbnails.classList.replace('hidden', 'block');
+      thumbnails.classList.add('is-visible');
     }
   };
 

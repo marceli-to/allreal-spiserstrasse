@@ -1,4 +1,4 @@
-<section data-view="list" class="block">
+<section data-view="list" class="block is-visible">
   <div class="grid grid-cols-16">
     <div class="col-span-16 lg:col-start-2 lg:col-span-12">
       <header class="grid grid-cols-12">

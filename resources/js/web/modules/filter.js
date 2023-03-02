@@ -8,7 +8,8 @@
 
   const classes = {
     hidden: 'hidden',
-    selected: 'is-selected'
+    selected: 'is-selected',
+    visible: 'is-visible'
   };
 
   const selectors = {
@@ -16,7 +17,9 @@
     btnFilterToggle: '[data-btn-filter-toggle]',
     btnFilterReset: '[data-btn-filter-reset]',
     filterItem: '[data-filter-item]',
-    item: '[data-filterable]'
+    item: '[data-filterable]',
+    noResults: '[data-no-results]',
+    view: '[data-view].is-visible',
   };
 
   const init = () => {
@@ -53,20 +56,25 @@
     // Create filter attribute
     const attribute = `[data-${attributes.filterType}="${attributes.filterValue}"]`;
     
-    // Toggle filter button class
-    const btn = document.querySelector(`[data-btn-filter][data-filter-type="${attributes.filterType}"][data-filter-value="${attributes.filterValue}"]`);
-    btn.classList.remove(classes.selected);
+    // Remove selected class from all filter options
+    const options = [].slice.call(
+      document.querySelectorAll(`[data-btn-filter][data-filter-type="${attributes.filterType}"]`)
+    );
+    options.forEach(function (option) {
+      option.classList.remove(classes.selected);
+    });
 
-    // Add or remove filter attribute
-    if (filterAttributes.includes(attribute)) {
-      filterAttributes = filterAttributes.filter(function (item) {
-        return item !== attribute;
-      });
-    }
-    else {
-      btn.classList.add(classes.selected);
-      filterAttributes.push(attribute);
-    }
+    // Add selected class to selected filter options
+    const option = document.querySelector(`[data-btn-filter][data-filter-type="${attributes.filterType}"][data-filter-value="${attributes.filterValue}"]`);
+    option.classList.add(classes.selected);
+
+    // Remove item from filter attributes that start with the same filter type
+    filterAttributes = filterAttributes.filter(function (item) {
+      return !item.startsWith(`[data-${attributes.filterType}`);
+    });
+
+    // Add filter attribute to array
+    filterAttributes.push(attribute);
 
     // Show all items if no filters are selected
     if (filterAttributes.length == 0) {
@@ -102,14 +110,19 @@
   };
 
   const showItems = () => {
-    filterAttributes.forEach(function (attribute) {
-      const items = [].slice.call(
-        document.querySelectorAll(attribute)
-      );
-      items.forEach(function (item) {
-        item.classList.remove(classes.hidden);
-      });
+
+    // Create filter string
+    const filterString = filterAttributes.join('');
+
+    // Get items that match filter string
+    const items = [].slice.call(
+      document.querySelectorAll(filterString)
+    );
+    items.forEach(function (item) {
+      item.classList.remove(classes.hidden);
     });
+
+    handleResults();
   };
 
   const toggleFilterItems = (btn) => {
@@ -161,6 +174,22 @@
     }
     else {
       btnReset.classList.remove('!text-black', '!border-black');
+    }
+  };
+
+  const handleResults = () => {
+    const view = document.querySelector(selectors.view);
+    const visibleItems = [].slice.call(
+      document.querySelectorAll(`${selectors.item}:not(.${classes.hidden})`)
+    );
+    const noResults = document.querySelector(selectors.noResults);
+    if (visibleItems.length == 0) {
+      noResults.classList.remove(classes.hidden);
+      view.classList.add(classes.hidden);
+    }
+    else {
+      noResults.classList.add(classes.hidden);
+      view.classList.remove(classes.hidden);
     }
   };
 

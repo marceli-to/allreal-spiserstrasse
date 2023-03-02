@@ -11,6 +11,7 @@
   </div>
 </div>
 @include('web.pages.partials.apartments.switcher')
+@include('web.pages.partials.apartments.no-results')
 @include('web.pages.partials.apartments.list')
 @include('web.pages.partials.apartments.thumbnails')
 @endsection

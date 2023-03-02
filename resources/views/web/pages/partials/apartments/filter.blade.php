@@ -21,6 +21,18 @@
 @endforeach
 
 <x-list-item>
+  <x-apartment-filter-link data-btn-filter-toggle="area">
+    Wohnfläche
+  </x-apartment-filter-link>
+</x-list-item>
+
+<x-list-item>
+  <x-apartment-filter-link data-btn-filter-toggle="price">
+    Kaufpreis
+  </x-apartment-filter-link>
+</x-list-item>
+
+<x-list-item>
   <x-apartment-filter-link data-btn-filter-toggle="state">
     Status
   </x-apartment-filter-link>
