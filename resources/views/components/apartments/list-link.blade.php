@@ -4,6 +4,7 @@
   {{ $attributes->merge(['class' => 'col-span-16 lg:col-start-2 lg:col-span-12 grid grid-cols-12 hover:bg-blue-light']) }}
   data-filterable
   data-sortable
+  data-list-item
   data-number="{{ $apartment['number'] }}" 
   data-rooms="{{ $apartment['rooms'] }}"
   data-floor="{{ $apartment['floor']['order'] }}"

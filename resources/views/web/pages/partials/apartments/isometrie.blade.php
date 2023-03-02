@@ -1,3 +1,3 @@
 <figure>
-  <img src="https://via.placeholder.com/616x320" alt="Projekt" class="w-full">
+  @include('web.pages.partials.apartments.iso.view-2')
 </figure>

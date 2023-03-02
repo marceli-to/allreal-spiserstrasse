@@ -9,9 +9,9 @@
       <x-menu-item href="{{ route('page.project') }}" class="{{ request()->routeIs('page.project') ? '' : '' }}">
         Projekt
       </x-menu-item>
-      <x-menu-item href="{{ route('page.location') }}" class="{{ request()->routeIs('page.location') ? '' : '' }}">
+      {{-- <x-menu-item href="{{ route('page.location') }}" class="{{ request()->routeIs('page.location') ? '' : '' }}">
         Lage
-      </x-menu-item>
+      </x-menu-item> --}}
       <x-menu-item href="{{ route('page.apartments') }}" class="{{ request()->routeIs('page.apartments') ? '' : '' }}">
         Objekte
       </x-menu-item>

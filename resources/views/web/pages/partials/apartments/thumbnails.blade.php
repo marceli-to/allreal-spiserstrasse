@@ -5,6 +5,7 @@
         <div 
         class="col-span-6 lg:col-span-3 min-h-[150px] pt-8 border-t border-silver"
         data-filterable
+        data-thumb-item
         data-rooms="{{ $a['rooms'] }}"
         data-floor="{{ $a['floor']['order'] }}"
         data-area="{{ $a['area'] }}"

@@ -18,7 +18,7 @@ use App\Http\Controllers\ContactController;
 
 Route::get('/', [HomeController::class, 'index'])->name('page.home');
 Route::get('/projekt', [ProjectController::class, 'index'])->name('page.project');
-Route::get('/lage', [LocationController::class, 'index'])->name('page.location');
+// Route::get('/lage', [LocationController::class, 'index'])->name('page.location');
 Route::get('/objekte', [ApartmentController::class, 'index'])->name('page.apartments');
 Route::get('/ausstattung', [FeaturesController::class, 'index'])->name('page.features');
 Route::get('/galerie', [GalleryController::class, 'index'])->name('page.gallery');

@@ -24,7 +24,11 @@ class Apartment extends Model
     'area',
     'area_basement',
     'area_exterior',
-    'price'
+    'price',
+    'iso_code_view_1',
+    'iso_code_view_2',
+    'iso_code_view_3',
+    'iso_code_view_4',
   ];
 
   /**
