@@ -1,3 +1,3 @@
-<h2 class="font-light text-lg">
+<h2 class="font-medium text-base">
   {{ $slot}}
 </h2>

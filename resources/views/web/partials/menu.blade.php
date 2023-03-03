@@ -16,7 +16,7 @@
         Objekte
       </x-menu.item>
       <x-menu.item href="{{ route('page.features') }}" class="{{ request()->routeIs('page.features') ? '' : '' }}">
-        Ausstattung
+        Kurzbaubeschrieb
       </x-menu.item>
       <x-menu.item href="{{ route('page.gallery') }}" class="{{ request()->routeIs('page.gallery') ? '' : '' }}">
         Galerie

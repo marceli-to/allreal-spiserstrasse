@@ -45,6 +45,7 @@
 
 .iso-cls-14, .iso-cls-18 {
   fill: #fff;
+  opacity: 0;
 }
 
 .iso-cls-15, .iso-cls-16, .iso-cls-17, .iso-cls-19, .iso-cls-20, .iso-cls-21 {
@@ -82,27 +83,27 @@
 [data-iso-item] .iso-cls-16,
 [data-iso-item] .iso-cls-17 {
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: opacity .04s ease-in-out;
 }
 
 [data-iso-item]:hover .iso-cls-21,
 [data-iso-item]:hover .iso-cls-15 {
   opacity: .4;
-  transition: opacity .08s ease-in-out;
+  transition: opacity .04s ease-in-out;
 
 }
 
 [data-iso-item]:hover .iso-cls-20,
 [data-iso-item]:hover .iso-cls-17 {
   opacity: .8;
-  transition: opacity .08s ease-in-out;
+  transition: opacity .04s ease-in-out;
 
 }
 
 [data-iso-item]:hover .iso-cls-19,
 [data-iso-item]:hover .iso-cls-16 {
   opacity: .6;
-  transition: opacity .08s ease-in-out;
+  transition: opacity .04s ease-in-out;
 
 }
 

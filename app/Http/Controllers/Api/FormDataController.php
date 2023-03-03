@@ -1,9 +1,11 @@
 <?php
 namespace App\Http\Controllers\Api;
 use App\Models\FormData;
+use App\Notifications\FormSubmit;
 use App\Http\Requests\FormDataStoreRequest;
 use App\Http\Resources\FormDataResource;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Notification;
 use Illuminate\Http\Request;
 
 class FormDataController extends Controller
@@ -28,6 +30,8 @@ class FormDataController extends Controller
   public function store(FormDataStoreRequest $request)
   {
     $data = FormData::create($request->except('_token'));
+    Notification::route('mail', 'm@marceli.to')->notify(new FormSubmit($data));
+    
     return response()->json('successfully updated');
   }
 

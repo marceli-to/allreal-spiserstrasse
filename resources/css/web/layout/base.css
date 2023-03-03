@@ -6,6 +6,18 @@ html {
   overflow-y: scroll;
 }
 
+ul.dash {
+  @apply list-none mb-16
+}
+
+ul.dash li {
+  @apply list-item
+}
+
+ul.dash  li:before {
+  @apply content-['\2013'] absolute -ml-16
+}
+
 .hyphen-auto {
   hyphens: auto;
 }
