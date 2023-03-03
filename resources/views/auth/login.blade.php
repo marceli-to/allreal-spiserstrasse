@@ -2,7 +2,7 @@
 @section('content')
 <x-form method="POST" action="{{ route('login') }}">
   <div class="mb-8">
-    <x-logo class="mx-auto h-12 mb-6 w-auto" />
+    <x-icon.logo class="mx-auto h-12 mb-6 w-auto" />
     <h2>{{ __('Sign in to your account') }}</h2>
     <p>{{ __('Use the provided email and password') }}</p>
   </div>
