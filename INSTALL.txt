@@ -11,3 +11,30 @@ Create User
 -----------
 
 DB::table('users')->insert(['name' => 'Marcel Stadelmann', 'email' => 'm@marceli.to', 'password' => Hash::make('7aq31rr')])
+
+SSH:
+----
+
+ssh azunogur@spiserstrasse.ch
+
+PHP:
+----
+
+/usr/local/php81/bin/php
+
+Composer:
+/usr/local/php81/bin/composer
+/usr/local/php81/bin/composer install --optimize-autoloader --no-dev --ignore-platform-reqs
+/usr/local/php81/bin/composer update --ignore-platform-reqs
+
+DB:
+---
+azunogur.mysql.db.internal
+spiserstrasse
+spiser
+HA!TT8S1v=2NWJsheM3R
+
+FTP:
+----
+marcelito@spiserstrasse.ch
+==e+*LqY8TF4w94GBJHi
