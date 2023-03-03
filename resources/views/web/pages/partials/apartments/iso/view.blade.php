@@ -4,9 +4,6 @@
     <g data-name="Nebenhaeuser">
       <g id="Haus_06">
         <g data-name="Front_Haus_06">
-          <g data-name="Volumen">
-            <polygon class="iso-cls-14" points="321.7 297.2 400.9 342.9 440.5 320.1 460.3 331.5 509.8 302.9 509.8 257.2 514.7 254.4 514.7 114.4 475.1 91.5 341.5 168.7 341.5 185.8 321.7 197.2 321.7 297.2"/>
-          </g>
           <g data-name="Vertikale_Front">
             <line class="iso-cls-4" x1="400.9" y1="202.9" x2="400.9" y2="342.9"/>
             <line class="iso-cls-4" x1="440.5" y1="180.1" x2="440.5" y2="320.1"/>
@@ -462,9 +459,6 @@
     <g data-name="Nebenhaeuser">
       <g data-name="Haus_06">
         <g data-name="Front_Haus_06">
-          <g data-name="Volumen">
-            <polygon class="iso-cls-14" points="623.6 308.7 623.6 268.7 490 191.5 430.6 225.8 430.6 365.8 450.4 377.2 450.4 400.1 499.9 428.6 539.5 405.8 584 431.5 643.4 397.2 643.4 297.2 623.6 308.7"/>
-          </g>
           <g data-name="Vertikale_Front">
             <line class="iso-cls-4" x1="450.4" y1="260.1" x2="450.4" y2="377.2"/>
             <line class="iso-cls-4" x1="499.9" y1="288.7" x2="499.9" y2="414.4"/>
@@ -920,9 +914,6 @@
       </g>
       <g data-name="Haus_06">
         <g data-name="Front_Haus_06">
-          <g data-name="Volumen">
-            <polygon class="iso-cls-14" points="440.5 294.4 361.3 248.7 321.7 271.5 301.9 260.1 252.5 288.7 252.5 334.4 247.5 337.2 247.5 477.2 306.9 511.5 440.5 434.4 440.5 294.4"/>
-          </g>
           <g data-name="Vertikale_Front">
             <line class="iso-cls-4" x1="306.9" y1="371.5" x2="306.9" y2="511.5"/>
           </g>
@@ -938,9 +929,6 @@
     </g>
     <g data-name="Haeuser_8–12">
       <g data-name="Back_Haeuser_8–12">
-        <g data-name="Volumen">
-          <polygon class="iso-cls-18" points="720.1 144.4 762.2 168.7 762.2 248.7 440.5 434.4 361.3 388.7 361.3 248.7 376.2 240.1 376.2 217.2 430.6 185.8 450.4 197.2 499.9 168.7 499.9 145.8 529.6 128.7 529.6 37.2 593.9 0 692.9 57.2 692.9 94.4 720.1 110.1 720.1 110.1 720.1 144.4"/>
-        </g>
         <g data-name="Bodenlinie">
           <line class="iso-cls-4" x1="687.9" y1="291.5" x2="608.8" y2="245.8"/>
           <line class="iso-cls-4" x1="564.2" y1="362.9" x2="485" y2="317.2"/>
@@ -1413,9 +1401,7 @@
           <line class="iso-cls-4" x1="589" y1="480.1" x2="509.8" y2="525.8"/>
           <line class="iso-cls-4" x1="465.2" y1="408.7" x2="386.1" y2="454.4"/>
         </g>
-        <g data-name="Volumen">
-          <polygon class="iso-cls-18" points="707.7 294.4 608.8 351.5 574.1 331.5 574.1 308.7 519.7 277.2 499.9 288.7 450.4 260.1 450.4 237.2 396 205.8 376.2 217.2 341.5 197.2 282.1 231.5 282.1 271.5 262.4 282.9 262.4 382.9 584 568.6 663.2 522.9 673.1 528.6 772.1 471.5 772.1 331.5 707.7 294.4"/>
-        </g>
+
       </g>
       <g data-name="Haus_12">
         <x-apartment-iso-code :number="'12.1'" :view="4" />
@@ -1483,9 +1469,8 @@
     <g data-name="Nebenhaeuser">
       <g data-name="Haus_06">
         <g data-name="Front_Haus_06">
-          <g data-name="Volumen">
-            <polygon class="iso-cls-14" points="321.7 185.8 321.7 162.9 272.2 134.4 232.7 157.2 188.1 131.5 148.5 154.4 148.5 194.4 128.7 205.8 128.7 305.8 262.4 382.9 341.5 337.2 341.5 197.2 321.7 185.8"/>
-          </g>
+
+
           <g data-name="Vertikale_Front">
             <line class="iso-cls-4" x1="262.4" y1="382.9" x2="262.4" y2="282.9"/>
             <line class="iso-cls-4" x1="282.1" y1="231.5" x2="282.1" y2="271.5"/>
