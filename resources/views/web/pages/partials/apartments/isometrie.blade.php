@@ -1,3 +1,3 @@
 <figure>
-  @include('web.pages.partials.apartments.iso.view-2')
+  @include('web.pages.partials.apartments.iso.view')
 </figure>

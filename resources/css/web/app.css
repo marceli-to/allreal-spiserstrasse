@@ -1,5 +1,6 @@
 @import "typo/webfonts.css";
 @import "layout/base.css";
+@import "components/iso.css";
 @import "vendor/nprogress.css";
 
 @config "../../../tailwind.web.config.js";

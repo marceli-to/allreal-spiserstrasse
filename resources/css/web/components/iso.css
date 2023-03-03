@@ -1,0 +1,77 @@
+.iso-cls-1, .iso-cls-2, .iso-cls-3, .iso-cls-4, .iso-cls-5, .iso-cls-6, .iso-cls-7, .iso-cls-8, .iso-cls-9, .iso-cls-10, .iso-cls-11 {
+  fill: none;
+  stroke-miterlimit: 10;
+}
+
+.iso-cls-1, .iso-cls-5, .iso-cls-8, .iso-cls-10 {
+  stroke: #000;
+}
+
+.iso-cls-1, .iso-cls-10 {
+  stroke-width: .2px;
+}
+
+.iso-cls-2 {
+  stroke: #c6c6c5;
+}
+
+.iso-cls-2, .iso-cls-3, .iso-cls-4, .iso-cls-5, .iso-cls-6, .iso-cls-7, .iso-cls-8, .iso-cls-9 {
+  stroke-width: .1px;
+}
+
+.iso-cls-3 {
+  stroke: #c7c7c6;
+}
+
+.iso-cls-4, .iso-cls-7, .iso-cls-11 {
+  stroke: #c8c8c8;
+}
+
+.iso-cls-6, .iso-cls-9 {
+  stroke: #969696;
+}
+
+.iso-cls-12, .iso-cls-13 {
+  opacity: 0;
+}
+
+.iso-cls-14 {
+  opacity: 0;
+}
+
+.iso-cls-14, .iso-cls-7, .iso-cls-8, .iso-cls-9, .iso-cls-13, .iso-cls-10, .iso-cls-15, .iso-cls-16, .iso-cls-17, .iso-cls-18 {
+  fill-rule: evenodd;
+}
+
+.iso-cls-14, .iso-cls-18 {
+  fill: #fff;
+}
+
+.iso-cls-15, .iso-cls-16, .iso-cls-17, .iso-cls-19, .iso-cls-20, .iso-cls-21 {
+  fill: #164194;
+}
+
+.iso-cls-15, .iso-cls-21 {
+  opacity: .4;
+}
+
+.iso-cls-16, .iso-cls-19 {
+  opacity: .6;
+}
+
+.iso-cls-17, .iso-cls-20 {
+  opacity: .8;
+}
+
+.iso-cls-11 {
+  stroke-width: 0px;
+}
+
+[data-iso-item] {
+  opacity: 1;
+}
+
+/* .iso-cls-13 {
+  opacity: .5;
+  fill:red;
+} */
