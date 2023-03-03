@@ -30,7 +30,7 @@ class FormDataController extends Controller
   public function store(FormDataStoreRequest $request)
   {
     $data = FormData::create($request->except('_token'));
-    Notification::route('mail', 'm@marceli.to')->notify(new FormSubmit($data));
+    Notification::route('mail', env('MAIL_TO'))->notify(new FormSubmit($data));
     
     return response()->json('successfully updated');
   }
