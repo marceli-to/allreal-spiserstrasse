@@ -55,23 +55,55 @@
   opacity: .4;
 }
 
-.iso-cls-16, .iso-cls-19 {
-  opacity: .6;
-}
-
 .iso-cls-17, .iso-cls-20 {
   opacity: .8;
+}
+
+.iso-cls-16, .iso-cls-19 {
+  opacity: .6;
 }
 
 .iso-cls-11 {
   stroke-width: 0px;
 }
 
-[data-iso-item] {
-  opacity: 1;
+.iso-cls-12, .iso-cls-13 {
+  opacity: .05;
 }
 
-/* .iso-cls-13 {
-  opacity: .5;
-  fill:red;
-} */
+[data-iso-item]:hover {
+  cursor: pointer;
+}
+
+[data-iso-item] .iso-cls-21, 
+[data-iso-item] .iso-cls-20,
+[data-iso-item] .iso-cls-19,
+[data-iso-item] .iso-cls-15,
+[data-iso-item] .iso-cls-16,
+[data-iso-item] .iso-cls-17 {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+[data-iso-item]:hover .iso-cls-21,
+[data-iso-item]:hover .iso-cls-15 {
+  opacity: .4;
+  transition: opacity .08s ease-in-out;
+
+}
+
+[data-iso-item]:hover .iso-cls-20,
+[data-iso-item]:hover .iso-cls-17 {
+  opacity: .8;
+  transition: opacity .08s ease-in-out;
+
+}
+
+[data-iso-item]:hover .iso-cls-19,
+[data-iso-item]:hover .iso-cls-16 {
+  opacity: .6;
+  transition: opacity .08s ease-in-out;
+
+}
+
+
