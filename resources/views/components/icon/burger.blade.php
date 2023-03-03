@@ -3,4 +3,3 @@
   <path d="M28 17V20H0V17H28Z" fill="#164194"/>
   <path d="M28 8.5V11.5H0V8.5H28Z" fill="#164194"/>
 </svg>
-  

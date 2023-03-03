@@ -19,6 +19,7 @@ class ApartmentIsoCode extends Component
   {
     $apartment = Apartment::with('floors')->where('number', $number)->first();
     $code = null;
+
     switch($view)
     {
       case 1:
@@ -35,7 +36,6 @@ class ApartmentIsoCode extends Component
       break;
     }
 
-    // data-filterable data-hoverable data-iso-item data-number="12.1" data-rooms="6.5" data-floor="1" data-area="150" data-price="0.00" data-state="1"
     $state = $apartment->state == State::SOLD ? 3 : ($apartment->state == State::RESERVED ? 2 : 1);
     $floor = collect($apartment->floors->pluck('order')->all())->min();
 
@@ -44,8 +44,7 @@ class ApartmentIsoCode extends Component
       'data-name="'.$number.'" data-filterable data-hoverable data-iso-item data-rooms="'.$apartment->rooms.'" data-floor="'.$floor.'" data-area="'.$apartment->area.'" data-price="'.$apartment->price.'" data-state="'.$state.'"', 
       $code
     );
- 
-  }
+   }
 
   /**
    * Get the view / contents that represent the component.

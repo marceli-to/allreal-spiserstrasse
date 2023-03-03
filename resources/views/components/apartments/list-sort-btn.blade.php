@@ -3,5 +3,5 @@
   data-sortable-btn 
   data-sort-by="{{ $sortBy }}">
   <span class="block">{{$slot}}</span>
-  @include('web.icons.arrow-up-down')
+  <x-icon.arrow-up-down />
 </a>

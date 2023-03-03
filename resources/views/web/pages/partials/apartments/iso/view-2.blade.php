@@ -51,23 +51,19 @@
         stroke-width: 0px;
       }
 
-
-
+      [data-hoverable]:hover .iso-cls-11 {
+        opacity: .6;
+      }
+      [data-hoverable]:hover .iso-cls-12 {
+        opacity: .8;
+      }
+      [data-hoverable]:hover .iso-cls-13 {
+        opacity: .4;
+      }
 
       .iso-cls-8, .iso-cls-9, .iso-cls-10, .iso-cls-11, .iso-cls-12, .iso-cls-13 {
         opacity: 0;
       }
-
-      {{-- .iso-cls-11:not(.hidden) {
-        opacity: .6;
-      }
-      .iso-cls-12:not(.hidden) {
-        opacity: .8;
-      }
-      .iso-cls-13:not(.hidden) {
-        opacity: .4;
-      } --}}
-
     </style>
   </defs>
   <g data-name="Haeuser_08–12">
@@ -363,68 +359,68 @@
         <line class="iso-cls-2" x1="509.8" y1="220.1" x2="490" y2="208.7"/>
       </g>
     </g>
-    <g data-name="Haus_08">
-      <x-apartment-iso-code :number="'8.1'" :view="2" />
-      <x-apartment-iso-code :number="'8.2'" :view="2" />
-      <x-apartment-iso-code :number="'8.3'" :view="2" />
-      <x-apartment-iso-code :number="'8.101'" :view="2" />
-      <x-apartment-iso-code :number="'8.102'" :view="2" />
-      <x-apartment-iso-code :number="'8.103'" :view="2" />
-      <x-apartment-iso-code :number="'8.201'" :view="2" />
-      <x-apartment-iso-code :number="'8.202'" :view="2" />
-      <x-apartment-iso-code :number="'8.203'" :view="2" />
-      <x-apartment-iso-code :number="'8.301'" :view="2" />
-      <x-apartment-iso-code :number="'8.302'" :view="2" />
-      <x-apartment-iso-code :number="'8.303'" :view="2" />
-      <x-apartment-iso-code :number="'8.401'" :view="2" />
+    <g data-name="Haus_08" class="hidden">
+      <x-apartment-iso-code :number="'8.602'" :view="2" />
+      <x-apartment-iso-code :number="'8.601'" :view="2" />
+      <x-apartment-iso-code :number="'8.503'" :view="2" />
+      <x-apartment-iso-code :number="'8.502'" :view="2" />
+      <x-apartment-iso-code :number="'8.501'" :view="2" />
       <x-apartment-iso-code :number="'8.402'" :view="2" />
       <x-apartment-iso-code :number="'8.403'" :view="2" />
-      <x-apartment-iso-code :number="'8.501'" :view="2" />
-      <x-apartment-iso-code :number="'8.502'" :view="2" />
-      <x-apartment-iso-code :number="'8.503'" :view="2" />
-      <x-apartment-iso-code :number="'8.601'" :view="2" />
-      <x-apartment-iso-code :number="'8.602'" :view="2" />
+      <x-apartment-iso-code :number="'8.401'" :view="2" />
+      <x-apartment-iso-code :number="'8.302'" :view="2" />
+      <x-apartment-iso-code :number="'8.303'" :view="2" />
+      <x-apartment-iso-code :number="'8.301'" :view="2" />
+      <x-apartment-iso-code :number="'8.202'" :view="2" />
+      <x-apartment-iso-code :number="'8.203'" :view="2" />
+      <x-apartment-iso-code :number="'8.201'" :view="2" />
+      <x-apartment-iso-code :number="'8.102'" :view="2" />
+      <x-apartment-iso-code :number="'8.103'" :view="2" />
+      <x-apartment-iso-code :number="'8.101'" :view="2" />
+      <x-apartment-iso-code :number="'8.2'" :view="2" />
+      <x-apartment-iso-code :number="'8.3'" :view="2" />
+      <x-apartment-iso-code :number="'8.1'" :view="2" />
     </g>
-    <g data-name="Haus_10">
-      <x-apartment-iso-code :number="'10.1'" :view="2" />
-      <x-apartment-iso-code :number="'10.2'" :view="2" />
-      <x-apartment-iso-code :number="'10.3'" :view="2" />
-      <x-apartment-iso-code :number="'10.101'" :view="2" />
-      <x-apartment-iso-code :number="'10.102'" :view="2" />
-      <x-apartment-iso-code :number="'10.103'" :view="2" />
-      <x-apartment-iso-code :number="'10.201'" :view="2" />
-      <x-apartment-iso-code :number="'10.202'" :view="2" />
-      <x-apartment-iso-code :number="'10.203'" :view="2" />
-      <x-apartment-iso-code :number="'10.301'" :view="2" />
-      <x-apartment-iso-code :number="'10.302'" :view="2" />
-      <x-apartment-iso-code :number="'10.303'" :view="2" />
-      <x-apartment-iso-code :number="'10.401'" :view="2" />
-      <x-apartment-iso-code :number="'10.402'" :view="2" />
-      <x-apartment-iso-code :number="'10.403'" :view="2" />
-      <x-apartment-iso-code :number="'10.501'" :view="2" />
-      <x-apartment-iso-code :number="'10.502'" :view="2" />
-      <x-apartment-iso-code :number="'10.503'" :view="2" />
-      <x-apartment-iso-code :number="'10.601'" :view="2" />
+    <g data-name="Haus_10" class="">
       <x-apartment-iso-code :number="'10.602'" :view="2" />
+      <x-apartment-iso-code :number="'10.601'" :view="2" />
+      <x-apartment-iso-code :number="'10.502'" :view="2" />
+      <x-apartment-iso-code :number="'10.501'" :view="2" />
+      <x-apartment-iso-code :number="'10.402'" :view="2" />
+      <x-apartment-iso-code :number="'10.401'" :view="2" />
+      <x-apartment-iso-code :number="'10.302'" :view="2" />
+      <x-apartment-iso-code :number="'10.301'" :view="2" />
+      <x-apartment-iso-code :number="'10.202'" :view="2" />
+      <x-apartment-iso-code :number="'10.201'" :view="2" />
+      <x-apartment-iso-code :number="'10.102'" :view="2" />
+      <x-apartment-iso-code :number="'10.101'" :view="2" />
+      <x-apartment-iso-code :number="'10.2'" :view="2" />
+      <x-apartment-iso-code :number="'10.1'" :view="2" />
+      <x-apartment-iso-code :number="'10.503'" :view="2" />
+      <x-apartment-iso-code :number="'10.403'" :view="2" />
+      <x-apartment-iso-code :number="'10.303'" :view="2" />
+      <x-apartment-iso-code :number="'10.203'" :view="2" />
+      <x-apartment-iso-code :number="'10.103'" :view="2" />
+      <x-apartment-iso-code :number="'10.3'" :view="2" />
     </g>
-    <g data-name="Haus_12">
-      <x-apartment-iso-code :number="'12.1'" :view="2" />
-      <x-apartment-iso-code :number="'12.101'" :view="2" />
-      <x-apartment-iso-code :number="'12.102'" :view="2" />
-      <x-apartment-iso-code :number="'12.103'" :view="2" />
-      <x-apartment-iso-code :number="'12.201'" :view="2" />
-      <x-apartment-iso-code :number="'12.202'" :view="2" />
-      <x-apartment-iso-code :number="'12.203'" :view="2" />
-      <x-apartment-iso-code :number="'12.301'" :view="2" />
-      <x-apartment-iso-code :number="'12.302'" :view="2" />
-      <x-apartment-iso-code :number="'12.303'" :view="2" />
-      <x-apartment-iso-code :number="'12.401'" :view="2" />
-      <x-apartment-iso-code :number="'12.402'" :view="2" />
-      <x-apartment-iso-code :number="'12.403'" :view="2" />
-      <x-apartment-iso-code :number="'12.501'" :view="2" />
+    <g data-name="Haus_12" class="hidden">
+      <x-apartment-iso-code :number="'12.601'" :view="2" />
       <x-apartment-iso-code :number="'12.502'" :view="2" />
       <x-apartment-iso-code :number="'12.503'" :view="2" />
-      <x-apartment-iso-code :number="'12.601'" :view="2" />
+      <x-apartment-iso-code :number="'12.501'" :view="2" />
+      <x-apartment-iso-code :number="'12.402'" :view="2" />
+      <x-apartment-iso-code :number="'12.403'" :view="2" />
+      <x-apartment-iso-code :number="'12.401'" :view="2" />
+      <x-apartment-iso-code :number="'12.302'" :view="2" />
+      <x-apartment-iso-code :number="'12.303'" :view="2" />
+      <x-apartment-iso-code :number="'12.301'" :view="2" />
+      <x-apartment-iso-code :number="'12.202'" :view="2" />
+      <x-apartment-iso-code :number="'12.203'" :view="2" />
+      <x-apartment-iso-code :number="'12.201'" :view="2" />
+      <x-apartment-iso-code :number="'12.102'" :view="2" />
+      <x-apartment-iso-code :number="'12.103'" :view="2" />
+      <x-apartment-iso-code :number="'12.101'" :view="2" />
+      <x-apartment-iso-code :number="'12.1'" :view="2" />
     </g>
     <g data-name="Back_08–12">
       <g id="Bodenlinie">

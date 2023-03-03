@@ -4,6 +4,6 @@
   data-btn-filter 
   data-filter-type="{{ $type }}"
   data-filter-value="{{ $value }}">
-  @include('web.icons.radio')
+  <x-icon.radio />
   <span class="block ml-10">{!! $label !!}</span>
 </a>

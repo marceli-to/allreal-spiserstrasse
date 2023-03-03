@@ -121,7 +121,6 @@
     items.forEach(function (item) {
       item.classList.remove(classes.hidden);
     });
-
     handleResults();
   };
 
