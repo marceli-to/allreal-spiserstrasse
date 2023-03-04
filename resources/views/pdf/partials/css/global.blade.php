@@ -23,14 +23,14 @@
 body {
   color: #000000;
   font-size: 10pt;
-  font-family: 'din-light', Helvetica, Arial, sans-serif;
+  font-family: 'DinLight', Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 1;
   text-rendering: optimizeLegibility;
 }
 
 strong {
-  font-family: 'din-medium', Helvetica, Arial, sans-serif;
+  font-family: 'DinMedium', Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
@@ -45,7 +45,7 @@ td {
 }
 
 th {
-  font-family: 'din-light', Helvetica, Arial, sans-serif;
+  font-family: 'DinLight', Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-align: left;
 }
@@ -65,15 +65,15 @@ table td {
 }
 
 h1, h2, h3 {
-  font-family: 'din-medium', Helvetica, Arial, sans-serif;
+  font-family: 'DinMedium', Helvetica, Arial, sans-serif;
 }
 
 h1 {
   color: #000000;
-  font-family: 'din-light', Helvetica, Arial, sans-serif;
+  font-family: 'DinLight', Helvetica, Arial, sans-serif;
+  font-weight: 300;
   font-size: 18pt;
   line-height: 22pt;
-
 }
 
 p {
@@ -145,15 +145,6 @@ li {
 .page__content {
   left: 0;
   position: absolute;
-}
-
-
-.page__title {
-  font-size: 16pt;
-  font-family: 'din-medium', Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  line-height: .9;
-  top: 85mm;
 }
 
 

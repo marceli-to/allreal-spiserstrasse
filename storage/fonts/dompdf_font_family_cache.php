@@ -1,5 +1,4 @@
-<?php return function ($fontDir, $rootDir) {
-return array (
+<?php return array (
   'sans-serif' => array(
     'normal' => $rootDir . '/lib/fonts/Helvetica',
     'bold' => $rootDir . '/lib/fonts/Helvetica-Bold',
@@ -78,21 +77,25 @@ return array (
     'italic' => $rootDir . '/lib/fonts/DejaVuSerif-Italic',
     'normal' => $rootDir . '/lib/fonts/DejaVuSerif',
   ),
-  'ocrbregular' => array(
-    'normal' => $fontDir . '/ocrbregular-normal_52b74ff25e66b8272cd810f48714ec8a',
+  'nunito' => array(
+    'normal' => $fontDir . '/2ee5a7797d02fe4d560048b698835802',
   ),
-  'calibriregular' => array(
-    'normal' => $fontDir . '/calibriregular_normal_d0c601ed89fe6fb1ddc7b680a26306f5',
+  'basis-grotesque-regular-pro' => array(
+    'normal' => $fontDir . '/1e048c0090368d169446c93198c15a63',
   ),
-  'calibribold' => array(
-    'normal' => $fontDir . '/calibribold_normal_0ee0a87666611571ab0d1fa1298a0f5e',
-    'bold' => $fontDir . '/calibribold_bold_edd4e62e65ad1d10f9a6a1dd0521a923',
+  'basis-grotesque-medium-pro' => array(
+    'normal' => $fontDir . '/6579904852f67c0647faa1c957ef445b',
   ),
-  'effraregular' => array(
-    'normal' => $fontDir . '/effraregular_normal_70b9da2dcc7f4d7ada5836f9559b9d64',
+  'postgrotesklight' => array(
+    'normal' => $fontDir . '/postgrotesklight-normal_d47d18585a54833f5ad6b1483343e0c2',
   ),
-  'effrabold' => array(
-    'bold' => $fontDir . '/effrabold_bold_f077803178fd74236d4536c99aae9f54',
+  'postgroteskmedium' => array(
+    'normal' => $fontDir . '/postgroteskmedium-normal_bccce2c2339d2d4ac177087f6bbf593b',
   ),
-);
-}; ?>
+  'postgroteskbold' => array(
+    'normal' => $fontDir . '/postgroteskbold-normal_eaed2959d61e9bf908645f52234a6ace',
+  ),
+  'postgroteskregular' => array(
+    'normal' => $fontDir . '/postgroteskregular-normal_2a68218a15b49b255281afcceff2297e',
+  ),
+) ?>

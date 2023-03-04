@@ -11,6 +11,9 @@
   </div>
   <div class="col-start-12 col-span-4 lg:col-start-11 lg:col-span-3">
     @include('web.pages.partials.apartments.filter')
+
+    <a href="/preisliste" target="_blank" class="block mt-32">Preisliste</a>
+
   </div>
 </div>
 @include('web.pages.partials.apartments.switcher')
