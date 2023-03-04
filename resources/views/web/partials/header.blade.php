@@ -5,7 +5,8 @@
       href="javascript:;" 
       data-menu-toggle 
       data-menu-toggle-burger 
-      title="Menü anzeigen">
+      title="Menü anzeigen"
+      class="inline-block w-auto">
       <x-icon.burger />
     </a>
   </div>

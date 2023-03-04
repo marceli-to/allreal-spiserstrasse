@@ -1,30 +1,37 @@
 <style>
 @font-face {
-  font-family: 'EffraRegular';
-  src: url('{{ url("/") }}/assets/fonts/EffraRegular.ttf') format("truetype");
-  font-weight: 400;
+  font-family: 'DinLight';
+  src: url('{{ url("/") }}/fonts/din-light.ttf') format("truetype");
+  font-weight: normal;
   font-style: normal; 
 }
 
 @font-face {
-  font-family: 'EffraBold';
-  src: url('{{ url("/") }}/assets/fonts/EffraBold.ttf') format("truetype");
-  font-weight: 700;
+  font-family: 'DinMedium';
+  src: url('{{ url("/") }}/fonts/din-medium.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'DinRegular';
+  src: url('{{ url("/") }}/fonts/din-regular.ttf') format("truetype");
+  font-weight: normal;
   font-style: normal; 
 }
 
 body {
   color: #000000;
   font-size: 10pt;
-  font-family: 'EffraRegular', Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: 'din-light', Helvetica, Arial, sans-serif;
+  font-weight: normal;
   line-height: 1;
   text-rendering: optimizeLegibility;
 }
 
 strong {
-  font-family: 'EffraBold', Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-family: 'din-medium', Helvetica, Arial, sans-serif;
+  font-weight: normal;
 }
 
 table {
@@ -38,8 +45,8 @@ td {
 }
 
 th {
-  font-family: 'EffraRegular', Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: 'din-light', Helvetica, Arial, sans-serif;
+  font-weight: normal;
   text-align: left;
 }
 
@@ -58,8 +65,15 @@ table td {
 }
 
 h1, h2, h3 {
-  font-family: 'EffraBold', Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-family: 'din-medium', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color: #000000;
+  font-family: 'din-light', Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  line-height: 22pt;
+
 }
 
 p {
@@ -127,40 +141,21 @@ li {
   z-index: 100;
 }
 
-.page-info,
 .page__title,
-.page__date,
 .page__content {
   left: 0;
   position: absolute;
 }
 
-.page-info {
-  top: 42mm;
-  width: 168mm;
-}
-
-.page-info td.page-info__left {
-  width: 75mm;
-}
-
-.page-info td.page-info__left table td:first-of-type {
-  width: 25mm;
-}
 
 .page__title {
   font-size: 16pt;
-  font-family: 'EffraBold', Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-family: 'din-medium', Helvetica, Arial, sans-serif;
+  font-weight: normal;
   line-height: .9;
   top: 85mm;
 }
 
-.page__date {
-  font-family: 'EffraBold', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  top: 110mm;
-}
 
 .page__content {
   padding-top: 124mm;
@@ -189,10 +184,6 @@ li {
 
 .content-table tr {
   border-bottom: .1mm solid #000000;
-}
-
-.content-table .content-table__footer {
-  border-bottom: none;
 }
 
 </style>
