@@ -14,5 +14,14 @@
     },
     "effrabold": {
         "bold": "effrabold_bold_f077803178fd74236d4536c99aae9f54"
+    },
+    "dinlight": {
+        "normal": "dinlight_normal_7381862edaa97ffa7d322aecf4487cd4"
+    },
+    "dinmedium": {
+        "normal": "dinmedium_normal_be49839edbb5cb53277cb3121d599bfd"
+    },
+    "dinregular": {
+        "normal": "dinregular_normal_4467a9243ba6155e7f542f27030a6018"
     }
 }

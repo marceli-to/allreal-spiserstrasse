@@ -8,14 +8,14 @@
 
 @font-face {
   font-family: 'DinMedium';
-  src: url('{{ url("/") }}/fonts/din-medium.ttf') format("truetype");
+  src: url('{{ url("/") }}/fonts/din-light.ttf') format("truetype");
   font-weight: normal;
   font-style: normal; 
 }
 
 @font-face {
   font-family: 'DinRegular';
-  src: url('{{ url("/") }}/fonts/din-regular.ttf') format("truetype");
+  src: url('{{ url("/") }}/fonts/din-light.ttf') format("truetype");
   font-weight: normal;
   font-style: normal; 
 }
@@ -64,16 +64,11 @@ table td {
   vertical-align: top;
 }
 
-h1, h2, h3 {
-  font-family: 'DinMedium', Helvetica, Arial, sans-serif;
-}
-
-h1 {
+.page-title {
   color: #000000;
   font-family: 'DinLight', Helvetica, Arial, sans-serif;
-  font-weight: 300;
   font-size: 18pt;
-  line-height: 22pt;
+  line-height: 1.2; 
 }
 
 p {

@@ -1,7 +1,7 @@
 @include('pdf.partials.header')
 <div class="page">
 
-  <h1 class="page__title">Preisliste</h1>
+  <div class="page-title">Preisliste Eigentumswohnungen, Townhouses und Ateliers Spiserstrasse 8, Zürich</div>
 
   {{-- <div class="page__content">
     <table class="content-table">
@@ -18,6 +18,6 @@
       </tbody>
     </table>
   </div> --}}
-  
+
 </div>
 @include('pdf.partials.footer')
