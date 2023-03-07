@@ -10,5 +10,4 @@
     </x-content.article>
   </x-layout.content>
 </x-layout.columns>
-
 @endsection

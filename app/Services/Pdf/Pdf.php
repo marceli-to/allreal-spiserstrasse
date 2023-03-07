@@ -32,7 +32,7 @@ class Pdf
     $output = isset($opts['output']) ? $opts['output'] : NULL;
     $this->viewData['data'] = $data;
     $pdf = DomPDF::loadView('pdf.' . $view, $this->viewData);
-    $file = 'allreal-spiserstrasse-'. $name .'-' . date('dmY', time()) . '-' . \Str::random(12) . '.pdf';
+    $file = $name .'-' . date('d-m-Y-h-m-i', time()) . '.pdf';
     $pdf->save($this->storageFolder . $file);
     return [
       'path' => $this->storageFolder . $file,

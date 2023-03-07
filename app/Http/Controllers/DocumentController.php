@@ -24,7 +24,7 @@ class DocumentController extends Controller
     $pdf = (new Pdf())->create([
       'data' => $apartments,
       'view' => 'pricelist',
-      'name' => 'preisliste'
+      'name' => 'Allreal_Spiserstrasse_Preisliste'
     ]);
     return response()->download($pdf['path'], $pdf['name'], $this->headers);
   }

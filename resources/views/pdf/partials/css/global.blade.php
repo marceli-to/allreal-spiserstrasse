@@ -117,7 +117,7 @@ sup {
 }
 
 .footer {
-  bottom: -2mm;
+  bottom: 0;
   position: fixed;
   z-index: 100;
 }
