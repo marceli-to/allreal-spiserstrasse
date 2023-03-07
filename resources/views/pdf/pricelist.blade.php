@@ -73,7 +73,7 @@
           <td class="item spacer"></td>
           <td class="item underline">{{ $a->state == 'sold' ? 'verkauft' : ($a->state == 'reserved' ? 'reserviert' : 'frei') }}</td>
           <td class="item spacer"></td>
-          <td class="item underline align-right price">{{ $a->price }}</td>
+          <td class="item underline align-right price">{{ number_format($a->price , 2, ".", "\u{2009}") }}</td>
         </tr>
       @endforeach
     </table>
@@ -107,7 +107,7 @@
           <td class="item spacer"></td>
           <td class="item underline">{{ $a->state == 'sold' ? 'verkauft' : ($a->state == 'reserved' ? 'reserviert' : 'frei') }}</td>
           <td class="item spacer"></td>
-          <td class="item underline align-right price">{{ number_format($a->price , 2, ".", "&thinsp;") }}</td>
+          <td class="item underline align-right price">{{ number_format($a->price , 2, ".", "\u{2009}") }}</td>
         </tr>
       @endforeach
     </table>

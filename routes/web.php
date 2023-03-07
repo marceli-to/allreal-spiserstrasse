@@ -9,6 +9,7 @@ use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\RoundTourController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DocumentController;
+
 /*
 |--------------------------------------------------------------------------
 | Public Web Routes
@@ -18,8 +19,8 @@ use App\Http\Controllers\DocumentController;
 
 Route::get('/', [HomeController::class, 'index'])->name('page.home');
 Route::get('/projekt', [ProjectController::class, 'index'])->name('page.project');
-// Route::get('/lage', [LocationController::class, 'index'])->name('page.location');
 Route::get('/objekte', [ApartmentController::class, 'index'])->name('page.apartments');
+Route::get('/objekte/{apartment}/{slug?}', [ApartmentController::class, 'show'])->name('page.apartment');
 Route::get('/ausstattung', [FeaturesController::class, 'index'])->name('page.features');
 Route::get('/galerie', [GalleryController::class, 'index'])->name('page.gallery');
 Route::get('/360-rundgang', [RoundTourController::class, 'index'])->name('page.round-tour');
