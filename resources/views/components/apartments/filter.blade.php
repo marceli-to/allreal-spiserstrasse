@@ -42,11 +42,9 @@
     <x-apartment-filter-link-item :type="'state'" value="{{$value}}" label="{!! $label !!}" />
   </x-content.list-item>
 @endforeach
-
 <a 
   href="javascript:;" 
-  class="uppercase block mt-32 text-center border border-silver text-silver leading-none py-10"
+  class="uppercase block mt-32 text-center border border-anthrazit text-anthrazit leading-none py-10"
   data-btn-filter-reset>
   Filter zurücksetzen
 </a>
-

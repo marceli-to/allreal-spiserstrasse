@@ -6,7 +6,7 @@
     <x-swiper.slide :image="'allreal-2.jpg'" />
     <x-swiper.slide :image="'allreal-3.jpg'" />
   </x-swiper>
-  @include('web.pages.partials.home.news')
+  <x-news />
 </div>
 <section class="md:mt-48 md:grid md:grid-cols-16">
   <div class="md:col-span-10 md:col-start-1">

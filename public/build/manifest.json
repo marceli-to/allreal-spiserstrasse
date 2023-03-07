@@ -52,11 +52,11 @@
     "src": "resources/js/web/form/app.css"
   },
   "resources/js/spa/app.css": {
-    "file": "assets/app-4e58d039.css",
+    "file": "assets/app-5037eba2.css",
     "src": "resources/js/spa/app.css"
   },
   "resources/js/web/app.css": {
-    "file": "assets/app-f1e257f7.css",
+    "file": "assets/app-bbbd783c.css",
     "src": "resources/js/web/app.css"
   },
   "resources/js/web/form/app.js": {
@@ -71,11 +71,11 @@
     ]
   },
   "resources/js/web/app.js": {
-    "file": "assets/app-cfe2d259.js",
+    "file": "assets/app-a90ce188.js",
     "src": "resources/js/web/app.js",
     "isEntry": true,
     "css": [
-      "assets/app-f1e257f7.css"
+      "assets/app-bbbd783c.css"
     ],
     "assets": [
       "assets/din-medi-webfont-3079edd0.eot",
@@ -92,18 +92,18 @@
       "assets/din-regular-webfont-webfont-18a1b17b.svg"
     ]
   },
-  "_nprogress-8fc92ca2.js": {
-    "file": "assets/nprogress-8fc92ca2.js"
-  },
   "resources/js/spa/app.js": {
-    "file": "assets/app-660f8ffa.js",
+    "file": "assets/app-6afd982f.js",
     "src": "resources/js/spa/app.js",
     "isEntry": true,
     "imports": [
       "_nprogress-8fc92ca2.js"
     ],
     "css": [
-      "assets/app-4e58d039.css"
+      "assets/app-5037eba2.css"
     ]
+  },
+  "_nprogress-8fc92ca2.js": {
+    "file": "assets/nprogress-8fc92ca2.js"
   }
 }

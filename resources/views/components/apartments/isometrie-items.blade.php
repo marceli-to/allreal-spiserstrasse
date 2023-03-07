@@ -1530,6 +1530,5 @@
         <x-apartment-iso-code :number="'8.602'" :view="4" />     
       </g>
     </g>
-
   </g>
 </svg>
