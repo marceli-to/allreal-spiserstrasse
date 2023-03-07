@@ -33,7 +33,7 @@
       <x-content.li>Anschlüsse für Deckenlampen in Zimmer und </x-content.li>
       </x-content.ul>
       
-      <x-content.heading-2>Wohnen/Essen</x-content.heading-2>
+      <x-content.heading-2 class="mb-8">Wohnen/Essen</x-content.heading-2>
       <x-content.heading-2>Heizungsanlage</x-content.heading-2>
       <x-content.ul>
       <x-content.li>Bezug von Fernwärme über Fernwärmenetzverbund Altstetten</x-content.li>
@@ -82,7 +82,7 @@
       <x-content.li>Offene Garderobe mit Tablaren und Kleiderstange, teilweise mit Garderobenschrank kombiniert, innen kunstharzbeschichtet und Schranktüren grundiert zum Streichen</x-content.li>
       </x-content.ul>
 
-      <x-content.heading-2>Fertigbeläge</x-content.heading-2>
+      <x-content.heading-2 class="mb-8">Fertigbeläge</x-content.heading-2>
       <x-content.heading-2>Korridor, Entrée, Wohnen, Essen, Zimmer</x-content.heading-2>
       <x-content.ul>
       <x-content.li>Bodenbelag aus Parkett mit Holzsockel. Budget brutto CHF 130.00/m², Attika und Townhouses CHF 180.00/m² (exkl. MwSt.), fertig verlegt</x-content.li>

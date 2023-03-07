@@ -20,7 +20,7 @@ class DocumentController extends Controller
    */
   public function pricelist()
   { 
-    $apartments = Apartment::all();
+    $apartments = Apartment::with('floors')->get();
     $pdf = (new Pdf())->create([
       'data' => $apartments,
       'view' => 'pricelist',

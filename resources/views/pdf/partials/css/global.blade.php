@@ -22,7 +22,7 @@
 
 body {
   color: #000000;
-  font-size: 10pt;
+  font-size: 9pt;
   font-family: 'DinLight', Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 1;
@@ -64,13 +64,6 @@ table td {
   vertical-align: top;
 }
 
-.page-title {
-  color: #000000;
-  font-family: 'DinLight', Helvetica, Arial, sans-serif;
-  font-size: 18pt;
-  line-height: 1.2; 
-}
-
 p {
   margin-bottom: 5mm;
 }
@@ -82,6 +75,10 @@ ul, li {
 
 li {
   margin-left: 4mm;
+}
+
+sup {
+  font-size: 6pt;
 }
 
 /* Helpers */
@@ -136,40 +133,56 @@ li {
   z-index: 100;
 }
 
-.page__title,
+.page__title {
+  color: #000000;
+  font-family: 'DinLight', Helvetica, Arial, sans-serif;
+  font-size: 18pt;
+  line-height: 1;
+  position: absolute;
+}
+
 .page__content {
   left: 0;
   position: absolute;
 }
 
-
 .page__content {
-  padding-top: 124mm;
-  top: 0;
-  width: 168mm;
+  top: 28mm;
+  width: 174mm;
 }
 
 .content-table {
-  margin-bottom: 10mm;
   width: 100%;
 }
 
-.content-table tbody tr:first-of-type,
-.content-table thead {
-  border-bottom: .1mm solid #000000;
-}
-
-.content-table td:first-child {
-  width: 36mm;
-}
-
-.content-table th, 
 .content-table td {
-  padding: 1mm 0 2mm 0;
+  display: table-cell;
+  font-family: 'DinRegular', Helvetica, Arial, sans-serif;
+  width: 23mm;
 }
 
-.content-table tr {
+.content-table td.spacer {
+  width: 5.5mm;
+}
+
+.content-table td.price {
+  width: 38mm;
+}
+
+.content-table td.heading {
+  padding-bottom: 2mm;
+}
+
+.content-table td.item {
+  padding: 1.75mm 0;
+}
+
+.content-table td.heading.underline {
   border-bottom: .1mm solid #000000;
+}
+
+.content-table td.item.underline {
+  border-bottom: .1mm solid #c8c8c8;
 }
 
 </style>
