@@ -6,3 +6,4 @@ import './modules/filter.js';
 import './modules/menu.js';
 import './modules/swiper.js';
 import './modules/iso.js';
+import './modules/lightbox.js';

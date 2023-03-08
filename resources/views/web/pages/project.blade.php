@@ -2,10 +2,21 @@
 @section('seo_title', __('Projekt'))
 @section('page_title', __('Projekt'))
 @section('content')
+<x-content.lightbox>
+  <figure>
+    <img 
+      src="/media/allreal-spiserstrasse-umgebung.svg" 
+      width="1190" 
+      height="795" 
+      alt="Umgebungsplan Allreal Spiserstrasse" class="w-full bg-white">
+  </figure>
+</x-content.lightbox>
 <x-layout.columns>
   <x-layout.content>
     <figure class="mb-48">
-      <img src="https://via.placeholder.com/616x320" alt="Projekt" class="w-full">
+      <a href="javascript:;" title="Plan vergrössern" data-lightbox-open>
+        <img src="/media/allreal-spiserstrasse-umgebung.svg" width="1190" height="795" alt="Umgebungsplan Allreal Spiserstrasse" class="w-full">
+      </a>
     </figure>
     <x-content.article>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex dicta iste explicabo possimus quas soluta? Molestias doloribus odit nobis qui culpa nihil facere, voluptatem ipsa. Eum similique quibusdam beatae id.</p>
