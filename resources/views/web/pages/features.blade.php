@@ -153,6 +153,8 @@
       <x-content.li>Komplette Beleuchtungsinstallation</x-content.li>
       </x-content.ul>
 
+      <p class="text-base mt-44">Aus sämtlichen Plänen, Zeichnungen, Visualisierungen oder Angaben dieser Website können keinerlei Ansprüche abgeleitet werden. Sie sind nicht Vertragsbestandteil und basieren auf dem Projektstand zum Zeitpunkt der Publikation dieses Dokuments. Für Ausführungen und Flächenangaben sind der detaillierte Baubeschrieb und die Pläne im Massstab 1:50 massgebend. Ausführungsbedingte Änderungen und Anpassungen bleiben vorbehalten.</p>
+      <p class="text-base mt-16">Bei einer allfälligen Käufervermittlung durch Dritte entsteht weder gegenüber der Verkäuferin noch gegenüber der Bauherrschaft ein Anspruch auf Provisionsausrichtungen und Auslagenersatz. Die Weitergabe dieser Verkaufsunterlagen zu Vermittlungszwecken ist ohne schriftliche Erlaubnis der Bauherrschaft untersagt.</p>
     </x-content.article>
     </x-layout.content>
 </x-layout.columns>

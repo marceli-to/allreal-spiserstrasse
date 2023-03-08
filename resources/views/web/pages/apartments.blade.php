@@ -3,8 +3,12 @@
 @section('page_title', __('Wohnungen'))
 @section('content')
 <x-layout.columns>
-  <x-layout.content>
+  <x-layout.content class="md:col-span-10 lg:col-span-7 lg:col-start-2">
     <x-apartments.isometrie />
+  </x-layout.content>
+  <x-layout.content class="md:col-span-2 lg:col-span-1 lg:col-start-9 relative">
+    <x-icon.rotate />
+    <x-icon.north-arrow />
   </x-layout.content>
   <x-layout.sidebar>
     <x-apartments.filter />
@@ -28,7 +32,7 @@
 </x-layout.columns>
 
 <x-layout.columns>
-  <x-layout.content class="mb-32">
+  <x-layout.content class="mt-24 mb-32">
     <x-apartments.switcher />
   </x-layout.content>
 </x-layout.columns>

@@ -6,20 +6,12 @@
     thumbItem: '[data-thumb-item]',
     isoView: '[data-iso-view]',
     btnRotate: '[data-btn-rotate]',
+    iconNorthStar: '[data-iso-north-arrow]'
   };
 
   let currentView = 2;
 
   const init = () => {
-    const isoItems = [].slice.call(
-      document.querySelectorAll(selectors.isoItem)
-    );
-    
-    // Add event listener for mouse over
-    // isoItems.forEach(function (item) {
-    //   item.addEventListener("mouseover", function(){
-    //   }, false);
-    // });
 
     // Add click event on rotate button if it exists
     const btnRotate = document.querySelector(selectors.btnRotate);
@@ -48,9 +40,19 @@
     currentView = currentView < 4 ? currentView + 1 : 1;
     const isoView = document.querySelector('[data-iso-view="' + currentView + '"]');
     isoView.classList.remove('hidden');
-    const btnRotate = document.querySelector(selectors.btnRotate);
-    // Update inner html of rotate button
-    btnRotate.innerHTML = 'Rotate (' + currentView + ')';
+
+    // Hide all north star icons
+    const northStars = [].slice.call(
+      document.querySelectorAll(selectors.iconNorthStar)
+    );
+    northStars.forEach(function (northStar) {
+      northStar.classList.add('hidden');
+    });
+
+    // Show north star icon for current view
+    const northStar = document.querySelector('[data-iso-north-arrow="' + currentView + '"]');
+    northStar.classList.remove('hidden');
+
   };
 
   init();
