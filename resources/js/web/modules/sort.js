@@ -15,12 +15,25 @@
         sortBy(btn.dataset.sortBy);
       }, false);
     });
+
+    // Get current sort attribute from local storage
+    const sortAttribute = localStorage.getItem('sortAttribute');
+
+    // Get current sort order from local storage
+    const sortOrder = localStorage.getItem('sortOrder');
+
+    // Get current sort direction from local storage
+    const sortDirection = localStorage.getItem('sortDirection');
+
+    if (sortAttribute) {
+      sortBy(sortAttribute, sortOrder, sortDirection);
+    }
   };
 
-  const sortBy = (attribute) => {
+  const sortBy = (attribute, sortOrder = null, sortDir = null) => {
     // handle sort direction
-    sortDirection = sortDirection == 'asc' ? 'desc' : 'asc';
-    const order = sortDirection == 'asc' ? -1 : 1;
+    sortDirection = sortDir ? sortDir : sortDirection == 'asc' ? 'desc' : 'asc';
+    let order = sortOrder ? sortOrder : sortDirection == 'asc' ? -1 : 1;
 
     // get elements
     const els = document.querySelectorAll(`[data-sortable][data-${attribute}]`);
@@ -45,6 +58,15 @@
       return order * (aValue - bValue);
     });
     sorted.forEach(e => document.querySelector(selectors.list).appendChild(e));
+
+    // Save current sort attribute in local storage
+    localStorage.setItem('sortAttribute', attribute);
+
+    // Save current sort direction in local storage
+    localStorage.setItem('sortDirection', sortDirection);
+
+    // Save current sort order in local storage
+    localStorage.setItem('sortOrder', order);
   };
 
   init();

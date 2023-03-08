@@ -5,7 +5,7 @@
 <x-layout.columns>
   <x-layout.content>
       <div class="mb-8 h-20">
-        <a href="{{ route('page.apartments') }}" class="uppercase inline-flex items-center leading-none font-medium text-anthrazit" title="Zurück">
+        <a href="javascript:history.back()" class="uppercase inline-flex items-center leading-none font-medium text-anthrazit" title="Zurück">
           <x-icon.arrow-left />
           <span class="block ml-8">Zurück</span>
         </a>

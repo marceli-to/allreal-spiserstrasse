@@ -49,6 +49,20 @@
         resetFilter();
       }, false);
     }
+
+    // Get filter attributes from local storage
+    const savedFilterAttributes = JSON.parse(localStorage.getItem('filterAttributes'));
+    if (savedFilterAttributes) {
+      // Loop over saved filter attributes as key value pairs
+      // and apply each filter
+      Object.keys(savedFilterAttributes).forEach(function (key) {
+        const attributeObject = {
+          filterType: key,
+          filterValue: savedFilterAttributes[key]
+        };
+        applyFilter(attributeObject);
+      });
+    }
   };
 
   const applyFilter = (attributes) => {
@@ -75,6 +89,20 @@
 
     // Add filter attribute to array
     filterAttributes.push(attribute);
+
+    // Save filter attributes to local storage
+    const storageObject = {};
+    storageObject[attributes.filterType] = attributes.filterValue;
+
+    // If filter type is already in local storage, update value
+    const savedFilterAttributes = JSON.parse(localStorage.getItem('filterAttributes'));
+    if (savedFilterAttributes) {
+      savedFilterAttributes[attributes.filterType] = attributes.filterValue;
+      localStorage.setItem('filterAttributes', JSON.stringify(savedFilterAttributes));
+    }
+    else {
+      localStorage.setItem('filterAttributes', JSON.stringify(storageObject));
+    }
 
     // Show all items if no filters are selected
     if (filterAttributes.length == 0) {
@@ -110,10 +138,10 @@
     });
   };
 
-  const showItems = () => {
+  const showItems = (attr = null) => {
 
     // Create filter string
-    const filterString = filterAttributes.join('');
+    const filterString = attr ? attr : filterAttributes.join('');
 
     // Get items that match filter string
     const items = [].slice.call(
@@ -163,6 +191,7 @@
 
     states.isFiltering = false;
     filterAttributes = [];
+    localStorage.removeItem('filterAttributes');
     updateResetButton();
     showAll();
   };
