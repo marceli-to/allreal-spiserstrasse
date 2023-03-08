@@ -2,7 +2,7 @@
 @section('seo_title', __('Wohnungen'))
 @section('page_title', __('Wohnungen'))
 @section('content')
-<x-layout.columns>
+<x-layout.columns class="md:sticky md:top-0 z-10 bg-white md:pt-24 -md:mt-24 md:pb-32">
   <x-layout.content class="md:col-span-10 lg:col-span-7 lg:col-start-2">
     <x-apartments.isometrie />
   </x-layout.content>
@@ -32,7 +32,7 @@
 </x-layout.columns>
 
 <x-layout.columns>
-  <x-layout.content class="mt-24 mb-32">
+  <x-layout.content class="mb-32">
     <x-apartments.switcher />
   </x-layout.content>
 </x-layout.columns>

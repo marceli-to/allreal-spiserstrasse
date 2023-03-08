@@ -86,18 +86,24 @@
   transition: opacity .04s ease-in-out;
 }
 
+[data-iso-item].is-active .iso-cls-21,
+[data-iso-item].is-active .iso-cls-15,
 [data-iso-item]:hover .iso-cls-21,
 [data-iso-item]:hover .iso-cls-15 {
   opacity: .4;
   transition: opacity .04s ease-in-out;
 }
 
+[data-iso-item].is-active .iso-cls-20,
+[data-iso-item].is-active .iso-cls-17,
 [data-iso-item]:hover .iso-cls-20,
 [data-iso-item]:hover .iso-cls-17 {
   opacity: .8;
   transition: opacity .04s ease-in-out;
 }
 
+[data-iso-item].is-active .iso-cls-19,
+[data-iso-item].is-active .iso-cls-16,
 [data-iso-item]:hover .iso-cls-19,
 [data-iso-item]:hover .iso-cls-16 {
   opacity: .6;

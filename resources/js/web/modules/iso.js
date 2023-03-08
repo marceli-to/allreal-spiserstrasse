@@ -13,6 +13,70 @@
 
   const init = () => {
 
+    // Add event listener for mouse over on iso item
+    const isoItems = [].slice.call(
+      document.querySelectorAll(selectors.isoItem)
+    );
+    isoItems.forEach(function (isoItem) {
+      const listItem = document.querySelector('[data-list-item][data-number="' + isoItem.dataset.name + '"]');
+      const thumbItem = document.querySelector('[data-thumb-item][data-number="' + isoItem.dataset.name + '"]');
+
+      isoItem.addEventListener("mouseover", function(){
+        listItem.classList.add('bg-blue-light');
+        thumbItem.classList.add('bg-blue-light');
+      }, false);
+
+      isoItem.addEventListener("mouseleave", function(){
+        listItem.classList.remove('bg-blue-light');
+        thumbItem.classList.remove('bg-blue-light');
+      }, false);
+
+      isoItem.addEventListener("click", function(){
+        document.location.href = isoItem.dataset.url;
+      }, false);
+
+    });
+
+    // Add event listener for mouse over on list item
+    const listItems = [].slice.call(
+      document.querySelectorAll(selectors.listItem)
+    );
+    listItems.forEach(function (listItem) {
+      const isoItems = [].slice.call(
+        document.querySelectorAll('[data-iso-item][data-number="' + listItem.dataset.number + '"]')
+      );
+      listItem.addEventListener("mouseover", function(){
+        isoItems.forEach(function (isoItem) {
+          isoItem.classList.add('is-active');
+        });
+      }, false);
+      listItem.addEventListener("mouseleave", function(){
+        isoItems.forEach(function (isoItem) {
+          isoItem.classList.remove('is-active');
+        });
+      }, false);
+    });
+
+    // Add event listener for mouse over on thumb item
+    const thumbItems = [].slice.call(
+      document.querySelectorAll(selectors.thumbItem)
+    );
+    thumbItems.forEach(function (thumbItem) {
+      const isoItems = [].slice.call(
+        document.querySelectorAll('[data-iso-item][data-number="' + thumbItem.dataset.number + '"]')
+      );
+      thumbItem.addEventListener("mouseover", function(){
+        isoItems.forEach(function (isoItem) {
+          isoItem.classList.add('is-active');
+        });
+      }, false);
+      thumbItem.addEventListener("mouseleave", function(){
+        isoItems.forEach(function (isoItem) {
+          isoItem.classList.remove('is-active');
+        });
+      }, false);
+    });
+    
     // Add click event on rotate button if it exists
     const btnRotate = document.querySelector(selectors.btnRotate);
     if (btnRotate) {

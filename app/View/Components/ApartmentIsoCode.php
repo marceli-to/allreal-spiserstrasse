@@ -6,6 +6,7 @@ use Illuminate\View\Component;
 
 class ApartmentIsoCode extends Component
 {
+  public $apartment;
   public $number;
   public $view;
   public $code;
@@ -41,7 +42,17 @@ class ApartmentIsoCode extends Component
 
     $this->code = str_replace(
       'data-name="'.$number.'"', 
-      'data-name="'.$number.'" data-filterable data-hoverable data-iso-item data-rooms="'.$apartment->rooms.'" data-floor="'.$floor.'" data-area="'.$apartment->area.'" data-price="'.$apartment->price.'" data-state="'.$state.'"', 
+      'data-name="'.$number.'" 
+       data-number="'.$number.'" 
+       data-filterable 
+       data-hoverable 
+       data-iso-item 
+       data-url="'.route('page.apartment', ['slug' => $apartment->slug, 'apartment' => $apartment->id]).'"
+       data-rooms="'.$apartment->rooms.'" 
+       data-floor="'.$floor.'" 
+       data-area="'.$apartment->area.'" 
+       data-price="'.$apartment->price.'" 
+       data-state="'.$state.'"', 
       $code
     );
    }

@@ -1,3 +1,4 @@
+{{-- @php $apartments = collect($apartments); @endphp --}}
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 772.1 591.6" class="w-full">
   <g data-iso-view="1" class="hidden">
     <g data-name="Nebenhaeuser">
@@ -1196,6 +1197,7 @@
       </g>
     </g>
     <g id="Townhouse_8">
+      <x-apartment-iso-code :number="'8c'" :view="4" />
       <x-apartment-iso-code :number="'8c'" :view="4" />
       <x-apartment-iso-code :number="'8b.2'" :view="4" />
       <x-apartment-iso-code :number="'8d'" :view="4" />

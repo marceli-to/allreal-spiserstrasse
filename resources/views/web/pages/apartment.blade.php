@@ -1,5 +1,5 @@
 @extends('web.app')
-@section('seo_title', $apartment['title'])
+@section('seo_title', $apartment->title)
 @section('page_title', __('Wohnung'))
 @section('content')
 <x-layout.columns>
@@ -12,9 +12,9 @@
       </div>
       <figure class="block border-t border-t-anthrazit">
         <img 
-          src="/media/plans/lg/Allreal_Spiserstrasse_{{ $apartment['number'] }}.png" 
+          src="/media/plans/lg/Allreal_Spiserstrasse_{{ $apartment->number }}.png" 
           class="w-full h-auto" 
-          alt="{{ $apartment['type'] !== 'Atelier' ? $apartment['rooms'] . ' Zimmer-Wohnung' : 'Atelier' }}, {{ $apartment['floor']['label'] }}, {{ $apartment['street'] }}"
+          alt="{{ $apartment->type !== 'Atelier' ? $apartment->rooms . ' Zimmer-Wohnung' : 'Atelier' }}, {{ $apartment->floorArray['label'] }}, {{ $apartment->street }}"
           width="200"
           height="250">
     </figure>
@@ -23,27 +23,27 @@
     <div class="mt-28">
       <x-content.list-item class="flex justify-between py-10">
         <label class="block">Wohnung</label>
-        {{ $apartment['number'] }}
+        {{ $apartment->number }}
       </x-content.list-item>
       <x-content.list-item class="flex justify-between py-10 border-t-silver">
         <label class="block">Zimmer</label>
-        {{ $apartment['rooms'] }}
+        {{ $apartment->rooms }}
       </x-content.list-item>
       <x-content.list-item class="flex justify-between py-10 border-t-silver">
         <label class="block">Etage</label>
-        {{ $apartment['floor']['label'] }}
+        {{ $apartment->floorArray['label'] }}
       </x-content.list-item>
       <x-content.list-item class="flex justify-between py-10 border-t-silver">
-        <label class="block">Fläche <sup>2</sup></label>
-        {{ $apartment['area'] }}
+        <label class="block">Fläche (m<sup>2</sup>)</label>
+        {{ $apartment->area }}
       </x-content.list-item>
       <x-content.list-item class="flex justify-between py-10 border-t-silver">
-        <label class="block">Terrasse <sup>2</sup></label>
-        {{ $apartment['area_exterior'] }}
+        <label class="block">Terrasse (m<sup>2</sup>)</label>
+        {{ $apartment->area_exterior }}
       </x-content.list-item>
       <x-content.list-item class="flex justify-between py-10 border-t-silver">
         <label class="block">Verkaufspreis</label>
-        {{ number_format($apartment['price'] , 2, ".", "\u{2009}") }}
+        {{ number_format($apartment->price , 2, ".", "\u{2009}") }}
       </x-content.list-item>
     </div>
 
@@ -67,7 +67,7 @@
       <x-content.list-item class="py-10">
         <label class="block">Lage</label>
         <figure>
-          <img src="/media/plans/iso/allreal_spiserstrasse_{{ $apartment['number'] }}.png" alt="Lage Wohnung" width="300" height="253" class="w-full h-auto">
+          <img src="/media/plans/iso/allreal_spiserstrasse_{{ $apartment->number }}.png" alt="Lage Wohnung" width="300" height="253" class="w-full h-auto">
         </figure>
       </x-content.list-item>
     </div>

@@ -58,5 +58,52 @@ class Apartment extends Model
       return State::AVAILABLE;
     }
   }
+
+  public function getTitleAttribute()
+  {
+    if ($this->type == 'Atelier')
+    {
+      $title = 'Atelier ' . $this->number;
+    }
+    else
+    {
+      $title  = $this->rooms . ' Zimmer-Wohnung';
+      $title .= ', ' . collect($this->floors->pluck('acronym')->all())->implode('-');
+      $title .= ', ' . $this->number;
+    }
+    return $title;
+  }
+
+  public function getSlugAttribute()
+  {
+    if ($this->type == 'Atelier')
+    {
+      $slug = 'atelier-' . $this->number;
+    }
+    else
+    {
+      $slug  = $this->rooms . '-zimmer-wohnung';
+      $slug .= '-' . strtolower(collect($this->floors->pluck('acronym')->all())->implode('-'));
+      $slug .= '-' . $this->number;
+    }
+    return $slug;
+  }
+
+  public function getStateArrayAttribute()
+  {
+    return [
+      'key' => $this->state,
+      'value' => $this->state == State::SOLD ? 'verkauft' : ($this->state == State::RESERVED ? 'reserviert' : 'frei'),
+      'order' => $this->state == State::SOLD ? 3 : ($this->state == State::RESERVED ? 2 : 1),
+    ];
+  }
   
+  public function getFloorArrayAttribute()
+  {
+    return [
+      'label' => collect($this->floors->pluck('acronym')->all())->implode(', '),
+      'order' => collect($this->floors->pluck('order')->all())->min(),
+    ];
+  }
+
 }
