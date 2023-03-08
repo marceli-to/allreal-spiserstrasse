@@ -33,7 +33,7 @@
   </x-layout.content>
 </x-layout.columns>
 
-<section data-no-results class="hidden mb-8">
+<section data-no-results class="is-hidden mb-8">
   <x-layout.columns>
     <x-layout.content>
       Ihre Suche ergab keine Treffer.
@@ -45,7 +45,7 @@
   <x-apartments.list :apartments="$apartments" />
 </section>
 
-<section data-view="thumbnails" class="hidden">
+<section data-view="thumbnails" class="is-hidden">
   <x-apartments.thumbnails :apartments="$apartments" />
 </section>
 @endsection

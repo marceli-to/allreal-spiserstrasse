@@ -7,7 +7,7 @@
   };
 
   const classes = {
-    hidden: 'hidden',
+    hidden: 'is-hidden',
     selected: 'is-selected',
     visible: 'is-visible'
   };
@@ -98,6 +98,7 @@
     items.forEach(function (item) {
       item.classList.remove(classes.hidden);
     });
+    handleResults();
   };
 
   const hideAll = () => {

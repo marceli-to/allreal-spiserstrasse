@@ -26,15 +26,15 @@
     inactiveButton.classList.remove('font-medium');
 
     if (type == 'list') {
-      list.classList.replace('hidden', 'block');
+      list.classList.replace('is-hidden', 'block');
       list.classList.add('is-visible');
-      thumbnails.classList.replace('block', 'hidden');
+      thumbnails.classList.replace('block', 'is-hidden');
       thumbnails.classList.remove('is-visible');
     }
     else if (type == 'thumbnails') {
-      list.classList.replace('block', 'hidden');
+      list.classList.replace('block', 'is-hidden');
       list.classList.remove('is-visible');
-      thumbnails.classList.replace('hidden', 'block');
+      thumbnails.classList.replace('is-hidden', 'block');
       thumbnails.classList.add('is-visible');
     }
   };

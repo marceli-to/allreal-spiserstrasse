@@ -21,3 +21,7 @@ ul.dash  li:before {
 .hyphen-auto {
   hyphens: auto;
 }
+
+.is-hidden {
+  @apply !hidden;
+}
