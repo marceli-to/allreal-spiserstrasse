@@ -11,15 +11,15 @@ export default function useApartments() {
   const apartment = ref([]);
   const states = ref([
     {
-      key: 'available',
+      key: 1,
       value: 'frei'
     },
     {
-      key: 'reserved',
+      key: 2,
       value: 'reserviert'
     },
     {
-      key: 'sold',
+      key: 3,
       value: 'verkauft'
     },
   ]);

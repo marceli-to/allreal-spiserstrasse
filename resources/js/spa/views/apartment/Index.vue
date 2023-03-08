@@ -43,9 +43,9 @@
                 <table-cell>{{ apartment.street }}</table-cell>
                 <table-cell>{{ apartment.price }}</table-cell>
                 <table-cell>
-                  <pill :class="`is-${apartment.state.key}`">
-                    {{ apartment.state.value }}
-                  </pill>
+                  <pill class="is-available" v-if="apartment.state == 1">frei</pill>
+                  <pill class="is-reserved" v-if="apartment.state == 2">reserviert</pill>
+                  <pill class="is-sold" v-if="apartment.state == 3">verkauft</pill>
                 </table-cell>
                 <table-cell class="text-right">
                   <router-link 

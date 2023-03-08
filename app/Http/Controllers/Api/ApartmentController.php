@@ -44,7 +44,7 @@ class ApartmentController extends Controller
     if (str_starts_with($keyword, 'fre'))
     {
       $data = ApartmentResource::collection(
-        Apartment::flagged(State::AVAILABLE)->get()
+        Apartment::where('state', 1)->get()
       );
       return response()->json($data);
     }
@@ -52,7 +52,7 @@ class ApartmentController extends Controller
     if (str_starts_with($keyword, 'res'))
     {
       $data = ApartmentResource::collection(
-        Apartment::flagged(State::RESERVED)->get()
+        Apartment::where('state', 2)->get()
       );
       return response()->json($data);
     }
@@ -60,7 +60,7 @@ class ApartmentController extends Controller
     if (str_starts_with($keyword, 'ver'))
     {
       $data = ApartmentResource::collection(
-        Apartment::flagged(State::SOLD)->get()
+        Apartment::where('state', 3)->get()
       );
       return response()->json($data);
     }
@@ -85,11 +85,8 @@ class ApartmentController extends Controller
   public function update(Apartment $apartment, Request $request)
   {
     $apartment->price = $request->input('price');
+    $apartment->state = $request->input('state');
     $apartment->save();
-    $apartment->flags()->delete();
-    $apartment->flag(
-      $request->input('state')
-    );
     return response()->json('successfully updated');
   }
 }

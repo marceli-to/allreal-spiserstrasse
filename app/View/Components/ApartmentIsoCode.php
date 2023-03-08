@@ -7,7 +7,6 @@ use Illuminate\View\Component;
 class ApartmentIsoCode extends Component
 {
   public $apartment;
-  public $number;
   public $view;
   public $code;
 
@@ -16,11 +15,8 @@ class ApartmentIsoCode extends Component
    *
    * @return void
    */
-  public function __construct($number, $view)
+  public function __construct($apartment, $view)
   {
-    $apartment = Apartment::with('floors')->where('number', $number)->first();
-    $code = null;
-
     switch($view)
     {
       case 1:
@@ -37,13 +33,12 @@ class ApartmentIsoCode extends Component
       break;
     }
 
-    $state = $apartment->state == State::SOLD ? 3 : ($apartment->state == State::RESERVED ? 2 : 1);
     $floor = collect($apartment->floors->pluck('order')->all())->min();
 
     $this->code = str_replace(
-      'data-name="'.$number.'"', 
-      'data-name="'.$number.'" 
-       data-number="'.$number.'" 
+      'data-name="'.$apartment->number.'"', 
+      'data-name="'.$apartment->number.'" 
+       data-number="'.$apartment->number.'" 
        data-filterable 
        data-hoverable 
        data-iso-item 
@@ -52,7 +47,7 @@ class ApartmentIsoCode extends Component
        data-floor="'.$floor.'" 
        data-area="'.$apartment->area.'" 
        data-price="'.$apartment->price.'" 
-       data-state="'.$state.'"', 
+       data-state="'.$apartment->state.'"', 
       $code
     );
    }

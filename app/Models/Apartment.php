@@ -29,6 +29,7 @@ class Apartment extends Model
     'iso_code_view_2',
     'iso_code_view_3',
     'iso_code_view_4',
+    'state',
   ];
 
   /**
@@ -41,21 +42,21 @@ class Apartment extends Model
     'state'
   ];
 
-  public function getStateAttribute()
+  public function getStateStrAttribute()
   {
-    if ($this->hasFlag(State::SOLD))
+    if ($this->state == 1)
     {
-      return State::SOLD;
+      return State::AVAILABLE;
     }
     
-    if ($this->hasFlag(State::RESERVED))
+    if ($this->state == 2)
     {
       return State::RESERVED;
     }
 
-    if ($this->hasFlag(State::AVAILABLE))
+    if ($this->state == 3)
     {
-      return State::AVAILABLE;
+      return State::SOLD;
     }
   }
 
@@ -92,9 +93,9 @@ class Apartment extends Model
   public function getStateArrayAttribute()
   {
     return [
-      'key' => $this->state,
-      'value' => $this->state == State::SOLD ? 'verkauft' : ($this->state == State::RESERVED ? 'reserviert' : 'frei'),
-      'order' => $this->state == State::SOLD ? 3 : ($this->state == State::RESERVED ? 2 : 1),
+      'key' => $this->stateStr,
+      'value' => $this->stateStr == State::SOLD ? 'verkauft' : ($this->stateStr == State::RESERVED ? 'reserviert' : 'frei'),
+      'order' => $this->stateStr == State::SOLD ? 3 : ($this->stateStr == State::RESERVED ? 2 : 1),
     ];
   }
   

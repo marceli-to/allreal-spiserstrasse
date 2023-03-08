@@ -28,7 +28,7 @@
           </form-group>
           <form-group :label="'Status'">
             <form-select 
-              v-model="state" 
+              v-model="apartment.state" 
               :options="states">
             </form-select>
           </form-group>
@@ -69,14 +69,12 @@ store.loaded.value = false;
 let state = ref('');
 
 onMounted(() => {
-  getApartment(router.currentRoute.value.params.id).then(() => {
-    state.value = apartment.value.state.key;
-  });
+  getApartment(router.currentRoute.value.params.id);
 });
 
 const update = async () => {
   await updateApartment(apartment.value.id, {
-    state: state.value,
+    state: apartment.value.state,
     price: apartment.value.price
   });
 }

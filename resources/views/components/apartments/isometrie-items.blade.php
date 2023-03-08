@@ -1,4 +1,4 @@
-{{-- @php $apartments = collect($apartments); @endphp --}}
+@php $apartments = collect($apartments); @endphp
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 772.1 591.6" class="w-full">
   <g data-iso-view="1" class="hidden">
     <g data-name="Nebenhaeuser">
@@ -117,10 +117,10 @@
           <line class="iso-cls-5" x1="425.7" y1="442.9" x2="410.8" y2="434.4"/>
         </g>
       </g>
-      <x-apartment-iso-code :number="'8c'" :view="1" />
-      <x-apartment-iso-code :number="'8b.2'" :view="1" />
-      <x-apartment-iso-code :number="'8d'" :view="1" />
-      <x-apartment-iso-code :number="'8a.1'" :view="1" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8c')" :view="1" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8b.2')" :view="1" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8d')" :view="1" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8a.1')" :view="1" />
     </g>
     <g data-name="Townhouse_10">
       <g data-name="Back_Townhouse_10">
@@ -177,10 +177,10 @@
           <line class="iso-cls-5" x1="336.6" y1="494.4" x2="321.7" y2="485.8"/>
         </g>
       </g>
-      <x-apartment-iso-code :number="'10c'" :view="1" />
-      <x-apartment-iso-code :number="'10b.2'" :view="1" />
-      <x-apartment-iso-code :number="'10d'" :view="1" />
-      <x-apartment-iso-code :number="'10a.1'" :view="1" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10c')" :view="1" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10b.2')" :view="1" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10d')" :view="1" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10a.1')" :view="1" />
     </g>
     <g data-name="Townhouse_12">
       <g data-name="Back_Townhouse_12">
@@ -238,10 +238,10 @@
           <line class="iso-cls-5" x1="247.5" y1="545.8" x2="232.7" y2="537.2"/>
         </g>
       </g>
-      <x-apartment-iso-code :number="'12c'" :view="1" />
-      <x-apartment-iso-code :number="'12b.2'" :view="1" />
-      <x-apartment-iso-code :number="'12d'" :view="1" />
-      <x-apartment-iso-code :number="'12a.1'" :view="1" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12c')" :view="1" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12b.2')" :view="1" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12d')" :view="1" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12a.1')" :view="1" />
     </g>
     <g data-name="Haeuser_8–12">
       <g data-name="Back_Haeuser_8–12">
@@ -387,66 +387,66 @@
         </g>
       </g>
       <g id="Haus_8">
-        <x-apartment-iso-code :number="'8.1'" :view="1" />
-        <x-apartment-iso-code :number="'8.3'" :view="1" />
-        <x-apartment-iso-code :number="'8.2'" :view="1" />
-        <x-apartment-iso-code :number="'8.101'" :view="1" />
-        <x-apartment-iso-code :number="'8.102'" :view="1" />
-        <x-apartment-iso-code :number="'8.103'" :view="1" />
-        <x-apartment-iso-code :number="'8.201'" :view="1" />
-        <x-apartment-iso-code :number="'8.202'" :view="1" />
-        <x-apartment-iso-code :number="'8.203'" :view="1" />
-        <x-apartment-iso-code :number="'8.301'" :view="1" />
-        <x-apartment-iso-code :number="'8.302'" :view="1" />
-        <x-apartment-iso-code :number="'8.303'" :view="1" />
-        <x-apartment-iso-code :number="'8.401'" :view="1" />
-        <x-apartment-iso-code :number="'8.402'" :view="1" />
-        <x-apartment-iso-code :number="'8.403'" :view="1" />
-        <x-apartment-iso-code :number="'8.501'" :view="1" />
-        <x-apartment-iso-code :number="'8.502'" :view="1" />
-        <x-apartment-iso-code :number="'8.503'" :view="1" />
-        <x-apartment-iso-code :number="'8.601'" :view="1" />
-        <x-apartment-iso-code :number="'8.602'" :view="1" /> 
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.1')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.3')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.2')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.101')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.102')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.103')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.201')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.202')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.203')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.301')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.302')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.303')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.401')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.402')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.403')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.501')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.502')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.503')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.601')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.602')" :view="1" /> 
       </g>
       <g id="Haus_10">
-        <x-apartment-iso-code :number="'10.1'" :view="1" />
-        <x-apartment-iso-code :number="'10.3'" :view="1" />
-        <x-apartment-iso-code :number="'10.2'" :view="1" />
-        <x-apartment-iso-code :number="'10.101'" :view="1" />
-        <x-apartment-iso-code :number="'10.102'" :view="1" />
-        <x-apartment-iso-code :number="'10.103'" :view="1" />
-        <x-apartment-iso-code :number="'10.201'" :view="1" />
-        <x-apartment-iso-code :number="'10.202'" :view="1" />
-        <x-apartment-iso-code :number="'10.203'" :view="1" />
-        <x-apartment-iso-code :number="'10.301'" :view="1" />
-        <x-apartment-iso-code :number="'10.302'" :view="1" />
-        <x-apartment-iso-code :number="'10.303'" :view="1" />
-        <x-apartment-iso-code :number="'10.401'" :view="1" />
-        <x-apartment-iso-code :number="'10.402'" :view="1" />
-        <x-apartment-iso-code :number="'10.403'" :view="1" />
-        <x-apartment-iso-code :number="'10.501'" :view="1" />
-        <x-apartment-iso-code :number="'10.502'" :view="1" />
-        <x-apartment-iso-code :number="'10.503'" :view="1" />
-        <x-apartment-iso-code :number="'10.601'" :view="1" />
-        <x-apartment-iso-code :number="'10.602'" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.1')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.3')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.2')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.101')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.102')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.103')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.201')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.202')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.203')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.301')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.302')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.303')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.401')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.402')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.403')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.501')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.502')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.503')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.601')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.602')" :view="1" />
       </g>
       <g id="Haus_12">
-        <x-apartment-iso-code :number="'12.1'" :view="1" />
-        <x-apartment-iso-code :number="'12.101'" :view="1" />
-        <x-apartment-iso-code :number="'12.102'" :view="1" />
-        <x-apartment-iso-code :number="'12.103'" :view="1" />
-        <x-apartment-iso-code :number="'12.201'" :view="1" />
-        <x-apartment-iso-code :number="'12.202'" :view="1" />
-        <x-apartment-iso-code :number="'12.203'" :view="1" />
-        <x-apartment-iso-code :number="'12.301'" :view="1" />
-        <x-apartment-iso-code :number="'12.302'" :view="1" />
-        <x-apartment-iso-code :number="'12.401'" :view="1" />
-        <x-apartment-iso-code :number="'12.402'" :view="1" />
-        <x-apartment-iso-code :number="'12.403'" :view="1" />
-        <x-apartment-iso-code :number="'12.501'" :view="1" />
-        <x-apartment-iso-code :number="'12.502'" :view="1" />
-        <x-apartment-iso-code :number="'12.503'" :view="1" />
-        <x-apartment-iso-code :number="'12.601'" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.1')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.101')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.102')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.103')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.201')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.202')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.203')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.301')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.302')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.401')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.402')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.403')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.501')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.502')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.503')" :view="1" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.601')" :view="1" />
       </g>
     </g>
   </g>
@@ -543,10 +543,10 @@
           <line class="iso-cls-4" x1="277.2" y1="348.7" x2="277.2" y2="368.7"/>
         </g>
       </g>
-      <x-apartment-iso-code :number="'8c'" :view="2" />
-      <x-apartment-iso-code :number="'8b.2'" :view="2" />
-      <x-apartment-iso-code :number="'8d'" :view="2" />
-      <x-apartment-iso-code :number="'8a.1'" :view="2" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8c')" :view="2" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8b.2')" :view="2" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8d')" :view="2" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8a.1')" :view="2" />
       <g data-name="Front_Townhouse_8">
         <g data-name="Schatten">
           <polygon class="iso-cls-13" points="371.2 340.1 331.6 362.9 331.6 422.9 371.2 400.1 371.2 340.1"/>
@@ -598,10 +598,10 @@
           <line class="iso-cls-4" x1="262.4" y1="340.1" x2="262.4" y2="360.1"/>
         </g>
       </g>
-      <x-apartment-iso-code :number="'10c'" :view="2" />
-      <x-apartment-iso-code :number="'10b.2'" :view="2" />
-      <x-apartment-iso-code :number="'10d'" :view="2" />
-      <x-apartment-iso-code :number="'10a.1'" :view="2" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10c')" :view="2" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10b.2')" :view="2" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10d')" :view="2" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10a.1')" :view="2" />
       <g data-name="Front_Townhouse_10">
         <g data-name="Schatten">
           <polygon class="iso-cls-13" points="242.6 351.5 257.4 360.1 257.4 362.9 242.6 371.5 242.6 351.5"/>
@@ -652,10 +652,10 @@
           <line class="iso-cls-4" x1="99" y1="245.8" x2="99" y2="265.8"/>
         </g>
       </g>
-      <x-apartment-iso-code :number="'12c'" :view="2" />
-      <x-apartment-iso-code :number="'12b.2'" :view="2" />
-      <x-apartment-iso-code :number="'12d'" :view="2" />
-      <x-apartment-iso-code :number="'12a.1'" :view="2" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12c')" :view="2" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12b.2')" :view="2" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12d')" :view="2" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12a.1')" :view="2" />
       <g data-name="Front_Townhouse_12">
         <g data-name="Schatten">
           <polygon class="iso-cls-13" points="153.5 300.1 168.3 308.7 168.3 311.5 153.5 320.1 153.5 300.1"/>
@@ -790,76 +790,76 @@
         </g>
       </g>
       <g data-name="Haus_12">
-        <x-apartment-iso-code :number="'12.1'" :view="2" />
-        <x-apartment-iso-code :number="'12.101'" :view="2" />
-        <x-apartment-iso-code :number="'12.102'" :view="2" />
-        <x-apartment-iso-code :number="'12.103'" :view="2" />
-        <x-apartment-iso-code :number="'12.201'" :view="2" />
-        <x-apartment-iso-code :number="'12.202'" :view="2" />
-        <x-apartment-iso-code :number="'12.203'" :view="2" />
-        <x-apartment-iso-code :number="'12.301'" :view="2" />
-        <x-apartment-iso-code :number="'12.302'" :view="2" />
-        <x-apartment-iso-code :number="'12.401'" :view="2" />
-        <x-apartment-iso-code :number="'12.402'" :view="2" />
-        <x-apartment-iso-code :number="'12.403'" :view="2" />
-        <x-apartment-iso-code :number="'12.501'" :view="2" />
-        <x-apartment-iso-code :number="'12.502'" :view="2" />
-        <x-apartment-iso-code :number="'12.503'" :view="2" />
-        <x-apartment-iso-code :number="'12.601'" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.1')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.101')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.102')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.103')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.201')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.202')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.203')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.301')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.302')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.401')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.402')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.403')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.501')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.502')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.503')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.601')" :view="2" />
       </g>
       <g data-name="Haus_10">
-        <x-apartment-iso-code :number="'10.1'" :view="2" />
-        <x-apartment-iso-code :number="'10.3'" :view="2" />
-        <x-apartment-iso-code :number="'10.2'" :view="2" />
-        <x-apartment-iso-code :number="'10.101'" :view="2" />
-        <x-apartment-iso-code :number="'10.102'" :view="2" />
-        <x-apartment-iso-code :number="'10.103'" :view="2" />
-        <x-apartment-iso-code :number="'10.201'" :view="2" />
-        <x-apartment-iso-code :number="'10.202'" :view="2" />
-        <x-apartment-iso-code :number="'10.203'" :view="2" />
-        <x-apartment-iso-code :number="'10.301'" :view="2" />
-        <x-apartment-iso-code :number="'10.302'" :view="2" />
-        <x-apartment-iso-code :number="'10.303'" :view="2" />
-        <x-apartment-iso-code :number="'10.401'" :view="2" />
-        <x-apartment-iso-code :number="'10.402'" :view="2" />
-        <x-apartment-iso-code :number="'10.403'" :view="2" />
-        <x-apartment-iso-code :number="'10.501'" :view="2" />
-        <x-apartment-iso-code :number="'10.502'" :view="2" />
-        <x-apartment-iso-code :number="'10.503'" :view="2" />
-        <x-apartment-iso-code :number="'10.601'" :view="2" />
-        <x-apartment-iso-code :number="'10.602'" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.1')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.3')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.2')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.101')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.102')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.103')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.201')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.202')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.203')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.301')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.302')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.303')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.401')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.402')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.403')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.501')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.502')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.503')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.601')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.602')" :view="2" />
       </g>
       <g data-name="Haus_8">
-        <x-apartment-iso-code :number="'8.1'" :view="2" />
-        <x-apartment-iso-code :number="'8.3'" :view="2" />
-        <x-apartment-iso-code :number="'8.2'" :view="2" />
-        <x-apartment-iso-code :number="'8.101'" :view="2" />
-        <x-apartment-iso-code :number="'8.102'" :view="2" />
-        <x-apartment-iso-code :number="'8.103'" :view="2" />
-        <x-apartment-iso-code :number="'8.201'" :view="2" />
-        <x-apartment-iso-code :number="'8.202'" :view="2" />
-        <x-apartment-iso-code :number="'8.203'" :view="2" />
-        <x-apartment-iso-code :number="'8.301'" :view="2" />
-        <x-apartment-iso-code :number="'8.302'" :view="2" />
-        <x-apartment-iso-code :number="'8.303'" :view="2" />
-        <x-apartment-iso-code :number="'8.401'" :view="2" />
-        <x-apartment-iso-code :number="'8.402'" :view="2" />
-        <x-apartment-iso-code :number="'8.403'" :view="2" />
-        <x-apartment-iso-code :number="'8.501'" :view="2" />
-        <x-apartment-iso-code :number="'8.502'" :view="2" />
-        <x-apartment-iso-code :number="'8.503'" :view="2" />
-        <x-apartment-iso-code :number="'8.601'" :view="2" />
-        <x-apartment-iso-code :number="'8.602'" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.1')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.3')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.2')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.101')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.102')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.103')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.201')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.202')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.203')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.301')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.302')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.303')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.401')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.402')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.403')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.501')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.502')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.503')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.601')" :view="2" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.602')" :view="2" />
       </g>
 
     </g>
   </g>
   <g data-iso-view="3" class="hidden">
     <g id="Townhouse_12">
-      <x-apartment-iso-code :number="'12c'" :view="3" />
-      <x-apartment-iso-code :number="'12b.2'" :view="3" />
-      <x-apartment-iso-code :number="'12d'" :view="3" />
-      <x-apartment-iso-code :number="'12a.1'" :view="3" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12c')" :view="3" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12b.2')" :view="3" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12d')" :view="3" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12a.1')" :view="3" />
       <g id="FRONT_Townhouse_12">
         <g data-name="Dachunterteilung">
           <line class="iso-cls-5" x1="499.9" y1="151.5" x2="485" y2="142.9"/>
@@ -870,10 +870,10 @@
       </g>
     </g>
     <g id="Townhouse_10">
-      <x-apartment-iso-code :number="'10c'" :view="3" />
-      <x-apartment-iso-code :number="'10b.2'" :view="3" />
-      <x-apartment-iso-code :number="'10d'" :view="3" />
-      <x-apartment-iso-code :number="'10a.1'" :view="3" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10c')" :view="3" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10b.2')" :view="3" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10d')" :view="3" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10a.1')" :view="3" />
       <g id="FRONT_Townhouse_10">
         <g data-name="Dachunterteilung">
           <line class="iso-cls-5" x1="405.9" y1="200.1" x2="396" y2="194.4"/>
@@ -907,10 +907,10 @@
           <polyline class="iso-cls-8" points="361.3 320.1 301.9 354.4 262.4 331.5 262.4 271.5 351.4 220.1 376.2 234.4"/>
         </g>
       </g>
-      <x-apartment-iso-code :number="'8c'" :view="3" />
-      <x-apartment-iso-code :number="'8b.2'" :view="3" />
-      <x-apartment-iso-code :number="'8d'" :view="3" />
-      <x-apartment-iso-code :number="'8a.1'" :view="3" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8c')" :view="3" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8b.2')" :view="3" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8d')" :view="3" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8a.1')" :view="3" />
     </g>
     <g data-name="Haeuser_8–12">
       <g data-name="Back_Haeuser_8–12">
@@ -1029,66 +1029,66 @@
         </g>
       </g>
       <g id="Haus_12">
-        <x-apartment-iso-code :number="'12.1'" :view="3" />
-        <x-apartment-iso-code :number="'12.101'" :view="3" />
-        <x-apartment-iso-code :number="'12.102'" :view="3" />
-        <x-apartment-iso-code :number="'12.103'" :view="3" />
-        <x-apartment-iso-code :number="'12.201'" :view="3" />
-        <x-apartment-iso-code :number="'12.202'" :view="3" />
-        <x-apartment-iso-code :number="'12.203'" :view="3" />
-        <x-apartment-iso-code :number="'12.301'" :view="3" />
-        <x-apartment-iso-code :number="'12.302'" :view="3" />
-        <x-apartment-iso-code :number="'12.401'" :view="3" />
-        <x-apartment-iso-code :number="'12.402'" :view="3" />
-        <x-apartment-iso-code :number="'12.403'" :view="3" />
-        <x-apartment-iso-code :number="'12.501'" :view="3" />
-        <x-apartment-iso-code :number="'12.502'" :view="3" />
-        <x-apartment-iso-code :number="'12.503'" :view="3" />
-        <x-apartment-iso-code :number="'12.601'" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.1')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.101')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.102')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.103')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.201')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.202')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.203')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.301')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.302')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.401')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.402')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.403')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.501')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.502')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.503')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.601')" :view="3" />
       </g>
       <g id="Haus_10">
-        <x-apartment-iso-code :number="'10.1'" :view="3" />
-        <x-apartment-iso-code :number="'10.3'" :view="3" />
-        <x-apartment-iso-code :number="'10.2'" :view="3" />
-        <x-apartment-iso-code :number="'10.101'" :view="3" />
-        <x-apartment-iso-code :number="'10.102'" :view="3" />
-        <x-apartment-iso-code :number="'10.103'" :view="3" />
-        <x-apartment-iso-code :number="'10.201'" :view="3" />
-        <x-apartment-iso-code :number="'10.202'" :view="3" />
-        <x-apartment-iso-code :number="'10.203'" :view="3" />
-        <x-apartment-iso-code :number="'10.301'" :view="3" />
-        <x-apartment-iso-code :number="'10.302'" :view="3" />
-        <x-apartment-iso-code :number="'10.303'" :view="3" />
-        <x-apartment-iso-code :number="'10.401'" :view="3" />
-        <x-apartment-iso-code :number="'10.402'" :view="3" />
-        <x-apartment-iso-code :number="'10.403'" :view="3" />
-        <x-apartment-iso-code :number="'10.501'" :view="3" />
-        <x-apartment-iso-code :number="'10.502'" :view="3" />
-        <x-apartment-iso-code :number="'10.503'" :view="3" />
-        <x-apartment-iso-code :number="'10.601'" :view="3" />
-        <x-apartment-iso-code :number="'10.602'" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.1')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.3')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.2')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.101')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.102')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.103')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.201')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.202')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.203')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.301')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.302')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.303')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.401')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.402')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.403')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.501')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.502')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.503')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.601')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.602')" :view="3" />
       </g>
       <g id="Haus_8">
-        <x-apartment-iso-code :number="'8.1'" :view="3" />
-        <x-apartment-iso-code :number="'8.3'" :view="3" />
-        <x-apartment-iso-code :number="'8.2'" :view="3" />
-        <x-apartment-iso-code :number="'8.101'" :view="3" />
-        <x-apartment-iso-code :number="'8.102'" :view="3" />
-        <x-apartment-iso-code :number="'8.103'" :view="3" />
-        <x-apartment-iso-code :number="'8.201'" :view="3" />
-        <x-apartment-iso-code :number="'8.202'" :view="3" />
-        <x-apartment-iso-code :number="'8.203'" :view="3" />
-        <x-apartment-iso-code :number="'8.301'" :view="3" />
-        <x-apartment-iso-code :number="'8.302'" :view="3" />
-        <x-apartment-iso-code :number="'8.303'" :view="3" />
-        <x-apartment-iso-code :number="'8.401'" :view="3" />
-        <x-apartment-iso-code :number="'8.402'" :view="3" />
-        <x-apartment-iso-code :number="'8.403'" :view="3" />
-        <x-apartment-iso-code :number="'8.501'" :view="3" />
-        <x-apartment-iso-code :number="'8.502'" :view="3" />
-        <x-apartment-iso-code :number="'8.503'" :view="3" />
-        <x-apartment-iso-code :number="'8.601'" :view="3" />
-        <x-apartment-iso-code :number="'8.602'" :view="3" /> 
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.1')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.3')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.2')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.101')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.102')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.103')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.201')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.202')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.203')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.301')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.302')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.303')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.401')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.402')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.403')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.501')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.502')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.503')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.601')" :view="3" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.602')" :view="3" /> 
       </g>
     </g>
     <g id="Nebenhäuser-2" data-name="Nebenhäuser">
@@ -1197,11 +1197,10 @@
       </g>
     </g>
     <g id="Townhouse_8">
-      <x-apartment-iso-code :number="'8c'" :view="4" />
-      <x-apartment-iso-code :number="'8c'" :view="4" />
-      <x-apartment-iso-code :number="'8b.2'" :view="4" />
-      <x-apartment-iso-code :number="'8d'" :view="4" />
-      <x-apartment-iso-code :number="'8a.1'" :view="4" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8c')" :view="4" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8b.2')" :view="4" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8d')" :view="4" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8a.1')" :view="4" />
       <g id="FRONT_Townhouse_8">
         <g id="Dachunterteilung">
           <line class="iso-cls-5" x1="455.4" y1="262.9" x2="485" y2="245.8"/>
@@ -1212,10 +1211,10 @@
       </g>
     </g>
     <g id="Townhouse_10">
-      <x-apartment-iso-code :number="'10c'" :view="4" />
-      <x-apartment-iso-code :number="'10b.2'" :view="4" />
-      <x-apartment-iso-code :number="'10d'" :view="4" />
-      <x-apartment-iso-code :number="'10a.1'" :view="4" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10c')" :view="4" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10b.2')" :view="4" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10d')" :view="4" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10a.1')" :view="4" />
       <g id="FRONT_Townhouse_10">
         <g data-name="Dachunterteilung">
           <line class="iso-cls-5" x1="564.2" y1="302.9" x2="574.1" y2="297.2"/>
@@ -1226,10 +1225,10 @@
       </g>
     </g>
     <g id="Townhouse_12">
-      <x-apartment-iso-code :number="'12c'" :view="4" />
-      <x-apartment-iso-code :number="'12b.2'" :view="4" />
-      <x-apartment-iso-code :number="'12d'" :view="4" />
-      <x-apartment-iso-code :number="'12a.1'" :view="4" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12c')" :view="4" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12b.2')" :view="4" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12d')" :view="4" />
+      <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12a.1')" :view="4" />
       <g id="FRONT_Townhouse_12">
         <g id="Kontur_Front-6" data-name="Kontur_Front">
           <polyline class="iso-cls-8" points="638.5 334.4 618.7 322.9 589 340.1"/>
@@ -1344,66 +1343,66 @@
         </g>
       </g>
       <g id="Haus_8">
-        <x-apartment-iso-code :number="'8.1'" :view="4" />
-        <x-apartment-iso-code :number="'8.3'" :view="4" />
-        <x-apartment-iso-code :number="'8.2'" :view="4" />
-        <x-apartment-iso-code :number="'8.101'" :view="4" />
-        <x-apartment-iso-code :number="'8.102'" :view="4" />
-        <x-apartment-iso-code :number="'8.103'" :view="4" />
-        <x-apartment-iso-code :number="'8.201'" :view="4" />
-        <x-apartment-iso-code :number="'8.202'" :view="4" />
-        <x-apartment-iso-code :number="'8.203'" :view="4" />
-        <x-apartment-iso-code :number="'8.301'" :view="4" />
-        <x-apartment-iso-code :number="'8.302'" :view="4" />
-        <x-apartment-iso-code :number="'8.303'" :view="4" />
-        <x-apartment-iso-code :number="'8.401'" :view="4" />
-        <x-apartment-iso-code :number="'8.402'" :view="4" />
-        <x-apartment-iso-code :number="'8.403'" :view="4" />
-        <x-apartment-iso-code :number="'8.501'" :view="4" />
-        <x-apartment-iso-code :number="'8.502'" :view="4" />
-        <x-apartment-iso-code :number="'8.503'" :view="4" />
-        <x-apartment-iso-code :number="'8.601'" :view="4" />
-        <x-apartment-iso-code :number="'8.602'" :view="4" /> 
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.1')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.3')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.2')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.101')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.102')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.103')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.201')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.202')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.203')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.301')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.302')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.303')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.401')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.402')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.403')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.501')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.502')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.503')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.601')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '8.602')" :view="4" /> 
       </g>
       <g id="Haus_10">
-        <x-apartment-iso-code :number="'10.1'" :view="4" />
-        <x-apartment-iso-code :number="'10.3'" :view="4" />
-        <x-apartment-iso-code :number="'10.2'" :view="4" />
-        <x-apartment-iso-code :number="'10.101'" :view="4" />
-        <x-apartment-iso-code :number="'10.102'" :view="4" />
-        <x-apartment-iso-code :number="'10.103'" :view="4" />
-        <x-apartment-iso-code :number="'10.201'" :view="4" />
-        <x-apartment-iso-code :number="'10.202'" :view="4" />
-        <x-apartment-iso-code :number="'10.203'" :view="4" />
-        <x-apartment-iso-code :number="'10.301'" :view="4" />
-        <x-apartment-iso-code :number="'10.302'" :view="4" />
-        <x-apartment-iso-code :number="'10.303'" :view="4" />
-        <x-apartment-iso-code :number="'10.401'" :view="4" />
-        <x-apartment-iso-code :number="'10.402'" :view="4" />
-        <x-apartment-iso-code :number="'10.403'" :view="4" />
-        <x-apartment-iso-code :number="'10.501'" :view="4" />
-        <x-apartment-iso-code :number="'10.502'" :view="4" />
-        <x-apartment-iso-code :number="'10.503'" :view="4" />
-        <x-apartment-iso-code :number="'10.601'" :view="4" />
-        <x-apartment-iso-code :number="'10.602'" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.1')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.3')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.2')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.101')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.102')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.103')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.201')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.202')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.203')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.301')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.302')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.303')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.401')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.402')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.403')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.501')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.502')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.503')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.601')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '10.602')" :view="4" />
       </g>
       <g id="Haus_12">
-        <x-apartment-iso-code :number="'12.1'" :view="4" />
-        <x-apartment-iso-code :number="'12.101'" :view="4" />
-        <x-apartment-iso-code :number="'12.102'" :view="4" />
-        <x-apartment-iso-code :number="'12.103'" :view="4" />
-        <x-apartment-iso-code :number="'12.201'" :view="4" />
-        <x-apartment-iso-code :number="'12.202'" :view="4" />
-        <x-apartment-iso-code :number="'12.203'" :view="4" />
-        <x-apartment-iso-code :number="'12.301'" :view="4" />
-        <x-apartment-iso-code :number="'12.302'" :view="4" />
-        <x-apartment-iso-code :number="'12.401'" :view="4" />
-        <x-apartment-iso-code :number="'12.402'" :view="4" />
-        <x-apartment-iso-code :number="'12.403'" :view="4" />
-        <x-apartment-iso-code :number="'12.501'" :view="4" />
-        <x-apartment-iso-code :number="'12.502'" :view="4" />
-        <x-apartment-iso-code :number="'12.503'" :view="4" />
-        <x-apartment-iso-code :number="'12.601'" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.1')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.101')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.102')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.103')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.201')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.202')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.203')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.301')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.302')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.401')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.402')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.403')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.501')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.502')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.503')" :view="4" />
+        <x-apartment-iso-code :apartment="$apartments->firstWhere('number', '12.601')" :view="4" />
       </g>
     </g>
   </g>
