@@ -38,7 +38,7 @@ a img {
 
 h1 {
   color: #000;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 0;
@@ -60,7 +60,7 @@ h3 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5em;
   margin-top: 0;
   text-align: left;
@@ -99,7 +99,7 @@ img {
 
 .header {
   background-color: #ffffff;
-  padding: 32px 32px 12px 32px;
+  padding: 32px 32px 0 32px;
   text-align: left;
 }
 
@@ -124,9 +124,9 @@ img {
   -premailer-cellpadding: 0;
   -premailer-cellspacing: 0;
   -premailer-width: 100%;
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #f9f9f9;
-  border-top: 1px solid #f9f9f9;
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -141,7 +141,7 @@ img {
   border-radius: 0;
   border-width: 0;
   box-shadow: none;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   width: 570px;
 }
@@ -164,17 +164,15 @@ img {
   -premailer-cellpadding: 0;
   -premailer-cellspacing: 0;
   -premailer-width: 570px;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   margin: 0 auto;
   padding: 0;
-  text-align: center;
   width: 100%;
 }
 
 .footer p {
-  color: #828282;
+  color: #000000;
   font-size: 12px;
-  text-align: center;
 }
 
 .footer a {

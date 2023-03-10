@@ -1,5 +1,5 @@
 <x-mail::message>
-# Neue Interessent/in
+# Neue Interessent/in Spisertrasse
 
 <x-mail::table>
 |               |                        |
