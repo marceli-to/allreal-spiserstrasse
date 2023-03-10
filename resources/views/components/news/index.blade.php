@@ -4,13 +4,13 @@
     <article class="py-8 md:py-12 md:px-20 md:bg-white border-b border-b-silver md:border-0">
       <div>14.02.2023</div>
       <h3 class="font-regular">
-        <a href="">Bezug der ersten Wohnungen [...]</a>
+        <a href="/" title="Bezug der ersten Wohnungen">Bezug der ersten Wohnungen [...]</a>
       </h3>
     </article>
     <article class="py-8 md:py-12 md:px-20 md:bg-white">
       <div>01.02.2023</div>
       <h3 class="font-regular">
-        <a href="">Umgebungsarbeiten haben begonnen [...]</a>
+        <a href="/" title="Umgebungsarbeiten haben begonnen">Umgebungsarbeiten haben begonnen [...]</a>
       </h3>
     </article>
   </section>
