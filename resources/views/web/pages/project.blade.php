@@ -5,7 +5,7 @@
 <x-content.lightbox>
   <figure>
     <img 
-      src="/media/allreal-spiserstrasse-umgebung.svg" 
+      src="/media/Allreal-Spiserstrasse-Umgebung.svg" 
       width="1190" 
       height="795" 
       alt="Umgebungsplan Allreal Spiserstrasse" class="w-full bg-white">
@@ -15,7 +15,7 @@
   <x-layout.content>
     <figure class="mb-48">
       <a href="javascript:;" title="Plan vergrössern" data-lightbox-open>
-        <img src="/media/allreal-spiserstrasse-umgebung.svg" width="1190" height="795" alt="Umgebungsplan Allreal Spiserstrasse" class="w-full">
+        <img src="/media/Allreal-Spiserstrasse-Umgebung.svg" width="1190" height="795" alt="Umgebungsplan Allreal Spiserstrasse" class="w-full">
       </a>
     </figure>
     <x-content.article>

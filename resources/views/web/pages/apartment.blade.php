@@ -67,7 +67,7 @@
       <x-content.list-item class="py-10">
         <label class="block">Lage</label>
         <figure>
-          <img src="/media/plans/iso/allreal_spiserstrasse_{{ $apartment->number }}.png" alt="Lage Wohnung" width="300" height="253" class="w-full h-auto">
+          <img src="/media/plans/iso/Allreal_Spiserstrasse_{{ $apartment->number }}.png" alt="Lage Wohnung" width="300" height="253" class="w-full h-auto">
         </figure>
       </x-content.list-item>
     </div>
