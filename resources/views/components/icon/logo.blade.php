@@ -1,1 +1,1 @@
-<img src="/img/logo.svg" width="186" height="48" {{ $attributes }} />
+<img src="/img/logo.svg" width="186" height="48" alt="Logo Allreal" {{ $attributes }} />
