@@ -27,13 +27,13 @@
     "file": "assets/din-regular-webfont-webfont-47a2416a.ttf",
     "src": "resources/css/web/fonts/din-regular-webfont-webfont.ttf"
   },
-  "resources/css/web/fonts/din-medi-webfont.ttf": {
-    "file": "assets/din-medi-webfont-be38dfc4.ttf",
-    "src": "resources/css/web/fonts/din-medi-webfont.ttf"
-  },
   "resources/css/web/fonts/din-light-webfont.ttf": {
     "file": "assets/din-light-webfont-08361e5c.ttf",
     "src": "resources/css/web/fonts/din-light-webfont.ttf"
+  },
+  "resources/css/web/fonts/din-medi-webfont.ttf": {
+    "file": "assets/din-medi-webfont-be38dfc4.ttf",
+    "src": "resources/css/web/fonts/din-medi-webfont.ttf"
   },
   "resources/css/web/fonts/din-regular-webfont-webfont.svg": {
     "file": "assets/din-regular-webfont-webfont-18a1b17b.svg",
@@ -51,13 +51,13 @@
     "file": "assets/app-86bb7afb.css",
     "src": "resources/js/web/form/app.css"
   },
-  "resources/js/spa/app.css": {
-    "file": "assets/app-8a49518e.css",
-    "src": "resources/js/spa/app.css"
-  },
   "resources/js/web/app.css": {
     "file": "assets/app-1b65b3cd.css",
     "src": "resources/js/web/app.css"
+  },
+  "resources/js/spa/app.css": {
+    "file": "assets/app-8a49518e.css",
+    "src": "resources/js/spa/app.css"
   },
   "resources/js/web/form/app.js": {
     "file": "assets/app-1f16b09c.js",
