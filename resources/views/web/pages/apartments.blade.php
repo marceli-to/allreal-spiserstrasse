@@ -13,20 +13,34 @@
   <x-layout.sidebar>
     <x-apartments.filter />
     <x-content.list-item class="mt-42">
-      <x-content.link 
-        url="/preisliste" 
-        title="Karte öffnen"
-        target="_blank">
-        <span>Preisliste</span>
-      </x-content.link>
+      <a 
+        href="/preisliste" 
+        title="Download Preisliste" 
+        target="_blank" 
+        class="flex justify-between py-10 hover:text-blue">
+        <label class="block cursor-pointer">Preisliste</label>
+        PDF
+      </a>
+    </x-content.list-item>
+    <x-content.list-item>
+      <a 
+        href="/media/downloads/Allreal_Spiserstrasse_Kurzbaubeschrieb.pdf" 
+        title="Download Kurzbaubeschrieb" 
+        target="_blank" 
+        class="flex justify-between py-10 hover:text-blue">
+        <label class="block cursor-pointer">Kurzbaubeschrieb</label>
+        PDF
+      </a>
     </x-content.list-item>
     <x-content.list-item class="mb-32 sm:mb-0">
-      <x-content.link 
-        url="/media/downloads/Allreal_Spiserstrasse_Kurzbaubeschrieb_230302.pdf" 
-        title="Kurzbaubeschrieb"
-        target="_blank">
-        <span>Kurzbaubeschrieb</span>
-      </x-content.link>
+      <a 
+        href="/media/downloads/Allreal_Spiserstrasse_Grundrisse.pdf" 
+        title="Download Grundrisse" 
+        target="_blank" 
+        class="flex justify-between py-10 hover:text-blue">
+        <label class="block cursor-pointer">Grundrisse</label>
+        PDF
+      </a>
     </x-content.list-item>
   </x-layout.sidebar>
 </x-layout.columns>

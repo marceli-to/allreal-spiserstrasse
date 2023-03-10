@@ -30,10 +30,9 @@
       <x-content.li>Jedes Zimmer mit Multimedia-Anschlussdose </x-content.li>
       <x-content.li>Lamellenstoren und Markisen elektrisch betrieben</x-content.li>
       <x-content.li>Entrée, Bad, Dusche, Küche mit Deckeneinbauleuchten</x-content.li>
-      <x-content.li>Anschlüsse für Deckenlampen in Zimmer und </x-content.li>
+      <x-content.li>Anschlüsse für Deckenlampen in Zimmer und Wohnen/Essen</x-content.li>
       </x-content.ul>
       
-      <x-content.heading-2 class="mb-8">Wohnen/Essen</x-content.heading-2>
       <x-content.heading-2>Heizungsanlage</x-content.heading-2>
       <x-content.ul>
       <x-content.li>Bezug von Fernwärme über Fernwärmenetzverbund Altstetten</x-content.li>
@@ -82,7 +81,7 @@
       <x-content.li>Offene Garderobe mit Tablaren und Kleiderstange, teilweise mit Garderobenschrank kombiniert, innen kunstharzbeschichtet und Schranktüren grundiert zum Streichen</x-content.li>
       </x-content.ul>
 
-      <x-content.heading-2 class="mb-8">Fertigbeläge</x-content.heading-2>
+      <x-content.heading-2 class="mb-8 mt-32">Fertigbeläge</x-content.heading-2>
       <x-content.heading-2>Korridor, Entrée, Wohnen, Essen, Zimmer</x-content.heading-2>
       <x-content.ul>
       <x-content.li>Bodenbelag aus Parkett mit Holzsockel. Budget brutto CHF 130.00/m², Attika und Townhouses CHF 180.00/m² (exkl. MwSt.), fertig verlegt</x-content.li>
@@ -155,6 +154,7 @@
 
       <p class="text-base mt-44">Aus sämtlichen Plänen, Zeichnungen, Visualisierungen oder Angaben dieser Website können keinerlei Ansprüche abgeleitet werden. Sie sind nicht Vertragsbestandteil und basieren auf dem Projektstand zum Zeitpunkt der Publikation dieses Dokuments. Für Ausführungen und Flächenangaben sind der detaillierte Baubeschrieb und die Pläne im Massstab 1:50 massgebend. Ausführungsbedingte Änderungen und Anpassungen bleiben vorbehalten.</p>
       <p class="text-base mt-16">Bei einer allfälligen Käufervermittlung durch Dritte entsteht weder gegenüber der Verkäuferin noch gegenüber der Bauherrschaft ein Anspruch auf Provisionsausrichtungen und Auslagenersatz. Die Weitergabe dieser Verkaufsunterlagen zu Vermittlungszwecken ist ohne schriftliche Erlaubnis der Bauherrschaft untersagt.</p>
+      <p class="text-base mt-16">Glattpark, 28. Februar 2023</p>
     </x-content.article>
     </x-layout.content>
 </x-layout.columns>

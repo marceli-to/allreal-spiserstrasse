@@ -49,13 +49,17 @@
 
     <div class="mt-44">
       <x-content.list-item>
-        <a href="" target="_blank" class="flex justify-between py-10 hover:text-blue">
+        <a 
+          href="/media/downloads/Allreal_Spiserstrasse_{{ $apartment->number }}.pdf" 
+          target="_blank" 
+          title="Download Grundriss {{ $apartment->number }}"
+          class="flex justify-between py-10 hover:text-blue">
           <label class="block cursor-pointer">Grundriss</label>
           PDF
         </a>
       </x-content.list-item>
       <x-content.list-item class="border-t-silver">
-        <a href="/media/downloads/Allreal_Spiserstrasse_Kurzbaubeschrieb_230302.pdf" 
+        <a href="/media/downloads/Allreal_Spiserstrasse_Kurzbaubeschrieb.pdf" 
           target="_blank" 
           class="flex justify-between py-10 hover:text-blue">
           <label class="block cursor-pointer">Kurzbaubeschrieb</label>
