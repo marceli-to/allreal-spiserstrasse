@@ -80,7 +80,9 @@
 
     // Add selected class to selected filter options
     const option = document.querySelector(`[data-btn-filter][data-filter-type="${attributes.filterType}"][data-filter-value="${attributes.filterValue}"]`);
-    option.classList.add(classes.selected);
+    if (option) {
+      option.classList.add(classes.selected);
+    }
 
     // Remove item from filter attributes that start with the same filter type
     filterAttributes = filterAttributes.filter(function (item) {
@@ -198,27 +200,32 @@
 
   const updateResetButton = () => {
     const btnReset = document.querySelector(selectors.btnFilterReset);
-    if (states.isFiltering) {
-      btnReset.classList.add('!text-black', '!border-black');
-    }
-    else {
-      btnReset.classList.remove('!text-black', '!border-black');
+    if (btnReset) {
+      if (states.isFiltering) {
+        btnReset.classList.add('!text-black', '!border-black');
+      }
+      else {
+        btnReset.classList.remove('!text-black', '!border-black');
+      }
     }
   };
 
   const handleResults = () => {
     const view = document.querySelector(selectors.view);
+    const noResults = document.querySelector(selectors.noResults);
     const visibleItems = [].slice.call(
       document.querySelectorAll(`${selectors.item}:not(.${classes.hidden})`)
     );
-    const noResults = document.querySelector(selectors.noResults);
-    if (visibleItems.length == 0) {
-      noResults.classList.remove(classes.hidden);
-      view.classList.add(classes.hidden);
-    }
-    else {
-      noResults.classList.add(classes.hidden);
-      view.classList.remove(classes.hidden);
+
+    if (view && noResults) {
+      if (visibleItems.length == 0) {
+        noResults.classList.remove(classes.hidden);
+        view.classList.add(classes.hidden);
+      }
+      else {
+        noResults.classList.add(classes.hidden);
+        view.classList.remove(classes.hidden);
+      }
     }
   };
 

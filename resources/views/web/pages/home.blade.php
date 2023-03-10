@@ -2,9 +2,7 @@
 @section('content')
 <div class="relative">
   <x-swiper>
-    <x-swiper.slide :image="'allreal-1.jpg'" />
-    <x-swiper.slide :image="'allreal-2.jpg'" />
-    <x-swiper.slide :image="'allreal-3.jpg'" />
+    <x-swiper.slide :image="'Allreal_Spiserstrasse_Aussen_Innenhof'" />
   </x-swiper>
   <x-news />
 </div>

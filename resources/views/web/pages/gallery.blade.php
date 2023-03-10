@@ -3,8 +3,14 @@
 @section('page_title', __('Galerie'))
 @section('content')
 <x-swiper>
-  <x-swiper.slide :image="'allreal-1.jpg'" :caption="'Lorem ipsm dolor'" />
-  <x-swiper.slide :image="'allreal-2.jpg'" :caption="'Lorem ipsm dolor'" />
-  <x-swiper.slide :image="'allreal-3.jpg'" :caption="'Lorem ipsm dolor'" />
+  <x-swiper.slide :image="'Allreal_Spiserstrasse_Aussen_Innenhof'" />
+  <x-swiper.slide :image="'Allreal_Spiserstrasse_Aussen_Terrasse'" />
+  <x-swiper.slide :image="'Allreal_Spiserstrasse_Aussen_Vogel-2'" />
+  <x-swiper.slide :image="'Allreal_Spiserstrasse_Aussen_Vogel'" />
+  <x-swiper.slide :image="'Allreal_Spiserstrasse_Innen_Bad-4-5'" />
+  <x-swiper.slide :image="'Allreal_Spiserstrasse_Innen_Kueche-4-5'" />
+  <x-swiper.slide :image="'Allreal_Spiserstrasse_Innen_Kueche'" />
+  <x-swiper.slide :image="'Allreal_Spiserstrasse_Innen_Loggia'" />
+  <x-swiper.slide :image="'Allreal_Spiserstrasse_Innen_Wohnen-4-5'" />
 </x-swiper>
 @endsection
