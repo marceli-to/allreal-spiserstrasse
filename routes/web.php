@@ -6,7 +6,6 @@ use App\Http\Controllers\LocationController;
 use App\Http\Controllers\ApartmentController;
 use App\Http\Controllers\FeaturesController;
 use App\Http\Controllers\GalleryController;
-use App\Http\Controllers\RoundTourController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DocumentController;
 
@@ -23,10 +22,8 @@ Route::get('/objekte', [ApartmentController::class, 'index'])->name('page.apartm
 Route::get('/objekte/{apartment}/{slug?}', [ApartmentController::class, 'show'])->name('page.apartment');
 Route::get('/ausstattung', [FeaturesController::class, 'index'])->name('page.features');
 Route::get('/galerie', [GalleryController::class, 'index'])->name('page.gallery');
-Route::get('/360-rundgang', [RoundTourController::class, 'index'])->name('page.round-tour');
 Route::get('/kontakt', [ContactController::class, 'index'])->name('page.contact');
 Route::get('/preisliste', [DocumentController::class, 'pricelist']);
-
 
 /*
 |--------------------------------------------------------------------------

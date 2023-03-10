@@ -9,9 +9,6 @@
       <x-menu.item href="{{ route('page.project') }}" class="{{ request()->routeIs('page.project') ? '' : '' }}">
         Projekt
       </x-menu.item>
-      {{-- <x-menu.item href="{{ route('page.location') }}" class="{{ request()->routeIs('page.location') ? '' : '' }}">
-        Lage
-      </x-menu.item> --}}
       <x-menu.item href="{{ route('page.apartments') }}" class="{{ request()->routeIs('page.apartments') ? '' : '' }}">
         Objekte
       </x-menu.item>
@@ -21,7 +18,7 @@
       <x-menu.item href="{{ route('page.gallery') }}" class="{{ request()->routeIs('page.gallery') ? '' : '' }}">
         Galerie
       </x-menu.item>
-      <x-menu.item href="{{ route('page.round-tour') }}" class="{{ request()->routeIs('page.round-tour') ? '' : '' }}">
+      <x-menu.item href="https://spiserstrasse.designraum.ch/" class="{{ request()->routeIs('page.round-tour') ? '' : '' }}" target="_blank">
         360°-Rundgang
       </x-menu.item>
       <x-menu.item href="{{ route('page.contact') }}" class="{{ request()->routeIs('page.contact') ? '' : '' }}">
