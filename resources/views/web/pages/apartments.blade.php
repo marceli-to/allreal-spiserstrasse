@@ -3,7 +3,7 @@
 @section('page_title', __('Wohnungen'))
 @section('content')
 <x-layout.columns class="md:sticky md:top-0 z-10 bg-white md:pt-24 -md:mt-24 md:pb-32">
-  <x-layout.content class="md:col-span-10 lg:col-span-7 lg:col-start-2">
+  <x-layout.content class="md:col-span-9 lg:col-span-7 lg:col-start-2">
     <x-apartments.isometrie :apartments="$apartments" />
   </x-layout.content>
   <x-layout.content class="md:col-span-2 lg:col-span-1 lg:col-start-9 relative">

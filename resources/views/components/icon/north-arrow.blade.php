@@ -1,5 +1,5 @@
 
-<div class="absolute right-0 top-[50%] flex items-center justify-center w-44 h-26">
+<div class="hidden md:block absolute right-0 top-[50%] flex items-center justify-center w-44 h-26">
   <svg width="44" height="16" viewBox="0 0 44 16" fill="none" xmlns="http://www.w3.org/2000/svg" data-iso-north-arrow="1" class="w-44 h-16 hidden">
     <path d="M44 8C44 12.4 37.8 16 30 16C26.1 16 22.6 15.1 20.1 13.7C17.6 12.3 16 10.3 16 8C16 3.6 22.2 0 30 0C33.9 0 37.4 0.899988 39.9 2.29999C42.4 3.79999 44 5.8 44 8ZM30 15.4C37.1 15.4 42.9 12.1 42.8 8C42.8 6 41.3 4.09999 39 2.79999C36.7 1.49999 33.4 0.600006 29.9 0.600006C23 0.600006 17.4 3.70001 17.1 7.60001H29.9V8.20001H17.1C17.3 10.1 18.7 11.8 20.9 13.1C23.3 14.5 26.5 15.4 30 15.4Z" fill="black"/>
     <path d="M10.4 5.79999V6.39999L2.10001 9.60001H10.4V10.2H0V9.60001L8.29999 6.39999H0V5.79999H10.4Z" fill="black"/>
