@@ -9,13 +9,15 @@
   const classes = {
     hidden: 'is-hidden',
     selected: 'is-selected',
-    visible: 'is-visible'
+    visible: 'is-visible',
+    active: 'is-active',
   };
 
   const selectors = {
     btnFilter: '[data-btn-filter]',
     btnFilterToggle: '[data-btn-filter-toggle]',
     btnFilterReset: '[data-btn-filter-reset]',
+    filter: '[data-filter]',
     filterItem: '[data-filter-item]',
     item: '[data-filterable]',
     noResults: '[data-no-results]',
@@ -156,12 +158,52 @@
   };
 
   const toggleFilterItems = (btn) => {
-    btn.classList.toggle(classes.selected);
+
+    // if the button is already selected, remove class 'selected' and hide all [data-filter-item] elements
+    if (btn.classList.contains(classes.selected)) {
+      btn.classList.remove(classes.selected);
+      const items = [].slice.call(
+        document.querySelectorAll(`[data-filter-item]`)
+      );
+      items.forEach(function (item) {
+        item.classList.add(classes.hidden);
+      });
+
+      // remove class 'active' from [data-filter] element
+      const filter = document.querySelector(selectors.filter);
+      filter.classList.remove(classes.active);
+      return;
+    }
+
+    // add class 'active' from [data-filter] element
+    const filter = document.querySelector(selectors.filter);
+    filter.classList.add(classes.active);
+
+    // remove class 'selected' from all buttons
+    const btns = [].slice.call(
+      document.querySelectorAll(selectors.btnFilterToggle)
+    );
+    btns.forEach(function (btn) {
+      btn.classList.remove(classes.selected);
+    });
+
+    // add class 'selected' to clicked button
+    btn.classList.add(classes.selected);
+    
+    // add class 'hidden' to all data-filter-items
     const items = [].slice.call(
-      document.querySelectorAll(`[data-filter-item="${btn.dataset.btnFilterToggle}"]`)
+      document.querySelectorAll(`[data-filter-item]`)
     );
     items.forEach(function (item) {
-      item.classList.toggle(classes.hidden);
+      item.classList.add(classes.hidden);
+    });
+    
+    // remove class 'hidden' from data-filter-items that match the data-btn-filter-toggle value
+    const itemsSelected = [].slice.call(
+      document.querySelectorAll(`[data-filter-item="${btn.dataset.btnFilterToggle}"]`)
+    );
+    itemsSelected.forEach(function (item) {
+      item.classList.remove(classes.hidden);
     });
   };
 
@@ -190,6 +232,10 @@
     btnFilter.forEach(function (btn) {
       btn.classList.remove(classes.selected);
     });
+
+    // Remove active class from filter
+    const filter = document.querySelector(selectors.filter);
+    filter.classList.remove(classes.active);
 
     states.isFiltering = false;
     filterAttributes = [];

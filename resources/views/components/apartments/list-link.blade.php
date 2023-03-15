@@ -8,6 +8,7 @@
   data-number="{{ $apartment->number }}" 
   data-rooms="{{ $apartment->rooms }}"
   data-floor="{{ $apartment->floorArray['order'] }}"
+  data-type="{{ $apartment->type->id }}"
   data-area="{{ $apartment->area }}"
   data-price="{{ $apartment->price }}"
   data-state="{{ $apartment->stateArray['order'] }}">

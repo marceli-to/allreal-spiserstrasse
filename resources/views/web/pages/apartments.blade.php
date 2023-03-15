@@ -10,7 +10,7 @@
     <x-icon.rotate />
     <x-icon.north-arrow />
   </x-layout.content>
-  <x-layout.sidebar>
+  <x-layout.sidebar data-filter="">
     <x-apartments.filter />
     <x-content.list-item class="mt-42">
       <a 

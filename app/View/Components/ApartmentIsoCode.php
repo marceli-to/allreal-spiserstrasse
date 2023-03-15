@@ -45,6 +45,7 @@ class ApartmentIsoCode extends Component
        data-url="'.route('page.apartment', ['slug' => $apartment->slug, 'apartment' => $apartment->id]).'"
        data-rooms="'.$apartment->rooms.'" 
        data-floor="'.$floor.'" 
+       data-type="'.$apartment->type->id.'" 
        data-area="'.$apartment->area.'" 
        data-price="'.$apartment->price.'" 
        data-state="'.$apartment->state.'"', 

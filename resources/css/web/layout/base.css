@@ -25,3 +25,13 @@ ul.dash  li:before {
 .is-hidden {
   @apply !hidden;
 }
+
+/* Variante 1 komplettes element OHNE border ist ausgegraut */
+/* [data-filter].is-active [data-btn-filter-toggle]:not(.is-selected) {
+  @apply opacity-20
+} */
+
+/* Variante 2 - komplettes element inkl. border ist ausgegraut */
+[data-filter].is-active [data-btn-filter-wrapper]:not(:has(.is-selected)) {
+  @apply opacity-40
+}

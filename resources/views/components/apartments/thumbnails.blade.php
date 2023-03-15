@@ -8,6 +8,7 @@
         data-thumb-item
         data-number="{{ $a->number }}"
         data-rooms="{{ $a->rooms }}"
+        data-type="{{ $a->type->id }}"
         data-floor="{{ $a->floorArray['order'] }}"
         data-area="{{ $a->area }}"
         data-price="{{ $a->price }}"
