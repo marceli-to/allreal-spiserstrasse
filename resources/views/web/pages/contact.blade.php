@@ -5,7 +5,13 @@
 <x-layout.columns>
   <x-layout.content class="max-w-xl">
     <x-content.article>
-      <p class="mb-16 text-base">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex dicta iste explicabo possimus quas soluta? Molestias doloribus odit nobis qui culpa nihil facere, voluptatem ipsa. Eum similique quibusdam beatae id.</p>
+      <p class="mb-16 text-base">
+        Beratung und Verkauf<br>
+        Thomas Altherr<br>
+        Allreal Generalunternehmung AG<br>
+        Lindbergh-Allee 1, 8152 Glattpark<br>
+        Tel. 044 319 12 38
+      </p>
       <div id="app-form" class="mt-48"></div>
     </x-content.article>
   </x-layout.content>

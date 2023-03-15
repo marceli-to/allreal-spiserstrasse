@@ -1,6 +1,6 @@
 @extends('web.app')
-@section('seo_title', __('Wohnungen'))
-@section('page_title', __('Wohnungen'))
+@section('seo_title', __('Objekte'))
+@section('page_title', __('Objekte'))
 @section('content')
 <x-layout.columns class="md:sticky md:top-0 z-10 bg-white md:pt-24 -md:mt-24 md:pb-32">
   <x-layout.content class="md:col-span-9 lg:col-span-7 lg:col-start-2">

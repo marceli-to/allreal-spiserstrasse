@@ -5,9 +5,9 @@
     <a href="javascript:;" class="block ml-1 lg:mt-38 lg:col-span-1" data-menu-toggle title="Menü verbergen">
       <x-icon.cross />
     </a>
-    <ul class="mt-40 lg:mt-0 lg:pt-35 lg:ml-7 lg:col-span-3">
-      <x-menu.item href="{{ route('page.project') }}" class="{{ request()->routeIs('page.project') ? '' : '' }}">
-        Projekt
+    <ul class="mt-40 lg:mt-0 lg:pt-32 lg:ml-7 lg:col-span-3">
+      <x-menu.item href="{{ route('page.project-location') }}" class="{{ request()->routeIs('page.project-location') ? '' : '' }}">
+        Projekt / Lage
       </x-menu.item>
       <x-menu.item href="{{ route('page.apartments') }}" class="{{ request()->routeIs('page.apartments') ? '' : '' }}">
         Objekte
