@@ -17,7 +17,7 @@ class ApartmentResource extends JsonResource
       'id' => $this->id,
       'number' => $this->number,
       'rooms' => $this->rooms,
-      'type' => $this->type,
+      'type' => $this->type->description,
       'street' => $this->street,
       'location' => $this->location,
       'area' => $this->area,
@@ -25,11 +25,6 @@ class ApartmentResource extends JsonResource
       'area_exterior' => $this->area_exterior,
       'price' => $this->price,
       'state' => $this->state,
-      // 'state' => [
-      //   'id' => $this->state,
-      //   'key' => $this->state == State::SOLD ? 'sold' : ($this->state == State::RESERVED ? 'reserved' : 'available'),
-      //   'value' => $this->state == State::SOLD ? 'verkauft' : ($this->state == State::RESERVED ? 'reserviert' : 'frei')
-      // ],
       'floor' => collect($this->floors->pluck('acronym')->all())->implode(', '),
     ];
   }

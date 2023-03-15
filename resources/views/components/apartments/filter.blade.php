@@ -44,7 +44,7 @@
 @endforeach
 <a 
   href="javascript:;" 
-  class="uppercase block mt-32 text-center border border-anthrazit text-anthrazit leading-none py-10"
+  class="uppercase block mt-32 text-center border border-anthrazit text-anthrazit leading-none py-10 tracking-wider"
   data-btn-filter-reset>
   Filter zurücksetzen
 </a>

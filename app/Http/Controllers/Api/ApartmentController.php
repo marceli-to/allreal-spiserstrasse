@@ -16,7 +16,7 @@ class ApartmentController extends Controller
   public function get()
   {  
     $data = ApartmentResource::collection(
-      Apartment::with('floors')->get()
+      Apartment::with('floors', 'type')->get()
     );
     return response()->json($data);
   }
@@ -68,7 +68,6 @@ class ApartmentController extends Controller
     $data = ApartmentResource::collection(
       Apartment::where('number', 'LIKE', '%'.$keyword.'%')
         ->orWhere('location', 'LIKE', '%'.$keyword.'%')
-        ->orWhere('type', 'LIKE', '%'.$keyword.'%')
         ->orWhere('rooms', 'LIKE', '%'.$keyword.'%')
         ->get()
     );

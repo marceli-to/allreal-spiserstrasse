@@ -16,7 +16,7 @@ class ApartmentController extends Controller
    */
   public function index()
   {  
-    return view($this->viewPath . 'apartments', ['apartments' => Apartment::with('floors')->get()]);
+    return view($this->viewPath . 'apartments', ['apartments' => Apartment::with('floors', 'type')->get()]);
   }
 
   /**

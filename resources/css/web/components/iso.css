@@ -7,7 +7,7 @@
   stroke: #000;
 }
 
-.iso-cls-1, .iso-cls-10 {
+.iso-cls-1, .iso-cls-10{
   stroke-width: .2px;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .iso-cls-2, .iso-cls-3, .iso-cls-4, .iso-cls-5, .iso-cls-6, .iso-cls-7, .iso-cls-8, .iso-cls-9 {
-  stroke-width: .1px;
+  stroke-width: .2px;
 }
 
 .iso-cls-3 {

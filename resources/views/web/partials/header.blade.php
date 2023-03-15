@@ -11,7 +11,7 @@
     </a>
   </div>
 
-  <div class="col-span-11 pt-43 hidden lg:block leading-none">
+  <div class="col-span-11 pt-40 hidden lg:block leading-none">
     <x-content.heading-1 />
   </div>
 

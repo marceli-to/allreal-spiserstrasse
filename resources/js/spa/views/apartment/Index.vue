@@ -17,7 +17,7 @@
               </a>
             </table-head>
             <table-head>
-              <a href="" @click.prevent="sortBy('type')" class="flex items-center">
+              <a href="" @click.prevent="sortBy('rooms')" class="flex items-center">
                 Zimmer
                 <chevron-up-down class="ml-2" />
               </a>
@@ -38,7 +38,7 @@
             <template v-for="apartment in apartments" :key="apartment.id">
               <table-row>
                 <table-cell>{{ apartment.number }}</table-cell>
-                <table-cell>{{ apartment.type }}</table-cell>
+                <table-cell>{{ apartment.rooms }}</table-cell>
                 <table-cell>{{ apartment.floor }}</table-cell>
                 <table-cell>{{ apartment.street }}</table-cell>
                 <table-cell>{{ apartment.price }}</table-cell>

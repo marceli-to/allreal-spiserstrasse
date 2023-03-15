@@ -1,6 +1,6 @@
 <a 
   href="javascript:;" 
-  class="flex items-center leading-none py-8 group" 
+  class="flex items-center leading-none py-10 group" 
   data-btn-filter 
   data-filter-type="{{ $type }}"
   data-filter-value="{{ $value }}">

@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\ModelFlags\Models\Concerns\HasFlags;
 use App\Traits\ApartmentRelationships;
 use App\Models\State;
+use App\Models\ApartmentType;
 
 class Apartment extends Model
 {
@@ -19,7 +20,6 @@ class Apartment extends Model
     'number',
     'location',
     'rooms',
-    'type',
     'street',
     'area',
     'area_basement',
@@ -30,6 +30,7 @@ class Apartment extends Model
     'iso_code_view_3',
     'iso_code_view_4',
     'state',
+    'type_id',
   ];
 
   /**
@@ -62,9 +63,13 @@ class Apartment extends Model
 
   public function getTitleAttribute()
   {
-    if ($this->type == 'Atelier')
+    if ($this->type->description == ApartmentType::ATELIER)
     {
       $title = 'Atelier ' . $this->number;
+    }
+    elseif ($this->type->description == ApartmentType::TOWNHOUSE)
+    {
+      $title = 'Townhouse ' . $this->number;
     }
     else
     {
@@ -77,9 +82,13 @@ class Apartment extends Model
 
   public function getSlugAttribute()
   {
-    if ($this->type == 'Atelier')
+    if ($this->type->description == ApartmentType::ATELIER)
     {
       $slug = 'atelier-' . $this->number;
+    }
+    else if ($this->type->description == ApartmentType::TOWNHOUSE)
+    {
+      $slug = 'townhouse-' . $this->number;
     }
     else
     {

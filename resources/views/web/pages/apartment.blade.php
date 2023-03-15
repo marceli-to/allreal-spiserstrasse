@@ -5,7 +5,7 @@
 <x-layout.columns>
   <x-layout.content>
       <div class="mb-8 h-20">
-        <a href="javascript:history.back()" class="uppercase inline-flex items-center leading-none font-medium text-anthrazit" title="Zurück">
+        <a href="javascript:history.back()" class="uppercase inline-flex items-center leading-none tracking-wider text-anthrazit" title="Zurück">
           <x-icon.arrow-left />
           <span class="block ml-8">Zurück</span>
         </a>
@@ -14,7 +14,7 @@
         <img 
           src="/media/plans/lg/Allreal_Spiserstrasse_{{ $apartment->number }}.png" 
           class="w-full h-auto" 
-          alt="{{ $apartment->type !== 'Atelier' ? $apartment->rooms . ' Zimmer-Wohnung' : 'Atelier' }}, {{ $apartment->floorArray['label'] }}, {{ $apartment->street }}"
+          alt="{{ $apartment->type->description !== 'Atelier' ? $apartment->rooms . ' Zimmer-Wohnung' : 'Atelier' }}, {{ $apartment->floorArray['label'] }}, {{ $apartment->street }}"
           width="200"
           height="250">
     </figure>

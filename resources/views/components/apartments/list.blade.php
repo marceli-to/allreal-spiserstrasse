@@ -14,7 +14,7 @@
   @foreach($apartments as $a) 
     <x-apartment-list-link :apartment="$a">
       <x-apartment-list-item :label="'Wohnung'" :merge="true">{{ $a->number }}</x-apartment-list-item>
-      <x-apartment-list-item :label="'Zimmer'">{{ $a->type }}</x-apartment-list-item>
+      <x-apartment-list-item :label="'Zimmer'">{{ $a->rooms }}</x-apartment-list-item>
       <x-apartment-list-item :label="'Etage'">{{ $a->floorArray['label'] }}</x-apartment-list-item>
       <x-apartment-list-item :label="'Fläche'">{{ $a->area }} m<sup class="text-xxs">2</sup></x-apartment-list-item>
       <x-apartment-list-item :label="'Verkaufspreis'">{{ number_format($a->price , 2, ".", "\u{2009}") }}</x-apartment-list-item>

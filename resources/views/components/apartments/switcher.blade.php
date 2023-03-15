@@ -2,7 +2,7 @@
   <li>
     <a 
       href="javascript:;" 
-      class="uppercase font-medium" 
+      class="uppercase tracking-wider font-medium" 
       data-view-type="list"
       title="Listenansicht">
       Liste
@@ -12,7 +12,7 @@
   <li>
     <a 
       href="javascript:;" 
-      class="uppercase" 
+      class="uppercase tracking-wider" 
       data-view-type="thumbnails"
       title="Grundrisse">
       Grundrisse
