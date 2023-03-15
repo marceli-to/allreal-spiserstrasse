@@ -139,7 +139,7 @@ export default {
 }
 
 .form-group button {
-  @apply mt-32 col-span-1 col-start-2 uppercase text-center border border-silver text-base text-silver leading-none py-10
+  @apply mt-32 tracking-wider col-span-1 col-start-2 uppercase text-center border border-silver text-base text-silver leading-none py-10
 }
 
 .form-group button:hover {
