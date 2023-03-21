@@ -6,8 +6,11 @@
       <x-icon.cross />
     </a>
     <ul class="mt-40 lg:mt-0 lg:pt-32 lg:ml-7 lg:col-span-3">
-      <x-menu.item href="{{ route('page.project-location') }}" class="{{ request()->routeIs('page.project-location') ? '' : '' }}">
-        Projekt / Lage
+      <x-menu.item href="{{ route('page.project') }}" class="{{ request()->routeIs('page.project') ? '' : '' }}">
+        Projekt
+      </x-menu.item>
+      <x-menu.item href="{{ route('page.location') }}" class="{{ request()->routeIs('page.location') ? '' : '' }}">
+        Lage
       </x-menu.item>
       <x-menu.item href="{{ route('page.apartments') }}" class="{{ request()->routeIs('page.apartments') ? '' : '' }}">
         Objekte

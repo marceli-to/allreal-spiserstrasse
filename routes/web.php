@@ -17,7 +17,8 @@ use App\Http\Controllers\DocumentController;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('page.home');
-Route::get('/projekt-lage', [ProjectController::class, 'index'])->name('page.project-location');
+Route::get('/projekt', [ProjectController::class, 'index'])->name('page.project');
+Route::get('/lage', [LocationController::class, 'index'])->name('page.location');
 Route::get('/objekte', [ApartmentController::class, 'index'])->name('page.apartments');
 Route::get('/objekte/{apartment}/{slug?}', [ApartmentController::class, 'show'])->name('page.apartment');
 Route::get('/ausstattung', [FeaturesController::class, 'index'])->name('page.features');

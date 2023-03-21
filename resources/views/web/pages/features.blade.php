@@ -75,10 +75,10 @@
       <x-content.heading-2>Schreinerarbeiten</x-content.heading-2>
       <x-content.ul>
       <x-content.li>Wohnungseingangstüren: Eiche furniert mit Holzrahmen, Mehrpunktverriegelung, Türspion</x-content.li>
-      <x-content.li>Innentüren: grundiert zum Streichen, mit Stahlzargen</x-content.li>
-      <x-content.li>Kellertüren: fertig grundiert zum Streichen, mit Stahlzargen oder Holzrahmen</x-content.li>
+      <x-content.li>Innentüren: weiss gestrichen, mit Stahlzargen</x-content.li>
+      <x-content.li>Kellertüren: weiss gestrichen, mit Stahlzargen oder Holzrahmen</x-content.li>
       <x-content.li>Zwei Vorhangschienen eingelassen in Weissputzdecke</x-content.li>
-      <x-content.li>Offene Garderobe mit Tablaren und Kleiderstange, teilweise mit Garderobenschrank kombiniert, innen kunstharzbeschichtet und Schranktüren grundiert zum Streichen</x-content.li>
+      <x-content.li>Offene Garderobe mit Tablaren und Kleiderstange, teilweise mit Garderobenschrank kombiniert, innen kunstharzbeschichtet und Schranktüren gestrichen</x-content.li>
       </x-content.ul>
 
       <x-content.heading-2 class="mb-8 mt-32">Fertigbeläge</x-content.heading-2>

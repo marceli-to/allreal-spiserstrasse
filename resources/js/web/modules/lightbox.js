@@ -57,6 +57,9 @@
   const hide = () => {
     const image = document.querySelector(selectors.image);
     image.classList.toggle('hidden');
+    
+    const html = document.querySelector(selectors.html);
+    html.classList.remove('overflow-hidden');
   };
 
   init();

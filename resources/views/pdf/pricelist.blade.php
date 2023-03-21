@@ -45,7 +45,7 @@
     </table>
   </div>
   <div class="break"></div>
-  <div class="page__title">Preisliste Eigentumswohnungen, Townhouses und Ateliers Spiserstrasse 8, Zürich</div>
+  <div class="page__title">Preisliste Eigentumswohnungen, Townhouses und Ateliers Spiserstrasse 10, Zürich</div>
   <div class="page__content">
     <table class="content-table">
       <tr>
@@ -79,7 +79,7 @@
     </table>
   </div>
   <div class="break"></div>
-  <div class="page__title">Preisliste Eigentumswohnungen, Townhouses und Ateliers Spiserstrasse 8, Zürich</div>
+  <div class="page__title">Preisliste Eigentumswohnungen, Townhouses und Ateliers Spiserstrasse 12, Zürich</div>
   <div class="page__content">
     <table class="content-table">
       <tr>
