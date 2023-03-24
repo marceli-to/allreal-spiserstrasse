@@ -10,8 +10,8 @@
         data-rooms="{{ $a->rooms }}"
         data-type="{{ $a->type->id }}"
         data-floor="{{ $a->floorArray['order'] }}"
-        data-area="{{ $a->area }}"
-        data-price="{{ $a->price }}"
+        data-area="{{ $a->filter_area }}"
+        data-price="{{ $a->filter_price }}"
         data-state="{{ $a->stateArray['order'] }}"
         title="Wohnung {{ $a->number }} anzeigen" >
         Wohnung {{ $a->number }}

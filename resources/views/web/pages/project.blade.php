@@ -20,17 +20,5 @@
       <p class="mb-16 lg:mb-24">Auf Nachhaltigkeit wird grossen Wert gelegt: Die gesamte Überbauung wird im Minergie-Eco-Standard erstellt, die Beheizung und die Erwärmung des Brauchwarmwassers erfolgen über einen Anschluss an das Fernwärmenetz. Eine kontrollierte Wohnungslüftung garantiert jederzeit ein angenehmes Raumklima bei niedrigen Energiekosten. Darüber hinaus wird ein Teil des Stroms mit einer eigenen Photovoltaikanlage erzeugt.</p>
     </x-content.article>
   </x-layout.content>
-  <x-layout.sidebar class="max-w-[280px] md:max-w-none mt-42 md:mt-0">
-    <x-content.list-item>
-      <x-content.link-external url="https://goo.gl/maps/bTT5LVBVSoRUJNP68" title="Karte öffnen">
-        <span>Google Maps</span>
-      </x-content.link-external>
-    </x-content.list-item>
-    <x-content.list-item>
-      <x-content.link-external url="https://maps.google.com" title="Webcam Baustelle öffnen">
-        <span>Webcam Baustelle</span>
-      </x-content.link-external>
-    </x-content.list-item>
-  </x-layout.sidebar>
 </x-layout.columns>
 @endsection

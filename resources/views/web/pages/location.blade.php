@@ -26,7 +26,18 @@
       <p class="mb-16 lg:mb-24">Der Autobahnschluss an die A1H bei der Europabrücke ist in knapp 5 Minuten erreichbar.</p>
     </x-content.article>
   </x-layout.content>
-
+  <x-layout.sidebar class="max-w-[280px] md:max-w-none mt-42 md:mt-0">
+    <x-content.list-item>
+      <x-content.link-external url="https://goo.gl/maps/bTT5LVBVSoRUJNP68" title="Karte öffnen">
+        <span>Google Maps</span>
+      </x-content.link-external>
+    </x-content.list-item>
+    <x-content.list-item>
+      <x-content.link-external url="https://maps.google.com" title="Webcam Baustelle öffnen">
+        <span>Webcam Baustelle</span>
+      </x-content.link-external>
+    </x-content.list-item>
+  </x-layout.sidebar>
 </x-layout.columns>
 
 @endsection

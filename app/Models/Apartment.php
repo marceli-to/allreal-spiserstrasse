@@ -25,6 +25,8 @@ class Apartment extends Model
     'area_basement',
     'area_exterior',
     'price',
+    'filter_price',
+    'filter_area',
     'iso_code_view_1',
     'iso_code_view_2',
     'iso_code_view_3',

@@ -10,7 +10,7 @@
         Thomas Altherr<br>
         Allreal Generalunternehmung AG<br>
         Lindbergh-Allee 1, 8152 Glattpark<br>
-        Tel. 044 319 12 38
+        Tel. <a href="tel:+41443191919">044 319 19 19</a><br>
       </p>
       <div id="app-form" class="mt-48"></div>
     </x-content.article>

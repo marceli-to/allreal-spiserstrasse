@@ -36,12 +36,22 @@
     Wohnfläche
   </x-apartment-filter-link>
 </x-content.list-item>
+@foreach (config('apartments.filter.areas') as $value => $label)
+  <x-content.list-item data-filter-item="area" class="is-hidden">
+    <x-apartment-filter-link-item :type="'area'" value="{{$value}}" label="{!! $label !!}" />
+  </x-content.list-item>
+@endforeach
 
 <x-content.list-item data-btn-filter-wrapper="">
   <x-apartment-filter-link data-btn-filter-toggle="price">
     Kaufpreis
   </x-apartment-filter-link>
 </x-content.list-item>
+@foreach (config('apartments.filter.prices') as $value => $label)
+  <x-content.list-item data-filter-item="price" class="is-hidden">
+    <x-apartment-filter-link-item :type="'price'" value="{{$value}}" label="{!! $label !!}" />
+  </x-content.list-item>
+@endforeach
 
 <x-content.list-item data-btn-filter-wrapper="">
   <x-apartment-filter-link data-btn-filter-toggle="state">
