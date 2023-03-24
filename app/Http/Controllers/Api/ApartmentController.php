@@ -86,6 +86,10 @@ class ApartmentController extends Controller
     $apartment->price = $request->input('price');
     $apartment->state = $request->input('state');
     $apartment->save();
+
+    // Run the artisan command to update the filter attributes
+    \Artisan::call('update:filterattr');
+    
     return response()->json('successfully updated');
   }
 }
