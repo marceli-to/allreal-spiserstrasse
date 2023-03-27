@@ -3,7 +3,7 @@
 <x-form method="POST" action="{{ route('password.update') }}">
   <input type="hidden" name="token" value="{{ request()->route('token') }}" />
   <div class="mb-8">
-    <x-icon.logo class="mx-auto h-12 mb-6 w-auto" />
+    <x-icon.logo class="mx-auto h-12 mb-10 w-auto" />
     <h2>{{ __('Change your password') }}</h2>
     <p>{{ __('Set a new password and confirm it, just in case.') }}</p>
   </div>

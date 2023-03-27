@@ -2,9 +2,9 @@
 @section('content')
 <x-form method="POST" action="{{ route('login') }}">
   <div class="mb-8">
-    <x-icon.logo class="mx-auto h-12 mb-6 w-auto" />
-    <h2>{{ __('Sign in to your account') }}</h2>
-    <p>{{ __('Use the provided email and password') }}</p>
+    <x-icon.logo class="mx-auto h-10 mb-10 w-auto" />
+    <h2>{{ __('Login Spiserstrasse') }}</h2>
+    <p>{{ __('Please enter your credentials to access your account.') }}</p>
   </div>
 
   @if ($errors->any())

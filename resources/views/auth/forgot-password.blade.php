@@ -2,7 +2,7 @@
 @section('content')
 <x-form method="POST" action="{{ route('password.email') }}">
   <div class="mb-8">
-    <x-icon.logo class="mx-auto h-12 mb-6 w-auto" />
+    <x-icon.logo class="mx-auto h-12 mb-10 w-auto" />
     <h2>{{ __('Request a new password') }}</h2>
     <p>{{ __('No worries – simply enter your email and we\'ll send you a link to reset your old password') }}</p>
   </div>
