@@ -46,8 +46,10 @@ class ApartmentIsoCode extends Component
        data-rooms="'.$apartment->rooms.'" 
        data-floor="'.$floor.'" 
        data-type="'.$apartment->type->id.'" 
-       data-area="'.$apartment->filter_area.'" 
-       data-price="'.$apartment->filter_price.'" 
+       data-area="'.$apartment->area.'" 
+       data-areaRange="'.$apartment->filter_area.'" 
+       data-price="'.$apartment->price.'" 
+       data-priceRange="'.$apartment->filter_price.'" 
        data-state="'.$apartment->state.'"', 
       $code
     );

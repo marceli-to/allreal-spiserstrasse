@@ -32,24 +32,24 @@
 @endforeach
 
 <x-content.list-item data-btn-filter-wrapper="">
-  <x-apartment-filter-link data-btn-filter-toggle="area">
+  <x-apartment-filter-link data-btn-filter-toggle="areaRange">
     Wohnfläche
   </x-apartment-filter-link>
 </x-content.list-item>
 @foreach (config('apartments.filter.areas') as $value => $label)
-  <x-content.list-item data-filter-item="area" class="is-hidden">
-    <x-apartment-filter-link-item :type="'area'" value="{{$value}}" label="{!! $label !!}" />
+  <x-content.list-item data-filter-item="areaRange" class="is-hidden">
+    <x-apartment-filter-link-item :type="'areaRange'" value="{{$value}}" label="{!! $label !!}" />
   </x-content.list-item>
 @endforeach
 
 <x-content.list-item data-btn-filter-wrapper="">
-  <x-apartment-filter-link data-btn-filter-toggle="price">
+  <x-apartment-filter-link data-btn-filter-toggle="priceRange">
     Kaufpreis
   </x-apartment-filter-link>
 </x-content.list-item>
 @foreach (config('apartments.filter.prices') as $value => $label)
-  <x-content.list-item data-filter-item="price" class="is-hidden">
-    <x-apartment-filter-link-item :type="'price'" value="{{$value}}" label="{!! $label !!}" />
+  <x-content.list-item data-filter-item="priceRange" class="is-hidden">
+    <x-apartment-filter-link-item :type="'priceRange'" value="{{$value}}" label="{!! $label !!}" />
   </x-content.list-item>
 @endforeach
 
