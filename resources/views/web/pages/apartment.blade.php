@@ -1,6 +1,6 @@
 @extends('web.app')
 @section('seo_title', $apartment->title)
-@section('page_title', __('Wohnung'))
+@section('page_title', $apartment->type->id == 1 ? 'Atelier' : 'Wohnung')
 @section('content')
 <x-layout.columns>
   <x-layout.content>
@@ -22,7 +22,7 @@
   <x-layout.sidebar>
     <div class="mt-28">
       <x-content.list-item class="flex justify-between py-10">
-        <label class="block">Wohnung</label>
+        <label class="block">{{ $apartment->type->id == 1 ? 'Atelier' : 'Wohnung' }}</label>
         {{ $apartment->number }}
       </x-content.list-item>
       <x-content.list-item class="flex justify-between py-10 border-t-silver">
@@ -30,17 +30,25 @@
         {{ $apartment->rooms }}
       </x-content.list-item>
       <x-content.list-item class="flex justify-between py-10 border-t-silver">
-        <label class="block">Etage</label>
+        <label class="block">Geschoss</label>
         {{ $apartment->floorArray['label'] }}
       </x-content.list-item>
       <x-content.list-item class="flex justify-between py-10 border-t-silver">
-        <label class="block">Fläche (m<sup>2</sup>)</label>
+        <label class="block">
+          @if ($apartment->type->id == 1)
+            Fläche, ca. m<sup>2</sup>
+          @else
+            Wohnfläche, ca. m<sup>2</sup>
+          @endif
+        </label>
         {{ $apartment->area }}
       </x-content.list-item>
-      <x-content.list-item class="flex justify-between py-10 border-t-silver">
-        <label class="block">Terrasse (m<sup>2</sup>)</label>
-        {{ $apartment->area_exterior }}
-      </x-content.list-item>
+      @if ($apartment->area_exterior > 0)
+        <x-content.list-item class="flex justify-between py-10 border-t-silver">
+          <label class="block">Aussenfläche, ca. m<sup>2</sup></label>
+          {{ $apartment->area_exterior }}
+        </x-content.list-item>
+      @endif
       <x-content.list-item class="flex justify-between py-10 border-t-silver">
         <label class="block">Verkaufspreis</label>
         {{ number_format($apartment->price , 2, ".", "\u{2009}") }}
@@ -75,6 +83,13 @@
         </figure>
       </x-content.list-item>
     </div>
+    @if ($apartment->type->id == 1)
+    <div class="mt-12">
+      <x-content.list-item class="flex justify-between py-10">
+        <label>Dieses Atelier ist nicht als Wohnraum nutzbar.</label>
+      </x-content.list-item>
+    </div>
+    @endif
   </x-layout.sidebar>
 </x-layout.columns>
 

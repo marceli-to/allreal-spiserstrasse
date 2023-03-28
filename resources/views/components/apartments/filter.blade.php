@@ -11,7 +11,7 @@
 
 <x-content.list-item data-btn-filter-wrapper="">
   <x-apartment-filter-link data-btn-filter-toggle="floor">
-    Etage
+    Geschoss
   </x-apartment-filter-link>
 </x-content.list-item>
 @foreach (config('apartments.filter.floors') as $value => $label)

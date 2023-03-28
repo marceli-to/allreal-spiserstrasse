@@ -27,6 +27,7 @@ class ApartmentController extends Controller
    */
   public function show(Apartment $apartment, $slug = NULL)
   {
+    $apartment = Apartment::with('type')->find($apartment->id);
     return view($this->viewPath . 'apartment', ['apartment' => $apartment]);
   }
   

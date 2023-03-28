@@ -19,7 +19,7 @@
         <td class="heading spacer"></td>
         <td class="heading underline">Zimmer</td>
         <td class="heading spacer"></td>
-        <td class="heading underline">Etage</td>
+        <td class="heading underline">Geschoss</td>
         <td class="heading spacer"></td>
         <td class="heading underline">Fläche m<sup>2</sup></td>
         <td class="heading spacer"></td>
@@ -53,7 +53,7 @@
         <td class="heading spacer"></td>
         <td class="heading underline">Zimmer</td>
         <td class="heading spacer"></td>
-        <td class="heading underline">Etage</td>
+        <td class="heading underline">Geschoss</td>
         <td class="heading spacer"></td>
         <td class="heading underline">Fläche m<sup>2</sup></td>
         <td class="heading spacer"></td>
@@ -87,7 +87,7 @@
         <td class="heading spacer"></td>
         <td class="heading underline">Zimmer</td>
         <td class="heading spacer"></td>
-        <td class="heading underline">Etage</td>
+        <td class="heading underline">Geschoss</td>
         <td class="heading spacer"></td>
         <td class="heading underline">Fläche m<sup>2</sup></td>
         <td class="heading spacer"></td>
