@@ -8,11 +8,11 @@ export default {
           label: 'Objekte',
           route: 'apartments.index'
         },
-        {
-          icon: 'mail',
-          label: 'Anfragen',
-          route: 'form-data.index'
-        },
+        // {
+        //   icon: 'mail',
+        //   label: 'Anfragen',
+        //   route: 'form-data.index'
+        // },
       ]
     },
   ]

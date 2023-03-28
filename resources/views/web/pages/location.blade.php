@@ -32,11 +32,6 @@
         <span>Google Maps</span>
       </x-content.link-external>
     </x-content.list-item>
-    <x-content.list-item>
-      <x-content.link-external url="https://maps.google.com" title="Webcam Baustelle öffnen">
-        <span>Webcam Baustelle</span>
-      </x-content.link-external>
-    </x-content.list-item>
   </x-layout.sidebar>
 </x-layout.columns>
 

@@ -8,7 +8,7 @@ const router = createRouter({
   linkActiveClass: 'is-active',
   routes: [
     {
-      path: '/administration/apartments',
+      path: '/administration',
       name: 'apartments.index',
       component: ApartmentIndex,
       meta: { requiresAuth: true },
