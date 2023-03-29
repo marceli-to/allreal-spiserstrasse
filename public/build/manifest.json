@@ -1,4 +1,8 @@
 {
+  "resources/css/web/fonts/din-medi-webfont.eot": {
+    "file": "assets/din-medi-webfont-3079edd0.eot",
+    "src": "resources/css/web/fonts/din-medi-webfont.eot"
+  },
   "resources/css/web/fonts/din-regular-webfont-webfont.eot": {
     "file": "assets/din-regular-webfont-webfont-13d4d27f.eot",
     "src": "resources/css/web/fonts/din-regular-webfont-webfont.eot"
@@ -7,56 +11,52 @@
     "file": "assets/din-light-webfont-7c7cbf36.eot",
     "src": "resources/css/web/fonts/din-light-webfont.eot"
   },
-  "resources/css/web/fonts/din-medi-webfont.eot": {
-    "file": "assets/din-medi-webfont-3079edd0.eot",
-    "src": "resources/css/web/fonts/din-medi-webfont.eot"
-  },
-  "resources/css/web/fonts/din-regular-webfont-webfont.woff": {
-    "file": "assets/din-regular-webfont-webfont-db81ed8d.woff",
-    "src": "resources/css/web/fonts/din-regular-webfont-webfont.woff"
+  "resources/css/web/fonts/din-light-webfont.woff": {
+    "file": "assets/din-light-webfont-6c9f2462.woff",
+    "src": "resources/css/web/fonts/din-light-webfont.woff"
   },
   "resources/css/web/fonts/din-medi-webfont.woff": {
     "file": "assets/din-medi-webfont-78fdda91.woff",
     "src": "resources/css/web/fonts/din-medi-webfont.woff"
   },
-  "resources/css/web/fonts/din-light-webfont.woff": {
-    "file": "assets/din-light-webfont-6c9f2462.woff",
-    "src": "resources/css/web/fonts/din-light-webfont.woff"
+  "resources/css/web/fonts/din-regular-webfont-webfont.woff": {
+    "file": "assets/din-regular-webfont-webfont-db81ed8d.woff",
+    "src": "resources/css/web/fonts/din-regular-webfont-webfont.woff"
   },
   "resources/css/web/fonts/din-regular-webfont-webfont.ttf": {
     "file": "assets/din-regular-webfont-webfont-47a2416a.ttf",
     "src": "resources/css/web/fonts/din-regular-webfont-webfont.ttf"
   },
-  "resources/css/web/fonts/din-light-webfont.ttf": {
-    "file": "assets/din-light-webfont-08361e5c.ttf",
-    "src": "resources/css/web/fonts/din-light-webfont.ttf"
-  },
   "resources/css/web/fonts/din-medi-webfont.ttf": {
     "file": "assets/din-medi-webfont-be38dfc4.ttf",
     "src": "resources/css/web/fonts/din-medi-webfont.ttf"
+  },
+  "resources/css/web/fonts/din-light-webfont.ttf": {
+    "file": "assets/din-light-webfont-08361e5c.ttf",
+    "src": "resources/css/web/fonts/din-light-webfont.ttf"
   },
   "resources/css/web/fonts/din-regular-webfont-webfont.svg": {
     "file": "assets/din-regular-webfont-webfont-18a1b17b.svg",
     "src": "resources/css/web/fonts/din-regular-webfont-webfont.svg"
   },
-  "resources/css/web/fonts/din-light-webfont.svg": {
-    "file": "assets/din-light-webfont-006c9fb7.svg",
-    "src": "resources/css/web/fonts/din-light-webfont.svg"
-  },
   "resources/css/web/fonts/din-medi-webfont.svg": {
     "file": "assets/din-medi-webfont-f640904b.svg",
     "src": "resources/css/web/fonts/din-medi-webfont.svg"
+  },
+  "resources/css/web/fonts/din-light-webfont.svg": {
+    "file": "assets/din-light-webfont-006c9fb7.svg",
+    "src": "resources/css/web/fonts/din-light-webfont.svg"
   },
   "resources/js/web/form/app.css": {
     "file": "assets/app-e2f145da.css",
     "src": "resources/js/web/form/app.css"
   },
   "resources/js/web/app.css": {
-    "file": "assets/app-ca1f504e.css",
+    "file": "assets/app-a30da52b.css",
     "src": "resources/js/web/app.css"
   },
   "resources/js/spa/app.css": {
-    "file": "assets/app-f2ebfedc.css",
+    "file": "assets/app-ee522c4c.css",
     "src": "resources/js/spa/app.css"
   },
   "resources/js/web/form/app.js": {
@@ -71,11 +71,11 @@
     ]
   },
   "resources/js/web/app.js": {
-    "file": "assets/app-a0e6041a.js",
+    "file": "assets/app-f7a2eab2.js",
     "src": "resources/js/web/app.js",
     "isEntry": true,
     "css": [
-      "assets/app-ca1f504e.css"
+      "assets/app-a30da52b.css"
     ],
     "assets": [
       "assets/din-medi-webfont-3079edd0.eot",
@@ -93,14 +93,14 @@
     ]
   },
   "resources/js/spa/app.js": {
-    "file": "assets/app-354408d6.js",
+    "file": "assets/app-da4e0ab2.js",
     "src": "resources/js/spa/app.js",
     "isEntry": true,
     "imports": [
       "_nprogress-8fc92ca2.js"
     ],
     "css": [
-      "assets/app-f2ebfedc.css"
+      "assets/app-ee522c4c.css"
     ]
   },
   "_nprogress-8fc92ca2.js": {

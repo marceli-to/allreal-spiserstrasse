@@ -42,7 +42,9 @@
           <td class="item underline align-right price">{{ number_format($a->price , 2, ".", "\u{2009}") }}</td>
         </tr>
       @endforeach
+      @include('pdf.partials.parking')
     </table>
+
   </div>
   <div class="break"></div>
   <div class="page__title">Preisliste Eigentumswohnungen, Townhouses und Ateliers Spiserstrasse 10, Zürich</div>
@@ -76,6 +78,7 @@
           <td class="item underline align-right price">{{ number_format($a->price , 2, ".", "\u{2009}") }}</td>
         </tr>
       @endforeach
+      @include('pdf.partials.parking')
     </table>
   </div>
   <div class="break"></div>
@@ -110,6 +113,7 @@
           <td class="item underline align-right price">{{ number_format($a->price , 2, ".", "\u{2009}") }}</td>
         </tr>
       @endforeach
+      @include('pdf.partials.parking')
     </table>
   </div>
 </div>

@@ -7,5 +7,12 @@
 </head>
 <body>
 <footer class="footer">
-  Spiserstrasse, Zürich
+  <table class="footer-table">
+    <tr>
+      <td style="width: 87mm">
+        <img src="{{ public_path('img/allreal-logo.png') }}" alt="Logo" width="100" style="display: block; width: 40mm; height: 10.267mm" />
+      </td>
+      <td style="width: 87mm; text-align: right; vertical-align: bottom">Spiserstrasse, Zürich</td>
+    </tr>
+  </table>
 </footer>

@@ -151,6 +151,7 @@ sup {
   width: 174mm;
 }
 
+.footer-table,
 .content-table {
   width: 100%;
 }
@@ -184,5 +185,9 @@ sup {
 .content-table td.item.underline {
   border-bottom: .1mm solid #c8c8c8;
 }
+.content-table td.item.overline {
+  border-top: .1mm solid #000000;
+}
+
 
 </style>
