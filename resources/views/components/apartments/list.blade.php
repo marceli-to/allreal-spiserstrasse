@@ -17,7 +17,7 @@
       <x-apartment-list-item :label="'Zimmer'">{{ $a->rooms }}</x-apartment-list-item>
       <x-apartment-list-item :label="'Geschoss'">{{ $a->floorArray['label'] }}</x-apartment-list-item>
       <x-apartment-list-item :label="'Fläche'">{{ $a->area }} m<sup class="text-xxs">2</sup></x-apartment-list-item>
-      <x-apartment-list-item :label="'Verkaufspreis'">{{ number_format($a->price , 2, ".", "\u{2009}") }}</x-apartment-list-item>
+      <x-apartment-list-item :label="'Verkaufspreis'">{{ $a->state == 1 ? number_format($a->price , 2, ".", "\u{2009}") : '–' }}</x-apartment-list-item>
       <x-apartment-list-item class="hidden md:block md:mr-0">{{ $a->stateArray['value'] }}</x-apartment-list-item>
     </x-apartment-list-link>
   @endforeach

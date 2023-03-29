@@ -11,7 +11,7 @@
   data-type="{{ $apartment->type->id }}"
   data-area="{{ $apartment->area }}"
   data-areaRange="{{ $apartment->filter_area }}"
-  data-price="{{ $apartment->price }}"
+  data-price="{{ $apartment->state == 1 ? $apartment->price : 0 }}"
   data-priceRange="{{ $apartment->filter_price }}"
   data-state="{{ $apartment->stateArray['order'] }}">
   {{ $slot }}

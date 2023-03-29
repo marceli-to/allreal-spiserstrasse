@@ -51,7 +51,7 @@
       @endif
       <x-content.list-item class="flex justify-between py-10 border-t-silver">
         <label class="block">Verkaufspreis</label>
-        {{ number_format($apartment->price , 2, ".", "\u{2009}") }}
+        {{ $apartment->state == 1 ? number_format($apartment->price , 2, ".", "\u{2009}") : '–' }}
       </x-content.list-item>
     </div>
 
