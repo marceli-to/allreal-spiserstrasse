@@ -22,6 +22,6 @@ return [
   |
   */
 
-  'description' => 'Spiserstrasse, Zürich',   
+  'description' => 'An der Spiserstrasse in Zürich Albisrieden entsteht bis Mitte 2025 die Wohnüberbauung Spiserstrasse mit 57 Eigentumswohnungen, sechs Townhouses sowie sechs Ateliers. Die Überbauung wird im Minergie-Eco-Standard realisiert.',   
 
 ];
