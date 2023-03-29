@@ -37,9 +37,13 @@
           <td class="item spacer"></td>
           <td class="item underline">{{ $a->area }}</td>
           <td class="item spacer"></td>
-          <td class="item underline">{{ $a->state == 'sold' ? 'verkauft' : ($a->state == 'reserved' ? 'reserviert' : 'frei') }}</td>
+          <td class="item underline">{{ $a->state == 3 ? 'verkauft' : ($a->state == 2 ? 'reserviert' : 'frei') }}</td>
           <td class="item spacer"></td>
-          <td class="item underline align-right price">{{ number_format($a->price , 2, ".", "\u{2009}") }}</td>
+          @if ($a->state == 3 || $a->state == 2)
+            <td class="item underline align-right price">&nbsp;</td>
+          @else
+            <td class="item underline align-right price">{{ number_format($a->price , 2, ".", "\u{2009}") }}</td>
+          @endif
         </tr>
       @endforeach
       @include('pdf.partials.parking')
@@ -73,9 +77,13 @@
           <td class="item spacer"></td>
           <td class="item underline">{{ $a->area }}</td>
           <td class="item spacer"></td>
-          <td class="item underline">{{ $a->state == 'sold' ? 'verkauft' : ($a->state == 'reserved' ? 'reserviert' : 'frei') }}</td>
+          <td class="item underline">{{ $a->state == 3 ? 'verkauft' : ($a->state == 2 ? 'reserviert' : 'frei') }}</td>
           <td class="item spacer"></td>
-          <td class="item underline align-right price">{{ number_format($a->price , 2, ".", "\u{2009}") }}</td>
+          @if ($a->state == 3 || $a->state == 2)
+            <td class="item underline align-right price">&nbsp;</td>
+          @else
+            <td class="item underline align-right price">{{ number_format($a->price , 2, ".", "\u{2009}") }}</td>
+          @endif
         </tr>
       @endforeach
       @include('pdf.partials.parking')
@@ -108,9 +116,13 @@
           <td class="item spacer"></td>
           <td class="item underline">{{ $a->area }}</td>
           <td class="item spacer"></td>
-          <td class="item underline">{{ $a->state == 'sold' ? 'verkauft' : ($a->state == 'reserved' ? 'reserviert' : 'frei') }}</td>
+          <td class="item underline">{{ $a->state == 3 ? 'verkauft' : ($a->state == 2 ? 'reserviert' : 'frei') }}</td>
           <td class="item spacer"></td>
-          <td class="item underline align-right price">{{ number_format($a->price , 2, ".", "\u{2009}") }}</td>
+          @if ($a->state == 3 || $a->state == 2)
+            <td class="item underline align-right price">&nbsp;</td>
+          @else
+            <td class="item underline align-right price">{{ number_format($a->price , 2, ".", "\u{2009}") }}</td>
+          @endif
         </tr>
       @endforeach
       @include('pdf.partials.parking')
