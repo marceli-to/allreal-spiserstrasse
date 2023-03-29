@@ -9,7 +9,7 @@
 <meta property="og:title" content="@if(trim($__env->yieldContent('seo_title')))@yield('seo_title') / {{config('seo.title')}}@else{{config('seo.title')}}@endif">
 <meta property="og:description" content="@if(trim($__env->yieldContent('seo_description')))@yield('seo_description')@else{{config('seo.description')}}@endif">
 <meta property="og:url" content="{{url()->current()}}">
-<meta property="og:image" content="@if(trim($__env->yieldContent('og_image')))@yield('og_image')@else{{ asset('assets/img/viak-og.jpg') }}@endif">
+<meta property="og:image" content="@if(trim($__env->yieldContent('og_image')))@yield('og_image')@else{{ asset('/media/Allreal_Spiserstrasse-OG.jpg') }}@endif">
 <meta property="og:site_name" content="{{config('seo.title')}}">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="theme-color" content="#ffffff">
