@@ -17,21 +17,21 @@
         <label>{{ errors.firstname ? errors.firstname : 'Vorname *'}}</label>
         <input type="text" name="firstname" v-model="form.firstname" @focus="removeValidationError('firstname')">
       </div>
-      <div class="form-group group">
-        <label>Strasse</label>
-        <input type="text" name="street" v-model="form.street">
+      <div :class="[errors.street ? 'text-red-500' : '', 'form-group group']">
+        <label>{{ errors.firstname ? errors.street : 'Strasse *'}}</label>
+        <input type="text" name="street" v-model="form.street" @focus="removeValidationError('street')">
       </div>
       <div class="form-group group">
         <label>Hausnummer</label>
         <input type="text" name="street" v-model="form.street_number">
       </div>
-      <div class="form-group group">
-        <label>Postleitzahl</label>
-        <input type="text" name="street" v-model="form.zip">
+      <div :class="[errors.zip ? 'text-red-500' : '', 'form-group group']">
+        <label>{{ errors.firstname ? errors.zip : 'Postleitzahl *'}}</label>
+        <input type="text" name="street" v-model="form.zip" @focus="removeValidationError('zip')">
       </div>
-      <div class="form-group group">
-        <label>Ort</label>
-        <input type="text" name="street" v-model="form.city">
+      <div :class="[errors.name ? 'text-red-500' : '', 'form-group group']">
+        <label>{{ errors.firstname ? errors.city : 'Ort *'}}</label>
+        <input type="text" name="street" v-model="form.city" @focus="removeValidationError('city')">
       </div>
       <div :class="[errors.phone ? 'text-red-500' : '', 'form-group group']">
         <label>{{ errors.phone ? errors.phone : 'Telefon *'}}</label>

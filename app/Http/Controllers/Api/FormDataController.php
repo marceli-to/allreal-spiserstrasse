@@ -31,7 +31,6 @@ class FormDataController extends Controller
   {
     $data = FormData::create($request->except('_token'));
     Notification::route('mail', env('MAIL_TO'))->notify(new FormSubmit($data));
-    
     return response()->json('successfully updated');
   }
 

@@ -7,6 +7,7 @@ use App\Http\Controllers\ApartmentController;
 use App\Http\Controllers\FeaturesController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\DocumentController;
 
 /*
@@ -24,6 +25,7 @@ Route::get('/objekte/{apartment}/{slug?}', [ApartmentController::class, 'show'])
 Route::get('/ausstattung', [FeaturesController::class, 'index'])->name('page.features');
 Route::get('/galerie', [GalleryController::class, 'index'])->name('page.gallery');
 Route::get('/kontakt', [ContactController::class, 'index'])->name('page.contact');
+Route::get('/aktuelles/{slug?}', [NewsController::class, 'show'])->name('page.news');
 Route::get('/preisliste', [DocumentController::class, 'pricelist']);
 
 /*
