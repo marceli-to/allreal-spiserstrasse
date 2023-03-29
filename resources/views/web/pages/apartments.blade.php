@@ -14,7 +14,7 @@
     <x-apartments.filter />
     <x-content.list-item class="mt-42">
       <a 
-        href="/preisliste" 
+        href="/preisliste?v={{time()}}" 
         title="Download Preisliste" 
         target="_blank" 
         class="flex justify-between py-10 hover:text-blue">
