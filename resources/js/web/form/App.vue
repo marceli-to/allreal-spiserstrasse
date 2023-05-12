@@ -41,8 +41,30 @@
         <label>{{ errors.email ? errors.email : 'E-Mail *'}}</label>
         <input type="email" name="firstname" v-model="form.email" @focus="removeValidationError('email')">
       </div>
+      <div :class="[errors.privacy_statement ? 'text-red-500' : '', 'form-group group mt-12']">
+        <div class="col-span-16 flex items-center">
+          <input 
+            type="checkbox" 
+            value="1" 
+            v-model="form.privacy_statement" 
+            id="accept_privacy_statement" 
+            class="!ring-0 leading-none focus:!ring-0 text-anthrazit"
+            @change="removeValidationError('privacy_statement')" />
+          <label class="border-none ml-12" for="accept_privacy_statement">
+            <template v-if="errors.privacy_statement">
+              <span class="text-red-500" v-html="errors.privacy_statement"></span>
+            </template>
+            <template v-else>
+              Ich akzeptiere die <a href="https://allreal.ch/datenschutzerklaerung/" target="_blank" class="underline underline-offset-2">Datenschutzerklärung</a><sup class="text-xxs">1</sup> von Allreal
+            </template>
+          </label>
+        </div>
+      </div>
       <div class="form-group">
         <button @click.prevent="submit()">Senden</button>
+      </div>
+      <div class="text-base mt-48">
+        <sup class="text-xxs">1</sup>Hinweis zum Datenschutz: Ihre persönlichen Daten werden nur für die Aufnahme in unsere Interessentendatenbank verwendet und nicht an Dritte weitergegeben. Weitere Informationen finden Sie in unserer Datenschutzerklärung.
       </div>
     </template>
   </form>
@@ -62,14 +84,16 @@ export default {
         zip: null,
         city: null,
         phone: null,
-        email: null
+        email: null,
+        privacy_statement: null
       },
 
       errors: {
         name: null,
         firstname: null,
         phone: null,
-        email: null
+        email: null,
+        privacy_statement: null
       },
 
       routes: {
@@ -101,6 +125,11 @@ export default {
         errors[data.errors[key][0]['field']] = data.errors[key][0]['error'];
       }
       this.errors = errors;
+
+      if (!this.form.privacy_statement) {
+        this.errors.privacy_statement = 'Bitte akzeptieren Sie die <a href="https://allreal.ch/datenschutzerklaerung/" target="_blank" class="underline underline-offset-2">Datenschutzerklärung</a> von Allreal';
+      }
+
     },
 
     removeValidationError(field) {

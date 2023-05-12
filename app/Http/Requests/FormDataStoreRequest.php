@@ -31,6 +31,7 @@ class FormDataStoreRequest extends FormRequest
       'city' => 'required',
       'phone' => 'required',
       'email' => 'required|email',
+      'privacy_statement' => 'required'
     ];
   }
 
@@ -74,6 +75,10 @@ class FormDataStoreRequest extends FormRequest
       'email.email' => [
         'field' => 'email',
         'error' => 'E-Mail ist ungültig'
+      ],
+      'privacy_statement.required' => [
+        'field' => 'privacy_statement',
+        'error' => 'Datenschutzerklärung muss akzeptiert werden'
       ],
     ];
   }
