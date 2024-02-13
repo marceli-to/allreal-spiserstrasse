@@ -8,6 +8,7 @@ module.exports = {
     "./resources/**/*.js",
     "./resources/**/*.vue",
   ],
+  
   theme: {
 
     extend: {
@@ -310,6 +311,7 @@ module.exports = {
     }
 
   },
+
   plugins: [
     require('@tailwindcss/forms'),
   ],
