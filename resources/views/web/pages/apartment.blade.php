@@ -58,7 +58,7 @@
     <div class="mt-44">
       <x-content.list-item>
         <a 
-          href="/media/downloads/Allreal_Spiserstrasse_{{ $apartment->number }}.pdf" 
+          href="/media/downloads/Allreal_Spiserstrasse_{{ $apartment->number }}.pdf?v=2" 
           target="_blank" 
           title="Download Grundriss {{ $apartment->number }}"
           class="flex justify-between py-10 hover:text-blue">

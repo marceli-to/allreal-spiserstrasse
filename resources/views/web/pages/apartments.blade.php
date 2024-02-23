@@ -34,7 +34,7 @@
     </x-content.list-item>
     <x-content.list-item class="mb-32 sm:mb-0">
       <a 
-        href="/media/downloads/Allreal_Spiserstrasse_Grundrisse.pdf" 
+        href="/media/downloads/Allreal_Spiserstrasse_Grundrisse.pdf?v=2" 
         title="Download Grundrisse" 
         target="_blank" 
         class="flex justify-between py-10 hover:text-blue">
