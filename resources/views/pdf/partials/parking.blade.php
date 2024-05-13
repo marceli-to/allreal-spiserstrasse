@@ -19,7 +19,7 @@
   <td class="item spacer"></td>
   <td class="item underline"></td>
   <td class="item spacer"></td>
-  <td class="item underline">frei</td>
+  <td class="item underline">verkauft</td>
   <td class="item spacer"></td>
-  <td class="item underline align-right price">{{ number_format(7500 , 2, ".", "\u{2009}") }}</td>
+  <td class="item underline align-right price"></td>
 </tr>
